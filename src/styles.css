@@ -305,4 +305,10 @@ h1 { font-size: clamp(29px, 3vw, 39px); letter-spacing: -.055em; line-height: 1.
 .empty-state p { font-size: 12px; margin: 0; }
 .modal-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
 .color-picker { display: flex; gap: 6px; flex-wrap: wrap; }
-.color-swatch { width: 22px; height: 22px; border-radius: 50%; border: 2p
+.color-swatch { width: 22px; height: 22px; border-radius: 50%; border: 2px solid transparent; cursor: pointer; transition: transform .12s ease; }
+.color-swatch:hover { transform: scale(1.15); }
+.color-swatch.active { border-color: var(--ink); box-shadow: 0 0 0 2px var(--paper), 0 0 0 4px var(--ink); }
+.progress-label { float: right; font-size: 11px; color: var(--ink); }
+.progress-range { width: 100%; accent-color: var(--coral); }
+@media (max-width: 980px) { .review-summary { grid-template-columns: repeat(2, 1fr); } .goals-grid { grid-template-columns: 1fr; } }
+@media (max-width: 720px) { .notes-toolbar { flex-direction: column; align-items: stretch; } .notes-search input { width: 100%; } .notes-tags { justify-content: center; } .notes-grid { grid-template-columns: 1fr; } .review-summary { grid-template-columns: 1fr 1fr; } .modal-row { grid-template-columns: 1fr; } }
