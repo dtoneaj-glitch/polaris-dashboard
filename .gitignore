@@ -1,0 +1,35 @@
+# Dependencies
+**/node_modules/
+
+# Build and deployment output
+**/dist/
+**/build/
+**/.vite/
+**/.tanstack/
+**/.vercel/
+**/test-results/
+**/coverage/
+
+# Local platform and runtime state
+**/.grok/app-env.json
+**/.grok/og-pending
+**/.node_modules.lock
+**/.project_id
+**/.superpowers/
+
+# Generated previews and local artifacts
+**/screenshots/
+**/artifacts/
+*.zip
+*.log
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local environment files
+.env
+.env.*
+!.env.example
