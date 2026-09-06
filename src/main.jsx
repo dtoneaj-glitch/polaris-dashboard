@@ -135,23 +135,23 @@ function goalProgress(g, projects) {
 
 // ── 初始資料 ──────────────────────────────────────────
 const initialProjects = [
-  { id: 'guru', name: '股流Radar', description: '台股市場脈動即時監控系統，掌握股流方向與資金輪動', stage: 'Active', color: '#e76f51', progress: 38, lastUpdated: Date.now(), next: '完成第一版監控面板' },
+  { id: 'guru', name: '股流Radar', description: '台股市場脈動即時監控系統，掌握股流方向與資金輪動', stage: 'Active', color: '#e76f51', progress: 45, lastUpdated: Date.now(), next: '收齊20則決策筆記' },
   { id: 'suno', name: 'SUNO Music', description: '用音樂保存正在發生的生活', stage: 'Explore', color: '#6f8f78', progress: 32, lastUpdated: Date.now() - 1 * DAY, next: '完成一首 demo' },
   { id: 'poker', name: 'Poker Trainer', description: '讓決策練習變得有趣', stage: 'MVP', color: '#7087a3', progress: 18, lastUpdated: Date.now() - 15 * DAY, next: '確認第一個訓練循環' },
   { id: 'novel', name: '小說世界觀', description: '長篇故事與角色資料庫', stage: 'Idea', color: '#bb8b4d', progress: 8, lastUpdated: Date.now() - 6 * DAY, next: '整理三個核心角色' },
 ]
 
 const initialIdeas = [
-  { id: 'idea-1', title: '台股板塊輪動儀表板', note: '監控各產業輪動，當股流從電子轉向金融時發出信號。', type: '產品', score: 91, created: '今天', ready: true },
   { id: 'idea-2', title: '法人買賣超追蹤', note: '整合外資、投信、自營商的進出場訊號，建立權責歸屬圖。', type: '系統', score: 85, created: '昨天', ready: true },
-  { id: 'idea-3', title: '股流歷史模式庫', note: '將過去一年常見的水流態勢分類、打標籤，方便快速比對當下局勢。', type: '產品', score: 73, created: '3 天前', ready: false },
 ]
 
 const initialTasks = [
-  { id: 'task-1', title: '完成第一版監控面板', projectId: 'guru', due: todayStr(), priority: '高', done: false },
+  { id: 'task-1', title: '完成第一版監控面板', projectId: 'guru', due: todayStr(), priority: '高', done: true, completedAt: Date.now() },
   { id: 'task-2', title: '定義股流指標參數', projectId: 'guru', due: todayStr(), priority: '中', done: false },
   { id: 'task-3', title: '完成一首 SUNO demo', projectId: 'suno', due: todayStr(3), priority: '中', done: false },
   { id: 'task-4', title: '確認第一個訓練循環', projectId: 'poker', due: todayStr(5), priority: '低', done: false },
+  { id: 'task-g1', title: '盤點主流/蓄勢/乘流/靜流指標', projectId: 'guru', due: todayStr(), priority: '中', done: false },
+  { id: 'task-g2', title: '建立股流歷史模式庫', projectId: 'guru', due: todayStr(), priority: '低', done: false },
 ]
 
 const initialNotes = [
@@ -164,21 +164,21 @@ const initialTimelineEvents = [
   { id: 'ev-1', date: '2026-08-10', type: 'milestone', title: '股流 Radar 概念成型', projectId: 'guru', color: '#6f8f78' },
   { id: 'ev-2', date: '2026-08-20', type: 'note', title: '確定「主流／蓄勢／乘流／靜流」四階段語彙', projectId: 'guru', color: '#e76f51' },
   { id: 'ev-3', date: '2026-09-01', type: 'milestone', title: '完成第一版原型介面', projectId: 'guru', color: '#6f8f78' },
-  { id: 'ev-4', date: '2026-09-03', type: 'note', title: '股流 Rader 監控面板上線準備', projectId: 'guru', color: '#e76f51' },
+  { id: 'ev-4', date: '2026-09-03', type: 'note', title: '股流 Radar 監控面板上線準備', projectId: 'guru', color: '#e76f51' },
   { id: 'ev-5', date: '2026-09-05', type: 'milestone', title: 'SUNO 第一首歌完成 demo', projectId: 'suno', color: '#6f8f78' },
 ]
 
 const initialGoals = [
-  { id: 'goal-1', title: '股流 Radar 第一版上線', description: '能被實際使用的監控面板程度', targetDate: '2026-09-15', progress: 38, color: '#e76f51' },
-  { id: 'goal-2', title: '收齊 20 則股流決策筆記', description: '累積成判斷資料庫', targetDate: '2026-10-01', progress: 15, color: '#6f8f78' },
+  { id: 'goal-1', title: '股流 Radar 第一版上線', description: '能被實際使用的監控面板程度', targetDate: '2026-09-15', progress: 45, color: '#e76f51', projectId: 'guru' },
+  { id: 'goal-2', title: '收齊 20 則股流決策筆記', description: '累積成判斷資料庫', targetDate: '2026-10-01', progress: 30, color: '#6f8f78', projectId: 'guru' },
   { id: 'goal-3', title: 'SUNO 頻道連續 4 週每週一首', description: '先做出有辨識度的聲音，再談規模', targetDate: '2026-09-28', progress: 25, color: '#6f8f78' },
-  { id: 'goal-4', title: '找到第一個付費使用者', description: '股流 Radar 痛點驗證', targetDate: '2026-10-15', progress: 5, color: '#7087a3' },
+  { id: 'goal-4', title: '找到第一個付費使用者', description: '股流 Radar 痛點驗證', targetDate: '2026-10-15', progress: 5, color: '#7087a3', projectId: 'guru' },
 ]
 
 const navItems = [
   { id: 'home', label: 'Home', icon: Gauge },
   { id: 'projects', label: 'Projects', icon: FolderKanban },
-  { id: 'ideas', label: 'Ideas', icon: Lightbulb, count: 3 },
+  { id: 'ideas', label: 'Ideas', icon: Lightbulb, count: 1 },
   { id: 'notes', label: 'Notes', icon: FileText },
   { id: 'timeline', label: 'Timeline', icon: CalendarDays },
   { id: 'review', label: 'Review', icon: BookOpen },
