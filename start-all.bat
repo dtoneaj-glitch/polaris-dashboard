@@ -1,6 +1,5 @@
 @echo off
-echo Starting dashboards...
-start "" http://127.0.0.1:5173
+echo Starting all dashboards...
 start "" http://127.0.0.1:8080
-echo Done. Both dashboards should open in your browser.
+echo Nora Workspace -> http://127.0.0.1:8080
 pause
