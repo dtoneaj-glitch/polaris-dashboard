@@ -29,11 +29,64 @@ import {
   Trash2,
   X,
 } from 'lucide-react'
+import { createClient } from '@supabase/supabase-js'
 import './styles.css'
 
 const STORAGE_KEY = 'nora_workspace_v1_demo_fresh'
 const THEME_KEY = 'polaris_theme'
+const CLOUD_CREDS_KEY = 'polaris_supabase_creds'
 document.documentElement.dataset.theme = localStorage.getItem(THEME_KEY) || 'dark'
+
+// ── Supabase 雲端同步 ─────────────────────────────────
+let _supabase = null
+let _cloudEmail = null
+
+function getSupabase() {
+  if (_supabase) return _supabase
+  try {
+    const creds = JSON.parse(localStorage.getItem(CLOUD_CREDS_KEY) || '{}')
+    if (creds.url && creds.key) {
+      _supabase = createClient(creds.url, creds.key)
+      return _supabase
+    }
+  } catch {}
+  return null
+}
+
+async function loadFromCloud() {
+  const sb = getSupabase()
+  if (!sb) return null
+  try {
+    const { data: authData } = await sb.auth.getUser()
+    const user = authData?.user
+    if (!user) return null
+    _cloudEmail = user.email
+    const result = {}
+    for (const table of ['projects', 'tasks', 'ideas', 'notes', 'timeline_events', 'goals', 'snapshots', 'reviews']) {
+      const { data, error } = await sb.from(table).select('*').eq('owner_email', _cloudEmail)
+      if (!error && data?.length) result[table] = data
+    }
+    return result
+  } catch (e) {
+    console.warn('Cloud load error:', e)
+    return null
+  }
+}
+
+async function syncToCloud(state) {
+  const sb = getSupabase()
+  if (!sb || !_cloudEmail) return
+  try {
+    await sb.from('profiles').upsert({ email: _cloudEmail, display_name: state.settings?.userName || '' }, { onConflict: 'email' })
+    for (const table of ['projects', 'tasks', 'ideas', 'notes', 'timeline_events', 'goals', 'snapshots', 'reviews']) {
+      const items = state[table] || []
+      if (items.length) {
+        const records = items.map(i => ({ ...i, owner_email: _cloudEmail }))
+        await sb.from(table).upsert(records, { onConflict: 'id' })
+      }
+    }
+  } catch (e) { console.warn('Cloud sync error:', e) }
+}
 
 // ── 日期工具（任務真日期 v1.3）────────────────────────
 const DAY = 86400000
@@ -209,7 +262,7 @@ function loadState() {
   return { settings: defaultSettings, projects: initialProjects, ideas: initialIdeas, tasks: initialTasks, notes: initialNotes, timelineEvents: initialTimelineEvents, goals: initialGoals, reviews: [], snapshots: [] }
 }
 
-function saveState(s) { localStorage.setItem(STORAGE_KEY, JSON.stringify(s)) }
+function saveState(s) { localStorage.setItem(STORAGE_KEY, JSON.stringify(s)); syncToCloud(s).catch(() => {}) }
 
 // ── 主元件 ────────────────────────────────────────────
 function App() {
@@ -246,6 +299,32 @@ function App() {
   }, [])
 
   useEffect(() => { saveState(state) }, [state])
+  // 載入雲端資料（若有設定）
+  useEffect(() => {
+    const init = async () => {
+      const sb = getSupabase()
+      if (!sb) return
+      try {
+        const { data: authData } = await sb.auth.signInAnonymously()
+        if (!authData.user) return
+        _cloudEmail = authData.user.email || 'anon-user'
+        const cloud = await loadFromCloud()
+        if (cloud && cloud.projects?.length) {
+          const migrated = {
+            settings: defaultSettings,
+            ...cloud,
+            reviews: cloud.reviews || [],
+            snapshots: cloud.snapshots || [],
+            tasks: (cloud.tasks || []).map((t) => ({ ...t, due: migrateDue(t.due) })),
+            projects: (cloud.projects || []).map((p) => ({ ...p, lastUpdated: migrateTs(p.lastUpdated ?? p.lastUpdate) })),
+          }
+          setState(migrated)
+          saveState(migrated)
+        }
+      } catch (e) { console.warn('Cloud init error:', e) }
+    }
+    init()
+  }, [])
   // 每日快照：每天第一次開啟時記錄各專案進度與任務數，累積成趨勢資料
   useEffect(() => {
     setState((c) => {
@@ -488,7 +567,7 @@ function App() {
             <span>{theme === 'dark' ? '日間模式' : '夜間模式'}</span>
           </button>
           <button className="nav-item annotation-item" onClick={() => setShowAnnotation(true)}><Plus size={17} strokeWidth={2.2} /><span>標註回饋</span></button>
-          <div className="sidebar-footer"><span className="sync-dot" /> Local-first workspace <span>v1.6</span></div>
+          <div className="sidebar-footer"><span className="sync-dot" /> Local-first workspace <span>v1.7</span></div>
         </div>
       </aside>
 
@@ -1479,6 +1558,50 @@ function SettingsPage({ state, onUpdateSettings, onExport, onImport, onReset }) 
     { label: '目標', value: state.goals.length },
     { label: '回顧', value: (state.reviews || []).length },
   ]
+  // 雲端狀態
+  const [cloudConnected, setCloudConnected] = useState(false)
+  const [cloudUrl, setCloudUrl] = useState(() => JSON.parse(localStorage.getItem(CLOUD_CREDS_KEY) || '{}').url || '')
+  const [cloudKey, setCloudKey] = useState('')
+  const [syncing, setSyncing] = useState(false)
+  const [syncMsg, setSyncMsg] = useState('')
+
+  useEffect(() => {
+    const sb = getSupabase()
+    setCloudConnected(!!sb)
+  }, [])
+
+  function connectCloud() {
+    if (!cloudUrl || !cloudKey) return
+    localStorage.setItem(CLOUD_CREDS_KEY, JSON.stringify({ url: cloudUrl, key: cloudKey }))
+    _supabase = null // 重設 cached client
+    setCloudConnected(true)
+    setSyncMsg('已連線，資料將自動同步')
+    setTimeout(() => setSyncMsg(''), 3000)
+  }
+
+  function disconnectCloud() {
+    localStorage.removeItem(CLOUD_CREDS_KEY)
+    _supabase = null
+    _cloudEmail = null
+    setCloudConnected(false)
+    setCloudUrl('')
+    setCloudKey('')
+    setSyncMsg('已斷開連線')
+    setTimeout(() => setSyncMsg(''), 3000)
+  }
+
+  async function forceSync() {
+    setSyncing(true)
+    try {
+      await syncToCloud(state)
+      setSyncMsg('同步成功 ✓')
+    } catch (e) {
+      setSyncMsg('同步失敗，請檢查憑證')
+    }
+    setSyncing(false)
+    setTimeout(() => setSyncMsg(''), 3000)
+  }
+
   return (
     <div className="sub-page">
       <section className="sub-page-header">
@@ -1488,6 +1611,23 @@ function SettingsPage({ state, onUpdateSettings, onExport, onImport, onReset }) 
         <h2>使用者</h2>
         <label>你的名字<input value={s.userName || ''} onChange={(e) => onUpdateSettings({ userName: e.target.value })} placeholder="例如：Chris" /></label>
         <p className="settings-hint">名字會顯示在每日問候與頭像，變更即時生效。工作區名稱固定為「北極星 Polaris」。</p>
+      </section>
+      <section className="settings-section">
+        <h2>☁️ 雲端同步</h2>
+        <p className="settings-hint">連接 Supabase 後，手機與電腦的資料會自動同步。先在 https://supabase.com/dashboard 建立專案，取得 URL 與 Anon Key。</p>
+        <div className="cloud-config" style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+          <input className="settings-input" placeholder="Supabase URL（形如 https://xxx.supabase.co）" value={cloudUrl} onChange={(e) => setCloudUrl(e.target.value)} />
+          <input className="settings-input" placeholder="Anon Public Key" value={cloudKey} onChange={(e) => setCloudKey(e.target.value)} type="password" />
+          <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+            {cloudConnected
+              ? <><button className="primary-button" onClick={forceSync} disabled={syncing}>{syncing ? '同步中…' : '立即同步'}</button>
+                <button className="outline-button danger" onClick={disconnectCloud}>斷開連線</button>
+                <span style={{ color: 'var(--success)', fontSize: 13, alignSelf: 'center' }}>✓ 已連線</span></>
+              : <button className="primary-button" onClick={connectCloud}>連線到雲端</button>}
+          </div>
+          {syncMsg && <p style={{ fontSize: 13, color: syncMsg.includes('✓') || syncMsg.includes('成功') ? 'var(--success)' : 'var(--error)', margin: 0 }}>{syncMsg}</p>}
+        </div>
+        <p className="settings-hint" style={{ marginTop: 10, fontSize: 12 }}>連線後每次儲存都會自動上傳；換裝置時先在「設定」輸入相同憑證即可載入資料。</p>
       </section>
       <section className="settings-section">
         <h2>資料</h2>
@@ -1501,7 +1641,7 @@ function SettingsPage({ state, onUpdateSettings, onExport, onImport, onReset }) 
       </section>
       <section className="settings-section">
         <h2>關於</h2>
-        <p className="settings-hint">北極星 Polaris v1.6 · Local-first creator command center · React + Vite</p>
+        <p className="settings-hint">北極星 Polaris v1.7 · Local-first creator command center · React + Vite + Supabase</p>
       </section>
     </div>
   )

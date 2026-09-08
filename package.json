@@ -10,10 +10,12 @@
   },
   "dependencies": {
     "@excalidraw/excalidraw": "^0.18.1",
+    "@supabase/supabase-js": "^2.116.0",
     "@vitejs/plugin-react": "latest",
     "lucide-react": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "supabase": "^2.117.0",
     "typescript": "latest",
     "vite": "latest"
   }
