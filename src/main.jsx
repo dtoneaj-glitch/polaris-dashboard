@@ -199,17 +199,18 @@ const initialIdeas = [
 ]
 
 const initialTasks = [
-  { id: 'task-1', title: '完成第一版監控面板', projectId: 'guru', due: todayStr(), priority: '高', done: true, completedAt: Date.now() },
-  { id: 'task-2', title: '定義股流指標參數', projectId: 'guru', due: todayStr(), priority: '中', done: false },
+  { id: 'task-1', title: '完成第一版監控面板', projectId: 'guru', due: '2026-09-13', priority: '高', done: true, completedAt: Date.now() },
+  { id: 'task-2', title: '定義股流指標參數', projectId: 'guru', due: '2026-09-13', priority: '中', done: false },
   { id: 'task-3', title: '完成一首 SUNO demo', projectId: 'suno', due: todayStr(3), priority: '中', done: false },
   { id: 'task-4', title: '確認第一個訓練循環', projectId: 'poker', due: todayStr(5), priority: '低', done: false },
-  { id: 'task-g1', title: '盤點主流/蓄勢/乘流/靜流指標', projectId: 'guru', due: todayStr(), priority: '中', done: false },
-  { id: 'task-g2', title: '建立股流歷史模式庫', projectId: 'guru', due: todayStr(), priority: '低', done: false },
-  { id: 'task-a1', title: '整理股流 Radar 整體架構規格書（Architecture + 系統規格v1.0）', projectId: 'guru', due: '2026-09-07', priority: '高', done: true, completedAt: Date.now() },
-  { id: 'task-a2', title: '完成 v2 四套指標型戰法規格（回湧/破堤/鯨躍/洋流）', projectId: 'guru', due: '2026-09-07', priority: '高', done: true, completedAt: Date.now() },
-  { id: 'task-a3', title: '產出 UI/UX 優化建議書並同步到儀表板', projectId: 'guru', due: '2026-09-08', priority: '中', done: true, completedAt: Date.now() },
+  { id: 'task-g1', title: '盤點主流/蓄勢/乘流/靜流指標', projectId: 'guru', due: '2026-09-13', priority: '中', done: false },
+  { id: 'task-g2', title: '建立股流歷史模式庫', projectId: 'guru', due: '2026-09-13', priority: '低', done: false },
+  { id: 'task-a1', title: '整理股流 Radar 整體架構規格書（Architecture + 系統規格v1.0）', projectId: 'guru', due: todayStr(-6), priority: '高', done: true, completedAt: Date.now() },
+  { id: 'task-a2', title: '完成 v2 四套指標型戰法規格（回湧/破堤/鯨躍/洋流）', projectId: 'guru', due: todayStr(-6), priority: '高', done: true, completedAt: Date.now() },
+  { id: 'task-a3', title: '產出 UI/UX 優化建議書並同步到儀表板', projectId: 'guru', due: todayStr(-5), priority: '中', done: true, completedAt: Date.now() },
+  { id: 'task-backtest', title: '回測引擎初版', projectId: '', due: '', priority: 'medium', done: false, createdAt: Date.now(), updatedAt: Date.now() },
+  { id: 'task-realtime', title: '盤中即時報價（WebSocket/Ticker）', projectId: '', due: '', priority: 'medium', done: false, createdAt: Date.now(), updatedAt: Date.now() }
 ]
-
 const initialNotes = [
   { id: 'note-1', title: '股流Radar 核心概念', content: '加入群組的主流、蓄勢、乘流、靜流，整個產品語彙統一在水流宇宙，使用者學一次就懂。', tags: ['股流', '概念'], projectId: 'guru', createdAt: Date.now() - 1 * 86400000 },
   { id: 'note-2', title: '策略走 A 還是 B', content: '等回覆：①策略走 A 還是 B；②上一輪 B0 歷史管線的三個決策點（執行模式／回補深度／先解鎖哪個畫面）還沒收到。', tags: ['股流', '決策'], projectId: 'guru', createdAt: Date.now() - 3 * 86400000 },

@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-13",
+  "source": "automated",
+  "tasks": [
+    {
+      "id": "task-backtest",
+      "done": false,
+      "title": "回測引擎初版"
+    },
+    {
+      "id": "task-realtime",
+      "done": false,
+      "title": "盤中即時報價（WebSocket/Ticker）"
+    }
+  ],
+  "notes": [],
+  "timelineEvents": [],
+  "projects": [],
+  "ideas": [],
+  "goals": []
+}

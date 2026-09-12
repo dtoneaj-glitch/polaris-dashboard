@@ -1,0 +1,46 @@
+# Auto-update Polaris dashboard data from work logs
+# Triggers: daily at 22:00 UTC, or manual dispatch
+
+name: Auto-Update Dashboard
+
+on:
+  schedule:
+    # 台北時間每天 22:00（UTC 14:00）自動執行
+    - cron: '0 14 * * *'
+  workflow_dispatch:  # 手動觸發
+
+jobs:
+  auto-update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT }}
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run auto-updater
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: node data/updater.js
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "Polaris Bot"
+          git config user.email "polaris-bot@dtoneaj-glitch.github.io"
+          git add -A
+          if ! git diff --cached --quiet; then
+            TIMESTAMP=$(TZ=Asia/Taipei date '+%Y-%m-%d %H:%M')
+            git commit -m "chore: auto-update dashboard data ($TIMESTAMP)"
+            git push
+          else
+            echo "No changes to commit."
+          fi
