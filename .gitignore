@@ -1,2 +1,9 @@
 node_modules/
 dist/
+# non-dashboard workspace directories
+.superpowers/
+*.vercel/
+screenshots/
+test-results/
+**/.node_modules.lock
+**/.project_id
