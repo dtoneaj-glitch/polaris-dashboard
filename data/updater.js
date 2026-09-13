@@ -95,7 +95,12 @@ function extractObjects(content, varName) {
     if (inStr) { buf += ch; if (ch === inStr) inStr = null; continue }
     if (ch === '"' || ch === "'") { inStr = ch; buf += ch; continue }
     if (ch === '[' || ch === '{') { depth++; buf += ch; continue }
-    if (ch === ']' || ch === '}') { depth--; buf += ch; continue }
+    if (ch === ']' || ch === '}') {
+      depth--
+      if (depth < 0) break
+      buf += ch
+      continue
+    }
     // Comma at depth 0 separates array items
     if (ch === ',' && depth === 0) {
       if (buf.trim()) result.push(buf.trim())
@@ -104,8 +109,11 @@ function extractObjects(content, varName) {
     }
     buf += ch
   }
-  if (buf.trim() && !buf.trim().startsWith(']') && !buf.trim().startsWith('}')) {
-    result.push(buf.trim())
+  if (buf.trim()) {
+    const trimmed = buf.trim().replace(/[\];]+\s*$/, '').trim()
+    if (trimmed && !trimmed.startsWith(']') && !trimmed.startsWith('}')) {
+      result.push(trimmed)
+    }
   }
   // Parse each item into a key-value object
   return result.map(parseObj).filter(obj => Object.keys(obj).length > 0)
@@ -116,29 +124,37 @@ function parseObj(item) {
   const inner = item.slice(1, -1).trim()
   const obj = {}
   const pairs = []
-  let depth = 0, inStr = null, escaped = false, buf = ''
+  let depth = 0, inStr = null, escaped = false, buf = '', key = ''
   for (const ch of inner) {
     if (escaped) { escaped = false; buf += ch; continue }
     if (ch === '\\') { escaped = true; buf += ch; continue }
     if (inStr) { buf += ch; if (ch === inStr) inStr = null; continue }
     if (ch === '"' || ch === "'") { inStr = ch; buf += ch; continue }
     if (ch === '[' || ch === '{') { depth++; buf += ch; continue }
-    if (ch === ']' || ch === '}') { depth--; buf += ch; continue }
-    if (ch === ':' && depth === 0) { /* colon is part of syntax, don't reset */ }
-    else if (ch === ',' && depth === 0) {
-      if (buf.trim()) pairs.push(buf.trim())
-      buf = ''
+    if (ch === ']' || ch === '}') {
+      depth--
+      if (depth < 0) break
+      buf += ch
+      continue
+    }
+    if (ch === ':' && depth === 0) {
+      key = buf.trim(); buf = ''; continue
+    }
+    if (ch === ',' && depth === 0) {
+      if (buf.trim() && key) pairs.push(`${key}: ${buf.trim()}`)
+      key = ''; buf = ''
       continue
     }
     buf += ch
   }
-  if (buf.trim()) pairs.push(buf.trim())
+  // Last pair (no trailing comma) — only if we have both key and value
+  if (buf.trim() && key) pairs.push(`${key}: ${buf.trim()}`)
   for (const pair of pairs) {
     const colonIdx = pair.indexOf(':')
     if (colonIdx <= 0) continue
-    const key = pair.slice(0, colonIdx).trim().replace(/^['"]|['"]$/g, '')
+    const k = pair.slice(0, colonIdx).trim().replace(/^['"]|['"]$/g, '')
     const valRaw = pair.slice(colonIdx + 1).trim()
-    obj[key] = valRaw ? evalRaw(valRaw) : undefined
+    obj[k] = valRaw ? evalRaw(valRaw) : undefined
   }
   return obj
 }
