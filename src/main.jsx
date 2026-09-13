@@ -220,12 +220,9 @@ const initialNotes = [
   { id: 'note-3', title: 'SUNO 聽了二十首參考曲', content: '決定走深夜氛圍，人聲少一點，留空間給低頻。先鎖這個方向。', tags: ['靈感', '音樂'], projectId: 'suno', createdAt: 'Date.now() - 7 * DAY' },
   { id: 'note-a1', title: '股流 Radar 整體架構', content: '資料源(TWSE/TPEx/FinMind)→供應商抽象層→PA Facts Layer(純函式算swing/結構/關鍵位/形態/量價)→g研判引擎(六段框架+策略層)→PWA呈現。熱度四成分=資金流向35%+價格強度25%+成交量異常20%+上漲廣度20%，熱區分四層：聚焦/升溫/分歧/退潮。三約束：資料可替換、事實先於AI、單向依賴。Phase1唯一策略pa_default；v2四戰法：回湧(volume-refill)、破堤(ma21-break)、鯨躍(deep-reversal)、洋流(ma200-current)。', tags: ['股流', '架構'], projectId: 'guru', createdAt: Date.now() },
   { id: 'note-20260912-股流更新：研判邏', title: '股流更新：研判邏輯修正：PA六段對齊分數把關、戰法統一接上九戰法、補齊...', content: 'Commit 記錄：研判邏輯修正：PA六段對齊分數把關、戰法統一接上九戰法、補齊停損缺口、移動停利功能；大盤籌碼本週改用自己資料庫；外部API交叉查證', tags: ['股流', '更新'], projectId: 'guru', createdAt: Date.now() },
-  { id: 'note-20260912-股流更新：大盤籌', title: '股流更新：大盤籌碼本週改用自己資料庫...', content: 'Commit 記錄：研判邏輯修正：PA六段對齊分數把關、戰法統一接上九戰法、補齊停損缺口、移動停利功能；大盤籌碼本週改用自己資料庫；外部API交叉查證', tags: ['股流', '儀表板'], projectId: 'guru', createdAt: Date.now() },
-  { id: 'note-20260912-股流更新：研判邏', title: '股流更新：研判邏輯修正：PA六段對齊分數把關、戰法統一接上九戰法、補齊...', content: 'Commit 記錄：研判邏輯修正：PA六段對齊分數把關、戰法統一接上九戰法、補齊停損缺口、移動停利功能；大盤籌碼本週改用自己資料庫；外部API交叉查證', tags: ['股流', '更新'], projectId: 'guru', createdAt: Date.now() },
   { id: 'note-20260912-股流更新：大盤籌', title: '股流更新：大盤籌碼本週改用自己資料庫...', content: 'Commit 記錄：研判邏輯修正：PA六段對齊分數把關、戰法統一接上九戰法、補齊停損缺口、移動停利功能；大盤籌碼本週改用自己資料庫；外部API交叉查證', tags: ['股流', '儀表板'], projectId: 'guru', createdAt: Date.now() }
 ]
 const initialTimelineEvents = [
-  { id: 'ev-20260911', date: todayStr(-2), title: 'Update: 大盤儀表板/大盤籌碼頁重新整合真實資料、水池成本價、觀察股水池命名、籌碼分歧引擎、VIX判讀等功能', type: 'milestone', projectId: 'guru', color: '#e76f51', createdAt: Date.now() },
   { id: 'ev-20260911', date: todayStr(-2), title: 'Update: 大盤儀表板/大盤籌碼頁重新整合真實資料、水池成本價、觀察股水池命名、籌碼分歧引擎、VIX判讀等功能', type: 'milestone', projectId: 'guru', color: '#e76f51', createdAt: Date.now() },
   { id: 'ev-6', date: todayStr(-6), type: 'milestone', title: '股流 Radar 整體架構規格書完成（Architecture v1.0 + 系統規格 + 策略 v2）', projectId: 'guru', color: '#e76f51' },
   { id: 'ev-5', date: todayStr(-8), type: 'milestone', title: 'SUNO 第一首歌完成 demo', projectId: 'suno', color: '#6f8f78' },

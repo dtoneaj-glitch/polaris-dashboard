@@ -214,6 +214,8 @@ function renderVal(v) {
         return `todayStr(${diffDays})`
       }
     }
+    // Preserve expression strings like "Date.now() - 1 * DAY" or "todayStr(3)"
+    if (/^(Date\.now\(\)|todayStr\()/.test(v) || /\s*[-+*\/]\s*\*?\s*DAY/.test(v)) return v
     return `'${v.replace(/'/g, "\\'")}'`
   }
   if (Array.isArray(v)) {
@@ -266,7 +268,8 @@ function applyTasks(updates, current) {
 
 function applyNotes(updates, current) {
   if (!updates?.notes?.length) return current
-  const newNotes = updates.notes.filter(n => n.title).map(n => ({
+  const seen = new Set(current.map(n => n.id))
+  const newNotes = updates.notes.filter(n => n.title && !seen.has(n.id)).map(n => ({
     id: n.id || `note-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`,
     title: n.title, content: n.content || '',
     tags: Array.isArray(n.tags) ? n.tags : (typeof n.tags === 'string' ? n.tags.split(',').map(s => s.trim()).filter(Boolean) : []),
