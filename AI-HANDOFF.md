@@ -401,6 +401,24 @@ Light theme 透過 `data-theme="light"` 覆蓋以上變數。
 
 ---
 
+## 9.5 每日工作回報流程（使用者收工時使用）
+
+使用者會貼一份 Markdown 回報表，AI 負責轉換成 worklog JSON 並執行更新。
+
+**步驟**：
+1. 讀取回報內容，提取日期、任務、筆記、進度
+2. 檢查 `worklog/YYYY-MM-DD.json` 是否已存在 → 已存在則跳過（避免重複）
+3. 搜尋 `initialTasks` 匹配標題 → 找到則沿用 id，找不到則生成 `task-{YYYYMMDD}-{title前10字}`
+4. 產出 `worklog/YYYY-MM-DD.json`
+5. 執行 `node data/updater.js` → `npm run build` → commit & push
+
+**完整指南**：📄 `docs/DAILY-REPORT-GUIDE.md`
+**填寫模板**：📄 `docs/DAILY-REPORT-TEMPLATE.md`
+
+**專案 ID 對照**：guru=股流Radar，suno=SUNO Music，poker=Poker Trainer，novel=小說世界觀
+
+---
+
 ## 10. 已知限制與注意事项
 
 1. **main.jsx 是單一檔案**（1688 行），所有元件都在裡面。搜尋時用 `function XXXPage` 定位。
