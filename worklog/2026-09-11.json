@@ -1,0 +1,27 @@
+{
+  "date": "2026-09-11",
+  "tasks": [
+    {
+      "id": "task-20260911-大盤儀表板/大盤籌碼",
+      "title": "大盤儀表板/大盤籌碼頁重新整合真實資料、水池成本價、觀察股水池命名、籌碼分歧引擎、VIX判讀等功能",
+      "projectId": "guru",
+      "priority": "中",
+      "done": true,
+      "completedAt": 1789284705916
+    }
+  ],
+  "notes": [],
+  "timelineEvents": [
+    {
+      "id": "ev-20260911",
+      "date": "2026-09-11",
+      "title": "Update: 大盤儀表板/大盤籌碼頁重新整合真實資料、水池成本價、觀察股水池命名、籌碼分歧引擎、VIX判讀等功能",
+      "type": "milestone",
+      "projectId": "guru",
+      "color": "#e76f51"
+    }
+  ],
+  "projects": [],
+  "ideas": [],
+  "goals": []
+}
