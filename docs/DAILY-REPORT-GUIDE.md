@@ -100,7 +100,7 @@
 
 ```bash
 # 產出 JSON 後執行更新
-cd D:/ZCODE/專案儀錶版/nora-workspace
+cd D:/ZCODE/專案儀錶版/polaris-dashboard
 node data/updater.js
 npm run build
 

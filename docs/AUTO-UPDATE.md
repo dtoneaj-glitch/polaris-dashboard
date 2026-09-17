@@ -164,7 +164,7 @@ git push
 ## 📂 檔案結構
 
 ```
-nora-workspace/
+polaris-dashboard/
 ├── .github/workflows/
 │   ├── deploy.yml          # 原有的 Pages 部署
 │   └── auto-update.yml     # ← 新增：資料自動更新

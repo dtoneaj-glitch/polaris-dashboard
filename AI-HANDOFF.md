@@ -22,7 +22,7 @@
 ## 2. 檔案結構
 
 ```
-nora-workspace/
+polaris-dashboard/
 ├── src/
 │   ├── main.jsx          ← 全部程式碼（唯一要讀的檔案）
 │   ├── styles.css        ← 設計系統 + 所有樣式
