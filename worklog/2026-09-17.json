@@ -1,6 +1,6 @@
 {
   "date": "2026-09-17",
-  "source": "manual",
+  "source": "daily-brief",
   "projects": [
     {
       "id": "ig-car",
@@ -29,40 +29,223 @@
       "progress": 5,
       "next": "建置 YT 頻道與 Q 版神明 IP，產出第 1 集腳本（三太子・情緒管理）"
     },
-    { "id": "suno", "remove": true },
-    { "id": "novel", "remove": true }
+    {
+      "id": "suno",
+      "remove": true
+    },
+    {
+      "id": "novel",
+      "remove": true
+    },
+    {
+      "id": "guru",
+      "name": "股流Radar",
+      "stage": "Active",
+      "color": "#e76f51",
+      "progress": 55,
+      "description": "兩段式產品：雷達（熱度四成分公式：資金35%／價格25%／量異常20%／廣度20% → 熱區分層聚焦/升溫/分歧/退潮）+ g研判（PA Facts Layer純函式計算結構/關鍵位/形態，Coach Engine六段框架輸出條件式情境）。三約束：資料可替換、事實先於AI、單向依賴。Phase1唯一策略pa_default，Phase2上v2四戰法（回湧/破堤/鯨躍/洋流）",
+      "next": "把架構規格寫進產品"
+    },
+    {
+      "id": "poker",
+      "name": "Poker Trainer",
+      "stage": "MVP",
+      "color": "#7087a3",
+      "progress": 18,
+      "description": "讓決策練習變得有趣",
+      "next": "確認第一個訓練循環"
+    }
   ],
   "tasks": [
-    { "id": "task-igcar-1", "title": "IG 帳號設定：顯示名稱「客里斯｜中古車選品師」＋貼定案 Bio", "projectId": "ig-car", "priority": "高", "done": false },
-    { "id": "task-igcar-2", "title": "切換專業帳號（類別：汽車）、上傳頭貼、開啟兩步驗證", "projectId": "ig-car", "priority": "高", "done": false },
-    { "id": "task-igcar-3", "title": "產出首波 9 篇 Carousel（首發：買車痛點篇）", "projectId": "ig-car", "priority": "高", "done": false },
-    { "id": "task-igcar-4", "title": "建立 Google 表單（買家／賣家問卷）＋完成誘餌 PDF", "projectId": "ig-car", "priority": "中", "done": false },
-    { "id": "task-igtravel-1", "title": "建立 IG 帳號（travel.curator_chris）＋設定 Bio／專業帳號／兩步驗證", "projectId": "ig-travel", "priority": "高", "done": false },
-    { "id": "task-igtravel-2", "title": "製作卡通地圖頭貼（imagegen）", "projectId": "ig-travel", "priority": "中", "done": false },
-    { "id": "task-igtravel-3", "title": "產出首波 9 篇 Carousel（第 9 篇開店宣言已定稿）", "projectId": "ig-travel", "priority": "高", "done": false },
-    { "id": "task-igtravel-4", "title": "LINE OpenChat 建群＋入群歡迎語、自動回覆關鍵字、避雷手冊 PDF", "projectId": "ig-travel", "priority": "中", "done": false },
-    { "id": "task-ytkids-1", "title": "建置 YouTube 頻道（名稱／簡介／去宗教化聲明）", "projectId": "yt-kids", "priority": "中", "done": false },
-    { "id": "task-ytkids-2", "title": "設計 Q 版神明 IP（三太子／文昌／關公／媽祖／土地公）＋主角設定", "projectId": "yt-kids", "priority": "中", "done": false },
-    { "id": "task-ytkids-3", "title": "產出第 1 集腳本＋分鏡（三太子・情緒管理）", "projectId": "yt-kids", "priority": "高", "done": false },
-    { "id": "task-ytkids-4", "title": "規劃首季 12–15 支影片上架排程與 Shorts 單元", "projectId": "yt-kids", "priority": "低", "done": false },
-    { "id": "task-3", "projectId": "" }
+    {
+      "id": "task-igcar-1",
+      "title": "IG 帳號設定：顯示名稱「客里斯｜中古車選品師」＋貼定案 Bio",
+      "projectId": "ig-car",
+      "priority": "高",
+      "done": false
+    },
+    {
+      "id": "task-igcar-2",
+      "title": "切換專業帳號（類別：汽車）、上傳頭貼、開啟兩步驗證",
+      "projectId": "ig-car",
+      "priority": "高",
+      "done": false
+    },
+    {
+      "id": "task-igcar-3",
+      "title": "產出首波 9 篇 Carousel（首發：買車痛點篇）",
+      "projectId": "ig-car",
+      "priority": "高",
+      "done": false
+    },
+    {
+      "id": "task-igcar-4",
+      "title": "建立 Google 表單（買家／賣家問卷）＋完成誘餌 PDF",
+      "projectId": "ig-car",
+      "priority": "中",
+      "done": false
+    },
+    {
+      "id": "task-igtravel-1",
+      "title": "建立 IG 帳號（travel.curator_chris）＋設定 Bio／專業帳號／兩步驗證",
+      "projectId": "ig-travel",
+      "priority": "高",
+      "done": false
+    },
+    {
+      "id": "task-igtravel-2",
+      "title": "製作卡通地圖頭貼（imagegen）",
+      "projectId": "ig-travel",
+      "priority": "中",
+      "done": false
+    },
+    {
+      "id": "task-igtravel-3",
+      "title": "產出首波 9 篇 Carousel（第 9 篇開店宣言已定稿）",
+      "projectId": "ig-travel",
+      "priority": "高",
+      "done": false
+    },
+    {
+      "id": "task-igtravel-4",
+      "title": "LINE OpenChat 建群＋入群歡迎語、自動回覆關鍵字、避雷手冊 PDF",
+      "projectId": "ig-travel",
+      "priority": "中",
+      "done": false
+    },
+    {
+      "id": "task-ytkids-1",
+      "title": "建置 YouTube 頻道（名稱／簡介／去宗教化聲明）",
+      "projectId": "yt-kids",
+      "priority": "中",
+      "done": false
+    },
+    {
+      "id": "task-ytkids-2",
+      "title": "設計 Q 版神明 IP（三太子／文昌／關公／媽祖／土地公）＋主角設定",
+      "projectId": "yt-kids",
+      "priority": "中",
+      "done": false
+    },
+    {
+      "id": "task-ytkids-3",
+      "title": "產出第 1 集腳本＋分鏡（三太子・情緒管理）",
+      "projectId": "yt-kids",
+      "priority": "高",
+      "done": false
+    },
+    {
+      "id": "task-ytkids-4",
+      "title": "規劃首季 12–15 支影片上架排程與 Shorts 單元",
+      "projectId": "yt-kids",
+      "priority": "低",
+      "done": false
+    },
+    {
+      "id": "task-3",
+      "projectId": ""
+    }
   ],
   "notes": [
-    { "id": "note-igcar-1", "title": "中古車選品師 IG：品牌與商業模式", "content": "品牌「客里斯｜中古車選品師」，內容主軸「不教你搶便宜車；教你避開買錯車」。收費：代拍固定服務費 1.5~2 萬；代銷服務費＋超額分潤；意向定金 3 萬（流標全退）。色調走方案三科技數據感（深灰 #1A1A1A＋冰川藍 #0066FF）。首發破冰：買車痛點篇。暖機規則：每天≤2則、不大量追蹤按讚、固定裝置。", "tags": ["IG", "中古車", "品牌"], "projectId": "ig-car" },
-    { "id": "note-igtravel-1", "title": "旅遊選品師 IG：品牌與漏斗", "content": "品牌「客里斯｜旅遊選品師（旅遊避雷針）」，核心是旅遊界的選品店。服務：行程健檢（優劣對比、隱藏成本拆解）＋選品推薦＋跟團訂購。客群：高時間價值上班族、怕踩雷跟團族、質感旅遊者。首波 9 篇全 Carousel（7-9 認識我 → 4-6 信任我 → 1-3 跟著我買）。", "tags": ["IG", "旅遊", "品牌"], "projectId": "ig-travel" },
-    { "id": "note-ytkids-1", "title": "神仙童萌會 YT：企劃重點", "content": "兒童神話動畫《神明小夥伴》。單集 6–8 分鐘三段式：現代困境 → 神話典故 → 現代感悟。首季神明對應議題：三太子（情緒管理）、文昌帝君（誠實累積）、關聖帝君（誠信守諾）、天上聖母（包容同理）、福德正神（珍惜感恩）。變現軌道：AdSense → 故事精選包（節慶包／品格專題包／教學延伸包）→ 品牌與政府專案 → 出版與 IP 授權。去宗教化定位為護城河。", "tags": ["YT", "兒童", "動畫"], "projectId": "yt-kids" },
-    { "id": "note-polaris-track-1", "title": "北極星追蹤範圍定案（2026-09-17）", "content": "北極星改為追蹤真實運營中的專案：股流Radar、中古車選品師 IG、旅遊選品師 IG、神仙童萌會 YT。Poker Trainer 為獨立案子保留；SUNO Music 移入靈感庫。IG 兩帳以 D:\\ZCODE\\IG運營 的工作檔為上下文；YT 企劃在 OneDrive\\桌面\\內容自媒體\\兒童神話動畫頻道運營企劃書.md。", "tags": ["北極星", "決策"], "projectId": "" }
+    {
+      "id": "note-igcar-1",
+      "title": "中古車選品師 IG：品牌與商業模式",
+      "content": "品牌「客里斯｜中古車選品師」，內容主軸「不教你搶便宜車；教你避開買錯車」。收費：代拍固定服務費 1.5~2 萬；代銷服務費＋超額分潤；意向定金 3 萬（流標全退）。色調走方案三科技數據感（深灰 #1A1A1A＋冰川藍 #0066FF）。首發破冰：買車痛點篇。暖機規則：每天≤2則、不大量追蹤按讚、固定裝置。",
+      "tags": [
+        "IG",
+        "中古車",
+        "品牌"
+      ],
+      "projectId": "ig-car"
+    },
+    {
+      "id": "note-igtravel-1",
+      "title": "旅遊選品師 IG：品牌與漏斗",
+      "content": "品牌「客里斯｜旅遊選品師（旅遊避雷針）」，核心是旅遊界的選品店。服務：行程健檢（優劣對比、隱藏成本拆解）＋選品推薦＋跟團訂購。客群：高時間價值上班族、怕踩雷跟團族、質感旅遊者。首波 9 篇全 Carousel（7-9 認識我 → 4-6 信任我 → 1-3 跟著我買）。",
+      "tags": [
+        "IG",
+        "旅遊",
+        "品牌"
+      ],
+      "projectId": "ig-travel"
+    },
+    {
+      "id": "note-ytkids-1",
+      "title": "神仙童萌會 YT：企劃重點",
+      "content": "兒童神話動畫《神明小夥伴》。單集 6–8 分鐘三段式：現代困境 → 神話典故 → 現代感悟。首季神明對應議題：三太子（情緒管理）、文昌帝君（誠實累積）、關聖帝君（誠信守諾）、天上聖母（包容同理）、福德正神（珍惜感恩）。變現軌道：AdSense → 故事精選包（節慶包／品格專題包／教學延伸包）→ 品牌與政府專案 → 出版與 IP 授權。去宗教化定位為護城河。",
+      "tags": [
+        "YT",
+        "兒童",
+        "動畫"
+      ],
+      "projectId": "yt-kids"
+    },
+    {
+      "id": "note-polaris-track-1",
+      "title": "北極星追蹤範圍定案（2026-09-17）",
+      "content": "北極星改為追蹤真實運營中的專案：股流Radar、中古車選品師 IG、旅遊選品師 IG、神仙童萌會 YT。Poker Trainer 為獨立案子保留；SUNO Music 移入靈感庫。IG 兩帳以 D:\\ZCODE\\IG運營 的工作檔為上下文；YT 企劃在 OneDrive\\桌面\\內容自媒體\\兒童神話動畫頻道運營企劃書.md。",
+      "tags": [
+        "北極星",
+        "決策"
+      ],
+      "projectId": ""
+    }
   ],
   "timelineEvents": [
-    { "id": "ev-igcar-1", "date": "2026-08-23", "title": "中古車選品師 IG 帳號建立＋品牌定案", "type": "milestone", "projectId": "ig-car", "color": "#0066FF" },
-    { "id": "ev-igtravel-1", "date": "2026-08-23", "title": "旅遊選品師品牌定案（Bio／頭貼／九宮格）", "type": "milestone", "projectId": "ig-travel", "color": "#2aa198" },
-    { "id": "ev-ytkids-1", "date": "2026-09-15", "title": "神仙童萌會 YT 運營企劃書完成", "type": "milestone", "projectId": "yt-kids", "color": "#b06bd6" }
+    {
+      "id": "ev-igcar-1",
+      "date": "2026-08-23",
+      "title": "中古車選品師 IG 帳號建立＋品牌定案",
+      "type": "milestone",
+      "projectId": "ig-car",
+      "color": "#0066FF"
+    },
+    {
+      "id": "ev-igtravel-1",
+      "date": "2026-08-23",
+      "title": "旅遊選品師品牌定案（Bio／頭貼／九宮格）",
+      "type": "milestone",
+      "projectId": "ig-travel",
+      "color": "#2aa198"
+    },
+    {
+      "id": "ev-ytkids-1",
+      "date": "2026-09-15",
+      "title": "神仙童萌會 YT 運營企劃書完成",
+      "type": "milestone",
+      "projectId": "yt-kids",
+      "color": "#b06bd6"
+    }
   ],
   "goals": [
-    { "id": "goal-ig-launch", "title": "兩個 IG 帳號上線並發布首波內容", "description": "中古車＋旅遊各完成帳號設定與首波 9 篇 Carousel", "targetDate": "2026-10-15", "progress": 10, "color": "#0066FF", "projectId": "ig-car" },
-    { "id": "goal-yt-launch", "title": "神仙童萌會頻道上線（首季 12–15 支）", "description": "完成頻道建置、Q 版神明 IP 與首季內容上架", "targetDate": "2027-01-31", "progress": 5, "color": "#b06bd6", "projectId": "yt-kids" }
+    {
+      "id": "goal-ig-launch",
+      "title": "兩個 IG 帳號上線並發布首波內容",
+      "description": "中古車＋旅遊各完成帳號設定與首波 9 篇 Carousel",
+      "targetDate": "2026-10-15",
+      "progress": 10,
+      "color": "#0066FF",
+      "projectId": "ig-car"
+    },
+    {
+      "id": "goal-yt-launch",
+      "title": "神仙童萌會頻道上線（首季 12–15 支）",
+      "description": "完成頻道建置、Q 版神明 IP 與首季內容上架",
+      "targetDate": "2027-01-31",
+      "progress": 5,
+      "color": "#b06bd6",
+      "projectId": "yt-kids"
+    }
   ],
   "ideas": [
-    { "id": "idea-suno", "title": "SUNO Music", "note": "用音樂保存正在發生的生活。方向：深夜氛圍、人聲少一點、留空間給低頻。（2026-09-17 由專案移入靈感庫）", "type": "創作", "score": 60, "created": "2026-09-17", "ready": false }
+    {
+      "id": "idea-suno",
+      "title": "SUNO Music",
+      "note": "用音樂保存正在發生的生活。方向：深夜氛圍、人聲少一點、留空間給低頻。（2026-09-17 由專案移入靈感庫）",
+      "type": "創作",
+      "score": 60,
+      "created": "2026-09-17",
+      "ready": false
+    }
   ]
 }

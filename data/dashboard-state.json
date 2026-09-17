@@ -7,7 +7,7 @@
       "stage": "Active",
       "color": "#e76f51",
       "progress": 55,
-      "lastUpdated": 1789657049677,
+      "lastUpdated": 1789657061090,
       "next": "把架構規格寫進產品"
     },
     {
@@ -17,7 +17,7 @@
       "stage": "MVP",
       "color": "#7087a3",
       "progress": 18,
-      "lastUpdated": 1788361049677,
+      "lastUpdated": 1789657061090,
       "next": "確認第一個訓練循環"
     },
     {
@@ -28,7 +28,7 @@
       "color": "#0066FF",
       "progress": 15,
       "next": "設定顯示名稱／Bio／專業帳號／兩步驗證，產出首波 9 篇 Carousel",
-      "lastUpdated": 1789657049677
+      "lastUpdated": 1789657061090
     },
     {
       "id": "ig-travel",
@@ -38,7 +38,7 @@
       "color": "#2aa198",
       "progress": 8,
       "next": "建立 IG 帳號（travel.curator_chris）並製作卡通地圖頭貼",
-      "lastUpdated": 1789657049677
+      "lastUpdated": 1789657061090
     },
     {
       "id": "yt-kids",
@@ -48,7 +48,7 @@
       "color": "#b06bd6",
       "progress": 5,
       "next": "建置 YT 頻道與 Q 版神明 IP，產出第 1 集腳本（三太子・情緒管理）",
-      "lastUpdated": 1789657049677
+      "lastUpdated": 1789657061090
     }
   ],
   "ideas": [
@@ -79,7 +79,7 @@
       "due": "2026-09-13",
       "priority": "高",
       "done": true,
-      "completedAt": 1789657049678
+      "completedAt": 1789657061091
     },
     {
       "id": "task-2",
@@ -128,7 +128,7 @@
       "due": "2026-09-11",
       "priority": "高",
       "done": true,
-      "completedAt": 1789657049678
+      "completedAt": 1789657061091
     },
     {
       "id": "task-a2",
@@ -137,7 +137,7 @@
       "due": "2026-09-11",
       "priority": "高",
       "done": true,
-      "completedAt": 1789657049678
+      "completedAt": 1789657061091
     },
     {
       "id": "task-a3",
@@ -146,7 +146,7 @@
       "due": "2026-09-12",
       "priority": "中",
       "done": true,
-      "completedAt": 1789657049678
+      "completedAt": 1789657061091
     },
     {
       "id": "task-20260911-大盤儀表板/大盤籌碼",
@@ -155,9 +155,9 @@
       "due": "",
       "priority": "中",
       "done": true,
-      "createdAt": 1789657049678,
-      "updatedAt": 1789657049678,
-      "completedAt": 1789657049678
+      "createdAt": 1789657061091,
+      "updatedAt": 1789657061091,
+      "completedAt": 1789657061091
     },
     {
       "id": "task-20260912-研判邏輯修正：PA六",
@@ -166,9 +166,9 @@
       "due": "",
       "priority": "高",
       "done": true,
-      "createdAt": 1789657049678,
-      "updatedAt": 1789657049678,
-      "completedAt": 1789657049678
+      "createdAt": 1789657061091,
+      "updatedAt": 1789657061091,
+      "completedAt": 1789657061091
     },
     {
       "id": "task-20260912-大盤籌碼本週改用自己",
@@ -177,9 +177,9 @@
       "due": "",
       "priority": "中",
       "done": true,
-      "createdAt": 1789657049678,
-      "updatedAt": 1789657049678,
-      "completedAt": 1789657049678
+      "createdAt": 1789657061091,
+      "updatedAt": 1789657061091,
+      "completedAt": 1789657061091
     },
     {
       "id": "task-backtest",
@@ -188,8 +188,8 @@
       "due": "",
       "priority": "medium",
       "done": false,
-      "createdAt": 1789657049678,
-      "updatedAt": 1789657049678
+      "createdAt": 1789657061091,
+      "updatedAt": 1789657061091
     },
     {
       "id": "task-realtime",
@@ -198,8 +198,8 @@
       "due": "",
       "priority": "medium",
       "done": false,
-      "createdAt": 1789657049678,
-      "updatedAt": 1789657049678
+      "createdAt": 1789657061091,
+      "updatedAt": 1789657061091
     },
     {
       "id": "task-igcar-1",
@@ -208,8 +208,8 @@
       "due": "",
       "priority": "高",
       "done": false,
-      "createdAt": 1789657049678,
-      "updatedAt": 1789657049678
+      "createdAt": 1789657061091,
+      "updatedAt": 1789657061091
     },
     {
       "id": "task-igcar-2",
@@ -218,8 +218,8 @@
       "due": "",
       "priority": "高",
       "done": false,
-      "createdAt": 1789657049678,
-      "updatedAt": 1789657049678
+      "createdAt": 1789657061091,
+      "updatedAt": 1789657061091
     },
     {
       "id": "task-igcar-3",
@@ -228,8 +228,8 @@
       "due": "",
       "priority": "高",
       "done": false,
-      "createdAt": 1789657049678,
-      "updatedAt": 1789657049678
+      "createdAt": 1789657061091,
+      "updatedAt": 1789657061091
     },
     {
       "id": "task-igcar-4",
@@ -238,8 +238,8 @@
       "due": "",
       "priority": "中",
       "done": false,
-      "createdAt": 1789657049678,
-      "updatedAt": 1789657049678
+      "createdAt": 1789657061091,
+      "updatedAt": 1789657061091
     },
     {
       "id": "task-igtravel-1",
@@ -248,8 +248,8 @@
       "due": "",
       "priority": "高",
       "done": false,
-      "createdAt": 1789657049678,
-      "updatedAt": 1789657049678
+      "createdAt": 1789657061091,
+      "updatedAt": 1789657061091
     },
     {
       "id": "task-igtravel-2",
@@ -258,8 +258,8 @@
       "due": "",
       "priority": "中",
       "done": false,
-      "createdAt": 1789657049678,
-      "updatedAt": 1789657049678
+      "createdAt": 1789657061091,
+      "updatedAt": 1789657061091
     },
     {
       "id": "task-igtravel-3",
@@ -268,8 +268,8 @@
       "due": "",
       "priority": "高",
       "done": false,
-      "createdAt": 1789657049678,
-      "updatedAt": 1789657049678
+      "createdAt": 1789657061091,
+      "updatedAt": 1789657061091
     },
     {
       "id": "task-igtravel-4",
@@ -278,8 +278,8 @@
       "due": "",
       "priority": "中",
       "done": false,
-      "createdAt": 1789657049678,
-      "updatedAt": 1789657049678
+      "createdAt": 1789657061091,
+      "updatedAt": 1789657061091
     },
     {
       "id": "task-ytkids-1",
@@ -288,8 +288,8 @@
       "due": "",
       "priority": "中",
       "done": false,
-      "createdAt": 1789657049678,
-      "updatedAt": 1789657049678
+      "createdAt": 1789657061091,
+      "updatedAt": 1789657061091
     },
     {
       "id": "task-ytkids-2",
@@ -298,8 +298,8 @@
       "due": "",
       "priority": "中",
       "done": false,
-      "createdAt": 1789657049678,
-      "updatedAt": 1789657049678
+      "createdAt": 1789657061091,
+      "updatedAt": 1789657061091
     },
     {
       "id": "task-ytkids-3",
@@ -308,8 +308,8 @@
       "due": "",
       "priority": "高",
       "done": false,
-      "createdAt": 1789657049678,
-      "updatedAt": 1789657049678
+      "createdAt": 1789657061091,
+      "updatedAt": 1789657061091
     },
     {
       "id": "task-ytkids-4",
@@ -318,8 +318,8 @@
       "due": "",
       "priority": "低",
       "done": false,
-      "createdAt": 1789657049678,
-      "updatedAt": 1789657049678
+      "createdAt": 1789657061091,
+      "updatedAt": 1789657061091
     }
   ],
   "notes": [
@@ -332,7 +332,7 @@
         "概念"
       ],
       "projectId": "guru",
-      "createdAt": 1789570649678
+      "createdAt": 1789570661091
     },
     {
       "id": "note-2",
@@ -343,7 +343,7 @@
         "決策"
       ],
       "projectId": "guru",
-      "createdAt": 1789397849678
+      "createdAt": 1789397861091
     },
     {
       "id": "note-3",
@@ -354,7 +354,7 @@
         "音樂"
       ],
       "projectId": "",
-      "createdAt": 1789052249678
+      "createdAt": 1789052261091
     },
     {
       "id": "note-a1",
@@ -365,7 +365,7 @@
         "架構"
       ],
       "projectId": "guru",
-      "createdAt": 1789657049678
+      "createdAt": 1789657061091
     },
     {
       "id": "note-20260912-股流更新：研判邏",
@@ -376,7 +376,7 @@
         "更新"
       ],
       "projectId": "guru",
-      "createdAt": 1789657049678
+      "createdAt": 1789657061091
     },
     {
       "id": "note-20260912-股流更新：大盤籌",
@@ -387,7 +387,7 @@
         "儀表板"
       ],
       "projectId": "guru",
-      "createdAt": 1789657049678
+      "createdAt": 1789657061091
     },
     {
       "id": "note-igcar-1",
@@ -399,7 +399,7 @@
         "品牌"
       ],
       "projectId": "ig-car",
-      "createdAt": 1789657049678
+      "createdAt": 1789657061091
     },
     {
       "id": "note-igtravel-1",
@@ -411,7 +411,7 @@
         "品牌"
       ],
       "projectId": "ig-travel",
-      "createdAt": 1789657049678
+      "createdAt": 1789657061091
     },
     {
       "id": "note-ytkids-1",
@@ -423,7 +423,7 @@
         "動畫"
       ],
       "projectId": "yt-kids",
-      "createdAt": 1789657049678
+      "createdAt": 1789657061091
     },
     {
       "id": "note-polaris-track-1",
@@ -434,7 +434,7 @@
         "決策"
       ],
       "projectId": "",
-      "createdAt": 1789657049678
+      "createdAt": 1789657061091
     }
   ],
   "timelineEvents": [
@@ -445,7 +445,7 @@
       "type": "milestone",
       "projectId": "yt-kids",
       "color": "#b06bd6",
-      "createdAt": 1789657049678
+      "createdAt": 1789657061091
     },
     {
       "id": "ev-20260911",
@@ -454,7 +454,7 @@
       "type": "milestone",
       "projectId": "guru",
       "color": "#e76f51",
-      "createdAt": 1789657049678
+      "createdAt": 1789657061091
     },
     {
       "id": "ev-6",
@@ -503,7 +503,7 @@
       "type": "milestone",
       "projectId": "ig-car",
       "color": "#0066FF",
-      "createdAt": 1789657049679
+      "createdAt": 1789657061091
     },
     {
       "id": "ev-igtravel-1",
@@ -512,7 +512,7 @@
       "type": "milestone",
       "projectId": "ig-travel",
       "color": "#2aa198",
-      "createdAt": 1789657049679
+      "createdAt": 1789657061091
     },
     {
       "id": "ev-1",
@@ -578,7 +578,7 @@
       "projectId": "yt-kids"
     }
   ],
-  "exportedAt": "2026-09-17T14:57:29.679Z",
+  "exportedAt": "2026-09-17T14:57:41.091Z",
   "schema": "polaris-dashboard-state/v1",
   "note": "由 scripts/export-state.js 從 src/main.jsx seed 匯出；給 AI / ZCode 讀取的儀表板內容快照。"
 }
