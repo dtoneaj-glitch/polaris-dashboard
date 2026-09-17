@@ -286,23 +286,39 @@ function applyTimelineEvents(updates, current) {
     projectId: ev.projectId || '', color: ev.color || '#e76f51', createdAt: NOW,
   }))
   const merged = [...added, ...current].sort((a, b) => (b.date || '').localeCompare(a.date || ''))
-  return merged
+  const seen = new Set()
+  return merged.filter(ev => {
+    const k = ev.id || `${ev.date}|${ev.title}`
+    if (seen.has(k)) return false
+    seen.add(k)
+    return true
+  })
 }
 
 function applyProjects(updates, current) {
   if (!updates?.projects?.length) return current
-  return current.map(p => {
+  const result = current.map(p => {
     const u = updates.projects.find(up => up.id === p.id)
     return u ? { ...p, ...u, lastUpdated: NOW } : p
   })
+  for (const u of updates.projects) {
+    if (!u.id || !u.name || result.find(p => p.id === u.id)) continue
+    result.push({ id: u.id, name: u.name, description: u.description || '', stage: u.stage || 'Idea', color: u.color || '#6f8f78', progress: u.progress ?? 0, next: u.next || '', lastUpdated: NOW })
+  }
+  return result
 }
 
 function applyGoals(updates, current) {
   if (!updates?.goals?.length) return current
-  return current.map(g => {
+  const result = current.map(g => {
     const u = updates.goals.find(ug => ug.id === g.id)
     return u ? { ...g, ...u } : g
   })
+  for (const u of updates.goals) {
+    if (!u.id || !u.title || result.find(g => g.id === u.id)) continue
+    result.push({ id: u.id, title: u.title, description: u.description || '', targetDate: u.targetDate || '', progress: u.progress ?? 0, color: u.color || '#4ecdc4' })
+  }
+  return result
 }
 
 function applyIdeas(updates, current) {
