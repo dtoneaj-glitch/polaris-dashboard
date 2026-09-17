@@ -189,7 +189,6 @@ function goalProgress(g, projects) {
 // ── 初始資料 ──────────────────────────────────────────
 const initialProjects = [
   { id: 'guru', name: '股流Radar', description: '兩段式產品：雷達（熱度四成分公式：資金35%／價格25%／量異常20%／廣度20% → 熱區分層聚焦/升溫/分歧/退潮）+ g研判（PA Facts Layer純函式計算結構/關鍵位/形態，Coach Engine六段框架輸出條件式情境）。三約束：資料可替換、事實先於AI、單向依賴。Phase1唯一策略pa_default，Phase2上v2四戰法（回湧/破堤/鯨躍/洋流）', stage: 'Active', color: '#e76f51', progress: 55, lastUpdated: Date.now(), next: '把架構規格寫進產品' },
-  { id: 'suno', name: 'SUNO Music', description: '用音樂保存正在發生的生活', stage: 'Explore', color: '#6f8f78', progress: 32, lastUpdated: Date.now() - 1 * DAY, next: '完成一首 demo' },
   { id: 'poker', name: 'Poker Trainer', description: '讓決策練習變得有趣', stage: 'MVP', color: '#7087a3', progress: 18, lastUpdated: Date.now() - 15 * DAY, next: '確認第一個訓練循環' },
   { id: 'novel', name: '小說世界觀', description: '長篇故事與角色資料庫', stage: 'Idea', color: '#bb8b4d', progress: 8, lastUpdated: Date.now() - 6 * DAY, next: '整理三個核心角色' },
   { id: 'ig-car', name: '中古車選品師 IG', description: '客里斯｜中古車選品師（@uc.curator_chris）。核心：「不教你搶便宜車，教你避開買錯車。」服務：代客尋車／代拍／拍賣代銷（和運、行將 SAA）。漏斗：Reels/圖文 → 私訊關鍵字 → 買賣家問卷 → 1對1 諮詢簽約 → 拍場執行。現況：帳號已建，品牌／Bio／頭貼／Notion 計畫完成；待補顯示名稱、Bio、專業帳號、兩步驗證與首波 9 篇 Carousel（首發：買車痛點篇）。', stage: 'Explore', color: '#0066FF', progress: 15, next: '設定顯示名稱／Bio／專業帳號／兩步驗證，產出首波 9 篇 Carousel', lastUpdated: Date.now() },
@@ -198,12 +197,12 @@ const initialProjects = [
 ]
 const initialIdeas = [
   { id: 'idea-2', title: '法人買賣超追蹤', note: '整合外資、投信、自營商的進出場訊號，建立權責歸屬圖。', type: '系統', score: 85, created: '昨天', ready: true },
+  { id: 'idea-suno', title: 'SUNO Music', note: '用音樂保存正在發生的生活。方向：深夜氛圍、人聲少一點、留空間給低頻。（2026-09-17 由專案移入靈感庫）', type: '創作', score: 60, created: '2026-09-17', ready: false }
 ]
-
 const initialTasks = [
   { id: 'task-1', title: '完成第一版監控面板', projectId: 'guru', due: todayStr(-4), priority: '高', done: true, completedAt: Date.now() },
   { id: 'task-2', title: '定義股流指標參數', projectId: 'guru', due: todayStr(-4), priority: '中', done: false },
-  { id: 'task-3', title: '完成一首 SUNO demo', projectId: 'suno', due: todayStr(3), priority: '中', done: false },
+  { id: 'task-3', title: '完成一首 SUNO demo', projectId: '', due: todayStr(3), priority: '中', done: false },
   { id: 'task-4', title: '確認第一個訓練循環', projectId: 'poker', due: todayStr(5), priority: '低', done: false },
   { id: 'task-g1', title: '盤點主流/蓄勢/乘流/靜流指標', projectId: 'guru', due: todayStr(-4), priority: '中', done: false },
   { id: 'task-g2', title: '建立股流歷史模式庫', projectId: 'guru', due: todayStr(-4), priority: '低', done: false },
@@ -231,20 +230,20 @@ const initialTasks = [
 const initialNotes = [
   { id: 'note-1', title: '股流Radar 核心概念', content: '加入群組的主流、蓄勢、乘流、靜流，整個產品語彙統一在水流宇宙，使用者學一次就懂。', tags: ['股流', '概念'], projectId: 'guru', createdAt: Date.now() - 1 * DAY },
   { id: 'note-2', title: '策略走 A 還是 B', content: '等回覆：①策略走 A 還是 B；②上一輪 B0 歷史管線的三個決策點（執行模式／回補深度／先解鎖哪個畫面）還沒收到。', tags: ['股流', '決策'], projectId: 'guru', createdAt: Date.now() - 3 * DAY },
-  { id: 'note-3', title: 'SUNO 聽了二十首參考曲', content: '決定走深夜氛圍，人聲少一點，留空間給低頻。先鎖這個方向。', tags: ['靈感', '音樂'], projectId: 'suno', createdAt: Date.now() - 7 * DAY },
+  { id: 'note-3', title: 'SUNO 聽了二十首參考曲', content: '決定走深夜氛圍，人聲少一點，留空間給低頻。先鎖這個方向。', tags: ['靈感', '音樂'], projectId: '', createdAt: Date.now() - 7 * DAY },
   { id: 'note-a1', title: '股流 Radar 整體架構', content: '資料源(TWSE/TPEx/FinMind)→供應商抽象層→PA Facts Layer(純函式算swing/結構/關鍵位/形態/量價)→g研判引擎(六段框架+策略層)→PWA呈現。熱度四成分=資金流向35%+價格強度25%+成交量異常20%+上漲廣度20%，熱區分四層：聚焦/升溫/分歧/退潮。三約束：資料可替換、事實先於AI、單向依賴。Phase1唯一策略pa_default；v2四戰法：回湧(volume-refill)、破堤(ma21-break)、鯨躍(deep-reversal)、洋流(ma200-current)。', tags: ['股流', '架構'], projectId: 'guru', createdAt: Date.now() },
   { id: 'note-20260912-股流更新：研判邏', title: '股流更新：研判邏輯修正：PA六段對齊分數把關、戰法統一接上九戰法、補齊...', content: 'Commit 記錄：研判邏輯修正：PA六段對齊分數把關、戰法統一接上九戰法、補齊停損缺口、移動停利功能；大盤籌碼本週改用自己資料庫；外部API交叉查證', tags: ['股流', '更新'], projectId: 'guru', createdAt: Date.now() },
   { id: 'note-20260912-股流更新：大盤籌', title: '股流更新：大盤籌碼本週改用自己資料庫...', content: 'Commit 記錄：研判邏輯修正：PA六段對齊分數把關、戰法統一接上九戰法、補齊停損缺口、移動停利功能；大盤籌碼本週改用自己資料庫；外部API交叉查證', tags: ['股流', '儀表板'], projectId: 'guru', createdAt: Date.now() },
   { id: 'note-igcar-1', title: '中古車選品師 IG：品牌與商業模式', content: '品牌「客里斯｜中古車選品師」，內容主軸「不教你搶便宜車；教你避開買錯車」。收費：代拍固定服務費 1.5~2 萬；代銷服務費＋超額分潤；意向定金 3 萬（流標全退）。色調走方案三科技數據感（深灰 #1A1A1A＋冰川藍 #0066FF）。首發破冰：買車痛點篇。暖機規則：每天≤2則、不大量追蹤按讚、固定裝置。', tags: ['IG', '中古車', '品牌'], projectId: 'ig-car', createdAt: Date.now() },
   { id: 'note-igtravel-1', title: '旅遊選品師 IG：品牌與漏斗', content: '品牌「客里斯｜旅遊選品師（旅遊避雷針）」，核心是旅遊界的選品店。服務：行程健檢（優劣對比、隱藏成本拆解）＋選品推薦＋跟團訂購。客群：高時間價值上班族、怕踩雷跟團族、質感旅遊者。首波 9 篇全 Carousel（7-9 認識我 → 4-6 信任我 → 1-3 跟著我買）。', tags: ['IG', '旅遊', '品牌'], projectId: 'ig-travel', createdAt: Date.now() },
   { id: 'note-ytkids-1', title: '神仙童萌會 YT：企劃重點', content: '兒童神話動畫《神明小夥伴》。單集 6–8 分鐘三段式：現代困境 → 神話典故 → 現代感悟。首季神明對應議題：三太子（情緒管理）、文昌帝君（誠實累積）、關聖帝君（誠信守諾）、天上聖母（包容同理）、福德正神（珍惜感恩）。變現軌道：AdSense → 故事精選包（節慶包／品格專題包／教學延伸包）→ 品牌與政府專案 → 出版與 IP 授權。去宗教化定位為護城河。', tags: ['YT', '兒童', '動畫'], projectId: 'yt-kids', createdAt: Date.now() },
-  { id: 'note-polaris-track-1', title: '北極星追蹤範圍定案（2026-09-17）', content: '北極星改為追蹤真實運營中的專案：股流Radar、中古車選品師 IG、旅遊選品師 IG、神仙童萌會 YT。IG 兩帳以 D:\ZCODE\IG運營 的工作檔為上下文；YT 企劃在 OneDrive\桌面\內容自媒體\兒童神話動畫頻道運營企劃書.md。', tags: ['北極星', '決策'], projectId: '', createdAt: Date.now() }
+  { id: 'note-polaris-track-1', title: '北極星追蹤範圍定案（2026-09-17）', content: '北極星改為追蹤真實運營中的專案：股流Radar、中古車選品師 IG、旅遊選品師 IG、神仙童萌會 YT。Poker Trainer 為獨立案子保留；SUNO Music 移入靈感庫。IG 兩帳以 D:\ZCODE\IG運營 的工作檔為上下文；YT 企劃在 OneDrive\桌面\內容自媒體\兒童神話動畫頻道運營企劃書.md。', tags: ['北極星', '決策'], projectId: '', createdAt: Date.now() }
 ]
 const initialTimelineEvents = [
   { id: 'ev-ytkids-1', date: todayStr(-2), title: '神仙童萌會 YT 運營企劃書完成', type: 'milestone', projectId: 'yt-kids', color: '#b06bd6', createdAt: Date.now() },
   { id: 'ev-20260911', date: todayStr(-2), title: 'Update: 大盤儀表板/大盤籌碼頁重新整合真實資料、水池成本價、觀察股水池命名、籌碼分歧引擎、VIX判讀等功能', type: 'milestone', projectId: 'guru', color: '#e76f51', createdAt: Date.now() },
   { id: 'ev-6', date: todayStr(-6), type: 'milestone', title: '股流 Radar 整體架構規格書完成（Architecture v1.0 + 系統規格 + 策略 v2）', projectId: 'guru', color: '#e76f51' },
-  { id: 'ev-5', date: todayStr(-8), type: 'milestone', title: 'SUNO 第一首歌完成 demo', projectId: 'suno', color: '#6f8f78' },
+  { id: 'ev-5', date: todayStr(-8), type: 'milestone', title: 'SUNO 第一首歌完成 demo', projectId: '', color: '#6f8f78' },
   { id: 'ev-4', date: todayStr(-10), type: 'note', title: '股流 Radar 監控面板上線準備', projectId: 'guru', color: '#e76f51' },
   { id: 'ev-3', date: todayStr(-12), type: 'milestone', title: '完成第一版原型介面', projectId: 'guru', color: '#6f8f78' },
   { id: 'ev-2', date: todayStr(-24), type: 'note', title: '確定「主流／蓄勢／乘流／靜流」四階段語彙', projectId: 'guru', color: '#e76f51' },

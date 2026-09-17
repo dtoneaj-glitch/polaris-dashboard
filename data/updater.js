@@ -297,11 +297,13 @@ function applyTimelineEvents(updates, current) {
 
 function applyProjects(updates, current) {
   if (!updates?.projects?.length) return current
-  const result = current.map(p => {
-    const u = updates.projects.find(up => up.id === p.id)
+  const removeIds = new Set(updates.projects.filter(u => u && u.remove).map(u => u.id))
+  const result = current.filter(p => !removeIds.has(p.id)).map(p => {
+    const u = updates.projects.find(up => up.id === p.id && !up.remove)
     return u ? { ...p, ...u, lastUpdated: NOW } : p
   })
   for (const u of updates.projects) {
+    if (!u || u.remove) continue
     if (!u.id || !u.name || result.find(p => p.id === u.id)) continue
     result.push({ id: u.id, name: u.name, description: u.description || '', stage: u.stage || 'Idea', color: u.color || '#6f8f78', progress: u.progress ?? 0, next: u.next || '', lastUpdated: NOW })
   }
