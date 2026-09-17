@@ -29,7 +29,8 @@
       "progress": 5,
       "next": "建置 YT 頻道與 Q 版神明 IP，產出第 1 集腳本（三太子・情緒管理）"
     },
-    { "id": "suno", "remove": true }
+    { "id": "suno", "remove": true },
+    { "id": "novel", "remove": true }
   ],
   "tasks": [
     { "id": "task-igcar-1", "title": "IG 帳號設定：顯示名稱「客里斯｜中古車選品師」＋貼定案 Bio", "projectId": "ig-car", "priority": "高", "done": false },
