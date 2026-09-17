@@ -27,7 +27,8 @@ const REPOS = [
   { id: 'guru', name: '股流Radar', path: 'D:/個人台/股流Radar/guliu-radar-local' },
 ]
 const DOCS = [
-  { id: 'ig-car',    name: '中古車選品師 IG', path: 'D:/ZCODE/IG運營/中古車選品師IG.md' },
+    { id: 'all', name: '進度總覽（跨專案總表）', path: 'D:/ZCODE/專案儀錶版/polaris-dashboard/進度總覽.md' },
+{ id: 'ig-car',    name: '中古車選品師 IG', path: 'D:/ZCODE/IG運營/中古車選品師IG.md' },
   { id: 'ig-travel', name: '旅遊選品師 IG',   path: 'D:/ZCODE/IG運營/旅遊選品師IG.md' },
   { id: 'ig-all',    name: 'IG 進度總覽',     path: 'D:/ZCODE/IG運營/進度總覽.md' },
   { id: 'yt-kids',   name: '神仙童萌會 YT',   path: 'C:/Users/amydo/OneDrive/桌面/內容自媒體/兒童神話動畫頻道運營企劃書.md' },
