@@ -89,3 +89,29 @@ node scripts/export-state.js
 | `data/dashboard-state.json` | 給 AI / ZCode 讀的最新儀表板快照 |
 
 *建立：2026-09-17*
+
+---
+
+## 七、自動收集（重點：不用自己填）
+
+`scripts/collect.js` 會自動把「你平常工作本來就會留下的痕跡」彙整成一個檔，AI 讀這個就好：
+
+```bash
+node scripts/collect.js            # 最近 3 天
+node scripts/collect.js --days 7   # 最近 7 天
+# 輸出：data/daily-input.md
+```
+
+收集內容：
+- 各 git repo 的近期 commit（目前：guru／股流Radar）
+- 各來源工作檔的「最後修改時間 + 章節大綱」（IG 兩帳、進度總覽、YT 企劃）
+- 今日有異動的檔案（workspace、D:\ZCODE\IG運營、D:\ZCODE\兒童YT頻道）
+- 目前儀表板狀態（各專案 progress／next）
+
+因此「每日流程」可以完全不用手動填表：
+
+1. `node scripts/collect.js`
+2. AI 讀 `data/daily-input.md` → 寫 `daily-brief.txt`
+3. `node scripts/daily-report.js`
+
+> 想加新的追蹤來源（例如某專案的 git repo 或工作檔），只要改 `scripts/collect.js` 最上方的 `REPOS` / `DOCS` / `SCAN_DIRS` 設定即可。
