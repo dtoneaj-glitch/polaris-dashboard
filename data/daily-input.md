@@ -1,5 +1,5 @@
 # 北極星 自動收集輸入（給 AI 讀）
-> 產生時間：2026-09-17 23:50　範圍：最近 3 天
+> 產生時間：2026-09-19 15:39　範圍：最近 3 天
 > 用途：AI 讀完後，把各專案濃縮成「一行方向＋進度」，寫進 daily-brief.txt 或 worklog。
 
 ## 1. Git commit（自動）
@@ -78,57 +78,20 @@ ce49afa | 2026-09-17 | chore: 專案現況快照 — 補 PROJECT.md/start-guliu.
 ```
 
 - ⚠ 神仙童萌會 YT（yt-kids）找不到：C:/Users/amydo/OneDrive/桌面/內容自媒體/兒童神話動畫頻道運營企劃書.md
-## 3. 今日（2026-09-17 起）有異動的檔案
-### workspace（61 個）
-- C:/Users/amydo/.openclaw-autoclaw/workspace/.cluster/expert-playbook.md　(2026-09-17 15:34)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw/workspace-state.json　(2026-09-17 16:50)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20260917-203656-1e005dcf-14d-11.txt　(2026-09-17 20:36)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20260917-205303-0fa10c43-e85-12.jpg　(2026-09-17 20:52)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20260917-205303-335b8b43-4fd-11.jpg　(2026-09-17 20:52)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20260917-232713-5a9d5bb6-2f9-12.jpg　(2026-09-17 20:52)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20260917-232713-87f50fe5-9c5-11.jpg　(2026-09-17 20:52)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20260917-233559-f8ce2ca7-2d2-13.jpg　(2026-09-17 03:11)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/.opencode/config.json　(2026-09-17 23:41)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/AGENTS.md　(2026-09-17 16:46)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/autoclaw-cluster-im-guide.html　(2026-09-17 19:45)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/config/mcp-tools-cache.json　(2026-09-17 16:46)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/config/mcporter.json　(2026-09-17 23:41)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/evolution-drafts/approved/geo-output-format.md　(2026-09-17 18:05)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/evolution-drafts/pending/existing-projects-registry.md　(2026-09-17 16:53)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/evolution-drafts/pending/polaris-canonical-nightly-report.md　(2026-09-17 18:04)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/evolution-drafts/pending/shutdown-worklog-workflow.md　(2026-09-17 23:21)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/HEARTBEAT.md　(2026-09-17 15:56)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/IDENTITY.md　(2026-09-17 16:36)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/MEMORY.md　(2026-09-17 18:05)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/notion連線診斷-2026-09-17.html　(2026-09-17 23:47)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/OneDrive退役-桌面還原報告-2026-09-17.html　(2026-09-17 22:09)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/autoclaw-guide/index.html　(2026-09-17 16:00)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/autoclaw-move-to-d/autoclaw-data-move-plan.html　(2026-09-17 16:56)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/autoclaw-move-to-d/autoclaw-data-move.ps1　(2026-09-17 16:56)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/autoclaw-vs-zcode.html　(2026-09-17 15:58)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/digital-product-workbench/index.html　(2026-09-17 19:54)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/digital-product-workbench/port-to-module.html　(2026-09-17 20:01)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/geo-output-spec/geo-output-spec-v2.html　(2026-09-17 17:15)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/geo-output-spec/geo-output-spec-v2.md　(2026-09-17 17:15)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/guliu-audit/北極星日報-腳本vsai實測對照.html　(2026-09-17 21:44)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/guliu-audit/股流radar-git說明-vix釐清-每日排程.html　(2026-09-17 19:37)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/guliu-audit/股流radar-p0修復執行報告.html　(2026-09-17 18:56)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/guliu-audit/股流radar-vix免費源上線與推送步驟.html　(2026-09-17 20:17)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/guliu-audit/股流radar-建置進度盤點.html　(2026-09-17 21:25)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/guliu-audit/股流radar-後續處理與測試上線技術清單.html　(2026-09-17 19:19)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/guliu-audit/股流radar-運作健檢與修改方案.html　(2026-09-17 18:18)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/image-demo/seedream-demo.jpg　(2026-09-17 18:08)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/polaris-autoupdate/polaris-資料匯入-2026-09-17.json　(2026-09-17 19:23)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/polaris-autoupdate/北極星-zcode-0ai每日更新.html　(2026-09-17 22:58)
+## 3. 今日（2026-09-19 起）有異動的檔案
+### workspace（3 個）
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.cluster/expert-playbook.md　(2026-09-19 15:35)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.opencode/config.json　(2026-09-19 15:32)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/config/mcporter.json　(2026-09-19 15:32)
 ### D:/ZCODE/IG運營（0 個）
 （今日無異動）
-### D:/ZCODE/兒童YT頻道（1 個）
-- D:/ZCODE/兒童YT頻道/交接報告-神仙童萌會-2026-09-17.md　(2026-09-17 23:49)
+### D:/ZCODE/兒童YT頻道（0 個）
+（今日無異動）
 
 ## 4. 目前儀表板狀態（更新前）
-- guru｜股流Radar｜stage=Active｜progress=55％｜next=把架構規格寫進產品
+- guru｜股流Radar｜stage=Active｜progress=58％｜next=把架構規格寫進產品
 - poker｜Poker Trainer｜stage=MVP｜progress=18％｜next=確認第一個訓練循環
 - ig-car｜中古車選品師 IG｜stage=Explore｜progress=15％｜next=設定顯示名稱／Bio／專業帳號／兩步驗證，產出首波 9 篇 Carousel
 - ig-travel｜旅遊選品師 IG｜stage=Idea｜progress=8％｜next=建立 IG 帳號（travel.curator_chris）並製作卡通地圖頭貼
-- yt-kids｜神仙童萌會（YT）｜stage=Idea｜progress=5％｜next=建置 YT 頻道與 Q 版神明 IP，產出第 1 集腳本（三太子・情緒管理）
+- yt-kids｜神仙童萌會（YT）｜stage=Idea｜progress=8％｜next=確認關公／媽祖去留並填全書大綱，再接第 1 集腳本（三太子×情緒管理）
 - 其他：ideas=2 tasks=26 notes=10 goals=6 timeline=10
