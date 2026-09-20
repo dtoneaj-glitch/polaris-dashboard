@@ -251,12 +251,12 @@ const initialTimelineEvents = [
   { id: 'ev-1', date: todayStr(-34), type: 'milestone', title: '股流 Radar 概念成型', projectId: 'guru', color: '#6f8f78' }
 ]
 const initialGoals = [
-  { id: 'goal-1', title: '股流 Radar 第一版上線', description: '能被實際使用的監控面板程度（含熱區/PA事實層/g研判/v2戰法）', targetDate: todayStr(-2), progress: 55, color: '#e76f51', projectId: 'guru' },
-  { id: 'goal-2', title: '收齊 20 則股流決策筆記', description: '累積成判斷資料庫', targetDate: todayStr(14), progress: 30, color: '#6f8f78', projectId: 'guru' },
-  { id: 'goal-3', title: 'SUNO 頻道連續 4 週每週一首', description: '先做出有辨識度的聲音，再談規模', targetDate: todayStr(11), progress: 25, color: '#6f8f78' },
-  { id: 'goal-4', title: '找到第一個付費使用者', description: '股流 Radar 痛點驗證', targetDate: todayStr(28), progress: 5, color: '#7087a3', projectId: 'guru' },
-  { id: 'goal-ig-launch', title: '兩個 IG 帳號上線並發布首波內容', description: '中古車＋旅遊各完成帳號設定與首波 9 篇 Carousel', targetDate: todayStr(26), progress: 10, color: '#0066FF', projectId: 'ig-car' },
-  { id: 'goal-yt-launch', title: '神仙童萌會頻道上線（首季 12–15 支）', description: '完成頻道建置、Q 版神明 IP 與首季內容上架', targetDate: todayStr(134), progress: 5, color: '#b06bd6', projectId: 'yt-kids' }
+  { id: 'goal-1', title: '股流 Radar 第一版上線', description: '能被實際使用的監控面板程度（含熱區/PA事實層/g研判/v2戰法）', targetDate: todayStr(-3), progress: 55, color: '#e76f51', projectId: 'guru' },
+  { id: 'goal-2', title: '收齊 20 則股流決策筆記', description: '累積成判斷資料庫', targetDate: todayStr(13), progress: 30, color: '#6f8f78', projectId: 'guru' },
+  { id: 'goal-3', title: 'SUNO 頻道連續 4 週每週一首', description: '先做出有辨識度的聲音，再談規模', targetDate: todayStr(10), progress: 25, color: '#6f8f78' },
+  { id: 'goal-4', title: '找到第一個付費使用者', description: '股流 Radar 痛點驗證', targetDate: todayStr(27), progress: 5, color: '#7087a3', projectId: 'guru' },
+  { id: 'goal-ig-launch', title: '兩個 IG 帳號上線並發布首波內容', description: '中古車＋旅遊各完成帳號設定與首波 9 篇 Carousel', targetDate: todayStr(24), progress: 10, color: '#0066FF', projectId: 'ig-car' },
+  { id: 'goal-yt-launch', title: '神仙童萌會頻道上線（首季 12–15 支）', description: '完成頻道建置、Q 版神明 IP 與首季內容上架', targetDate: todayStr(132), progress: 5, color: '#b06bd6', projectId: 'yt-kids' }
 ]
 const navItems = [
   { id: 'home', label: 'Home', icon: Gauge },
