@@ -1,10 +1,13 @@
 # 北極星 自動收集輸入（給 AI 讀）
-> 產生時間：2026-09-21 23:50　範圍：最近 3 天
+> 產生時間：2026-09-22 23:50　範圍：最近 3 天
 > 用途：AI 讀完後，把各專案濃縮成「一行方向＋進度」，寫進 daily-brief.txt 或 worklog。
 
 ## 1. Git commit（自動）
 ### 股流Radar（guru）
 ```
+9583f29 | 2026-09-22 | docs: 新增測試員操作手冊（docs/測試員操作手冊.md）
+659e715 | 2026-09-22 | feat(tunnel): 支援 Cloudflare Tunnel — vite allowedHosts 加入 .trycloudflare.com/.cfargotunnel.com 與 EXTRA_ALLOWED_HOSTS；新增 scripts/start-tunnel.bat 一鍵啟動
+273da74 | 2026-09-22 | chore(schedule): 每日存檔統一為單一排程 週一-五 21:00（此時行情/法人/籌碼皆已公布，避免重複執行）；移除 15:00 與補跑任務
 1f17c31 | 2026-09-21 | feat: 市場法人金額改用證交所官方 BFI82U(含籌碼判讀，與摘要同源) + flowSource 標示；每日排程改 15:00 主排程(另加 21:00 補跑，因法人/籌碼較晚公布)
 64d2ea6 | 2026-09-21 | fix(data): 修正資料慢一天 — TWSE 行情改用 rwd MI_INDEX(當日即可取得)，openapi STOCK_DAY_ALL 僅作後備；新增 parseTwseDate 處理西元/民國日期(修 3937 年誤判)
 558530b | 2026-09-21 | fix(chip): 籌碼判讀 v3 — 外資改「現貨為主、期貨為輔」，不同調時保留現貨方向並明講(修正外資大買卻顯示方向不明顯);移除左下角標註回饋按鈕;新增 2 項測試
@@ -88,57 +91,64 @@ d8b9587 | 2026-09-21 | fix(chip): 修正散戶多空比 — 對照真實 TAIFEX 
 ```
 
 - ⚠ 神仙童萌會 YT（yt-kids）找不到：C:/Users/amydo/OneDrive/桌面/內容自媒體/兒童神話動畫頻道運營企劃書.md
-## 3. 今日（2026-09-21 起）有異動的檔案
-### workspace（103 個）
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/guliu-audit/股流-三項收尾完成報告.html　(2026-09-21 12:36)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/guliu-audit/股流-上線測試前待辦清單與gonogo.html　(2026-09-21 12:51)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/guliu-audit/股流-上線測試計畫與案例.html　(2026-09-21 12:52)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/guliu-audit/股流-修好後是否為要的答案.html　(2026-09-21 12:21)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/guliu-audit/股流-凱基poc操作卡.html　(2026-09-21 15:17)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/guliu-audit/股流-凱基superpy串聯方案.html　(2026-09-21 14:01)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/guliu-audit/股流-凱基superpy評估.html　(2026-09-21 13:55)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/guliu-audit/股流-凱基即時行情串接實作報告.html　(2026-09-21 14:13)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/guliu-audit/股流-剩餘工作與分工總表.html　(2026-09-21 20:38)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/guliu-audit/股流-參考數值對照表與驗證紀錄.html　(2026-09-21 12:51)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/guliu-audit/股流-多空比根因分析與可行性.html　(2026-09-21 00:10)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/guliu-audit/股流-技術面處理完成報告.html　(2026-09-21 17:49)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/guliu-audit/股流-散戶多空比修正完成報告.html　(2026-09-21 12:31)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/guliu-audit/股流-散戶多空比公式驗證報告.html　(2026-09-21 00:06)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/guliu-audit/股流-盤中即時資料與家人遠端方案.html　(2026-09-21 13:15)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/guliu-audit/股流-自選股功能規格與驗證報告.html　(2026-09-21 12:51)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/guliu-audit/股流-自選股遷移sqlite完成報告.html　(2026-09-21 18:04)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/guliu-audit/股流-除權息處理完成報告.html　(2026-09-21 19:47)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/guliu-audit/股流-風險清單與交接文件.html　(2026-09-21 12:52)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/.env.example　(2026-09-21 15:09)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/.gitignore　(2026-09-21 22:38)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/.tmp-ai-data/admin-token.txt　(2026-09-21 22:39)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/.tmp-ai-data/mapsync.db　(2026-09-21 22:39)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/.tmp-ai-data/mapsync.db-shm　(2026-09-21 22:39)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/.tmp-ai-data/mapsync.db-wal　(2026-09-21 22:39)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/.tmp-test-data/admin-token.txt　(2026-09-21 22:40)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/.tmp-test-data/mapsync.db　(2026-09-21 22:40)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/.tmp-test-data/mapsync.db-shm　(2026-09-21 22:40)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/.tmp-test-data/mapsync.db-wal　(2026-09-21 22:40)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/backups/mapsync-2026-09-21T04-45-01-819Z.db　(2026-09-21 12:45)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/backups/mapsync-2026-09-21T04-45-11-736Z.db　(2026-09-21 12:45)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/backups/mapsync-2026-09-21T06-11-46-922Z.db　(2026-09-21 14:11)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/data/admin-token.txt　(2026-09-21 12:44)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/data/mapsync.db　(2026-09-21 14:11)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/data/mapsync.db-shm　(2026-09-21 22:39)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/data/mapsync.db-wal　(2026-09-21 22:39)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/deploy/admin-token.suggested.txt　(2026-09-21 13:13)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/deploy/beta-code.suggested.txt　(2026-09-21 18:30)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/deploy/Caddyfile　(2026-09-21 12:34)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/deploy/docker-compose.yml　(2026-09-21 12:34)
+## 3. 今日（2026-09-22 起）有異動的檔案
+### workspace（69 個）
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.cluster/expert-playbook.md　(2026-09-22 03:23)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.opencode/config.json　(2026-09-22 03:18)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/AGENTS.md　(2026-09-22 19:48)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/config/mcporter.json　(2026-09-22 03:19)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/guliu-audit/股流-測試員操作手冊.html　(2026-09-22 01:03)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/guliu-audit/股流-站長操作單.html　(2026-09-22 01:03)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/guliu-audit/股流-週四測試交付倒數計畫.html　(2026-09-22 00:21)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/.gitignore　(2026-09-22 02:50)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/.tmp-ai-data/admin-token.txt　(2026-09-22 01:28)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/.tmp-ai-data/mapsync.db　(2026-09-22 01:28)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/.tmp-ai-data/mapsync.db-shm　(2026-09-22 01:28)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/.tmp-ai-data/mapsync.db-wal　(2026-09-22 01:28)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/.tmp-test-data/admin-token.txt　(2026-09-22 23:05)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/.tmp-test-data/mapsync.db　(2026-09-22 23:05)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/.tmp-test-data/mapsync.db-shm　(2026-09-22 23:05)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/.tmp-test-data/mapsync.db-wal　(2026-09-22 23:05)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/backups/mapsync-2026-09-21T18-28-40-348Z.db　(2026-09-22 02:28)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/data/mapsync.db　(2026-09-22 23:33)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/data/mapsync.db-shm　(2026-09-22 23:01)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/data/mapsync.db-wal　(2026-09-22 23:33)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/deploy/admin-token.production.txt　(2026-09-22 02:28)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/deploy/beta-code.production.txt　(2026-09-22 02:28)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/deploy/cloudflared-config.yml　(2026-09-22 02:50)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/index.html　(2026-09-22 23:45)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/iOS捷徑設定指南.html　(2026-09-22 23:45)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/MVP-範圍定義.html　(2026-09-22 23:45)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/β測試執行計畫.html　(2026-09-22 23:45)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/上線前完成報告.html　(2026-09-22 23:45)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/上線待辦與協助清單.html　(2026-09-22 23:45)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/上線檢查清單與部署說明.html　(2026-09-22 23:45)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/五項缺口解法評估.html　(2026-09-22 23:45)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/交接與維運手冊.html　(2026-09-22 23:45)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/完整架構藍圖與進度.html　(2026-09-22 23:45)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/擴充清單與缺口盤點.html　(2026-09-22 23:45)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/改名指南.html　(2026-09-22 23:45)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/里程碑待辦看板.html　(2026-09-22 23:45)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/驗收清單與測試結果.html　(2026-09-22 23:45)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/package.json　(2026-09-22 01:41)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/README.md　(2026-09-22 02:40)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/scripts/build-docs.js　(2026-09-22 22:50)
 ### D:/ZCODE/IG運營（0 個）
 （今日無異動）
-### D:/ZCODE/兒童YT頻道（1 個）
-- D:/ZCODE/兒童YT頻道/專案簡報-神仙童萌會-2026-09-21.md　(2026-09-21 00:10)
+### D:/ZCODE/兒童YT頻道（8 個）
+- D:/ZCODE/兒童YT頻道/4-12歲孩童情緒、品格、朋友、家人100個發展課題.md　(2026-09-22 00:51)
+- D:/ZCODE/兒童YT頻道/notebooklm-上手.sh　(2026-09-22 01:10)
+- D:/ZCODE/兒童YT頻道/取題對照表-100課題-2026-09-21.md　(2026-09-22 03:34)
+- D:/ZCODE/兒童YT頻道/有聲書-上手簡報-2026-09-21.md　(2026-09-22 01:05)
+- D:/ZCODE/兒童YT頻道/腳本-S1-序章初遇-2026-09-21.md　(2026-09-22 19:07)
+- D:/ZCODE/兒童YT頻道/腳本-S1-序章初遇-定稿-工坊版-2026-09-22.md　(2026-09-22 20:05)
+- D:/ZCODE/兒童YT頻道/腳本-S1-序章初遇-工坊AI-2026-09-21.md　(2026-09-22 19:47)
+- D:/ZCODE/兒童YT頻道/腳本-S1-第02章-火氣變成超能力-定稿-2026-09-22.md　(2026-09-22 20:46)
 
 ## 4. 目前儀表板狀態（更新前）
-- guru｜股流Radar｜stage=Active｜progress=58％｜next=把架構規格寫進產品
+- guru｜股流Radar｜stage=Active｜progress=65％｜next=依上線測試計畫跑 Go/No-Go 驗收，把凱基即時行情從 PoC 接成正式資料源
 - poker｜Poker Trainer｜stage=MVP｜progress=18％｜next=確認第一個訓練循環
 - ig-car｜中古車選品師 IG｜stage=Explore｜progress=15％｜next=設定顯示名稱／Bio／專業帳號／兩步驗證，產出首波 9 篇 Carousel
 - ig-travel｜旅遊選品師 IG｜stage=Idea｜progress=8％｜next=建立 IG 帳號（travel.curator_chris）並製作卡通地圖頭貼
-- yt-kids｜神仙童萌會（YT）｜stage=Idea｜progress=10％｜next=填全書大綱（工坊 outline），再接第 1 集腳本（三太子×情緒管理）
+- yt-kids｜神仙童萌會（YT）｜stage=Idea｜progress=12％｜next=填全書大綱（工坊 outline），再接第 1 集腳本（三太子×情緒管理）
 - 其他：ideas=2 tasks=26 notes=10 goals=6 timeline=10
