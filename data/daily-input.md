@@ -1,5 +1,5 @@
 # 北極星 自動收集輸入（給 AI 讀）
-> 產生時間：2026-09-22 23:50　範圍：最近 3 天
+> 產生時間：2026-09-23 23:50　範圍：最近 3 天
 > 用途：AI 讀完後，把各專案濃縮成「一行方向＋進度」，寫進 daily-brief.txt 或 worklog。
 
 ## 1. Git commit（自動）
@@ -91,64 +91,66 @@ d8b9587 | 2026-09-21 | fix(chip): 修正散戶多空比 — 對照真實 TAIFEX 
 ```
 
 - ⚠ 神仙童萌會 YT（yt-kids）找不到：C:/Users/amydo/OneDrive/桌面/內容自媒體/兒童神話動畫頻道運營企劃書.md
-## 3. 今日（2026-09-22 起）有異動的檔案
-### workspace（69 個）
-- C:/Users/amydo/.openclaw-autoclaw/workspace/.cluster/expert-playbook.md　(2026-09-22 03:23)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/.opencode/config.json　(2026-09-22 03:18)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/AGENTS.md　(2026-09-22 19:48)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/config/mcporter.json　(2026-09-22 03:19)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/guliu-audit/股流-測試員操作手冊.html　(2026-09-22 01:03)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/guliu-audit/股流-站長操作單.html　(2026-09-22 01:03)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/guliu-audit/股流-週四測試交付倒數計畫.html　(2026-09-22 00:21)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/.gitignore　(2026-09-22 02:50)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/.tmp-ai-data/admin-token.txt　(2026-09-22 01:28)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/.tmp-ai-data/mapsync.db　(2026-09-22 01:28)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/.tmp-ai-data/mapsync.db-shm　(2026-09-22 01:28)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/.tmp-ai-data/mapsync.db-wal　(2026-09-22 01:28)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/.tmp-test-data/admin-token.txt　(2026-09-22 23:05)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/.tmp-test-data/mapsync.db　(2026-09-22 23:05)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/.tmp-test-data/mapsync.db-shm　(2026-09-22 23:05)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/.tmp-test-data/mapsync.db-wal　(2026-09-22 23:05)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/backups/mapsync-2026-09-21T18-28-40-348Z.db　(2026-09-22 02:28)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/data/mapsync.db　(2026-09-22 23:33)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/data/mapsync.db-shm　(2026-09-22 23:01)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/data/mapsync.db-wal　(2026-09-22 23:33)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/deploy/admin-token.production.txt　(2026-09-22 02:28)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/deploy/beta-code.production.txt　(2026-09-22 02:28)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/deploy/cloudflared-config.yml　(2026-09-22 02:50)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/index.html　(2026-09-22 23:45)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/iOS捷徑設定指南.html　(2026-09-22 23:45)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/MVP-範圍定義.html　(2026-09-22 23:45)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/β測試執行計畫.html　(2026-09-22 23:45)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/上線前完成報告.html　(2026-09-22 23:45)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/上線待辦與協助清單.html　(2026-09-22 23:45)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/上線檢查清單與部署說明.html　(2026-09-22 23:45)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/五項缺口解法評估.html　(2026-09-22 23:45)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/交接與維運手冊.html　(2026-09-22 23:45)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/完整架構藍圖與進度.html　(2026-09-22 23:45)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/擴充清單與缺口盤點.html　(2026-09-22 23:45)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/改名指南.html　(2026-09-22 23:45)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/里程碑待辦看板.html　(2026-09-22 23:45)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/驗收清單與測試結果.html　(2026-09-22 23:45)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/package.json　(2026-09-22 01:41)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/README.md　(2026-09-22 02:40)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/scripts/build-docs.js　(2026-09-22 22:50)
+## 3. 今日（2026-09-23 起）有異動的檔案
+### workspace（57 個）
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.cluster/expert-playbook.md　(2026-09-23 12:17)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20260923-014203-18e5d215-8cf-S__52830213_0.jpg　(2026-09-23 01:41)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20260923-014203-74151cd8-b17-S__52830212_0.jpg　(2026-09-23 01:41)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20260923-014203-9bf0d56e-312-S__52830214_0.jpg　(2026-09-23 01:41)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20260923-123842-049437f5-0f0-S__52846615_0.jpg　(2026-09-23 12:35)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20260923-123842-364d1703-a78-S__52846604_0.jpg　(2026-09-23 12:36)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20260923-123842-45cc2f05-5b9-S__52846605_0.jpg　(2026-09-23 12:36)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20260923-123842-4e5ce6ef-f4d-S__52846609_0.jpg　(2026-09-23 12:36)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20260923-123842-6a6534b2-8bf-S__52846603_0.jpg　(2026-09-23 12:36)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20260923-123842-70bd1592-1ce-S__52846600_0.jpg　(2026-09-23 12:36)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20260923-123842-7ea79198-d63-S__52846606_0.jpg　(2026-09-23 12:36)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20260923-123842-82a5099f-eb0-S__52846601_0.jpg　(2026-09-23 12:36)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20260923-123842-86e10307-e34-S__52846612_0.jpg　(2026-09-23 12:35)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20260923-123842-9d7a3909-26b-S__52846611_0.jpg　(2026-09-23 12:35)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20260923-123842-dda71a87-1f7-S__52846608_0.jpg　(2026-09-23 12:36)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20260923-123842-e1f7df52-0ae-S__52846613_0.jpg　(2026-09-23 12:35)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20260923-123842-ec5edcd1-5f0-S__52846614_0.jpg　(2026-09-23 12:35)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20260923-123842-f2170924-f09-S__52846602_0.jpg　(2026-09-23 12:36)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20260923-123842-fcaefbeb-861-S__52846607_0.jpg　(2026-09-23 12:36)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.opencode/config.json　(2026-09-23 12:15)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/config/mcporter.json　(2026-09-23 12:15)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/.gitignore　(2026-09-23 13:08)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/.tmp-test-data/admin-token.txt　(2026-09-23 13:08)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/.tmp-test-data/mapsync.db　(2026-09-23 13:08)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/.tmp-test-data/mapsync.db-shm　(2026-09-23 13:08)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/.tmp-test-data/mapsync.db-wal　(2026-09-23 13:08)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/data/mapsync.db-shm　(2026-09-23 13:05)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/data/mapsync.db-wal　(2026-09-23 19:48)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/index.html　(2026-09-23 23:39)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/iOS捷徑設定指南.html　(2026-09-23 23:39)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/MVP-範圍定義.html　(2026-09-23 23:39)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/OCR實測報告.html　(2026-09-23 23:39)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/β測試執行計畫.html　(2026-09-23 23:39)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/上線前完成報告.html　(2026-09-23 23:39)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/上線待辦與協助清單.html　(2026-09-23 23:39)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/上線檢查清單與部署說明.html　(2026-09-23 23:39)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/五項缺口解法評估.html　(2026-09-23 23:39)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/交接與維運手冊.html　(2026-09-23 23:39)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/加朋友與登入方案.html　(2026-09-23 23:39)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/docs/完整架構藍圖與進度.html　(2026-09-23 23:39)
 ### D:/ZCODE/IG運營（0 個）
 （今日無異動）
-### D:/ZCODE/兒童YT頻道（8 個）
-- D:/ZCODE/兒童YT頻道/4-12歲孩童情緒、品格、朋友、家人100個發展課題.md　(2026-09-22 00:51)
-- D:/ZCODE/兒童YT頻道/notebooklm-上手.sh　(2026-09-22 01:10)
-- D:/ZCODE/兒童YT頻道/取題對照表-100課題-2026-09-21.md　(2026-09-22 03:34)
-- D:/ZCODE/兒童YT頻道/有聲書-上手簡報-2026-09-21.md　(2026-09-22 01:05)
-- D:/ZCODE/兒童YT頻道/腳本-S1-序章初遇-2026-09-21.md　(2026-09-22 19:07)
-- D:/ZCODE/兒童YT頻道/腳本-S1-序章初遇-定稿-工坊版-2026-09-22.md　(2026-09-22 20:05)
-- D:/ZCODE/兒童YT頻道/腳本-S1-序章初遇-工坊AI-2026-09-21.md　(2026-09-22 19:47)
-- D:/ZCODE/兒童YT頻道/腳本-S1-第02章-火氣變成超能力-定稿-2026-09-22.md　(2026-09-22 20:46)
+### D:/ZCODE/兒童YT頻道（10 個）
+- D:/ZCODE/兒童YT頻道/腳本-S1-第03章-不完美也可以-定稿-2026-09-23.md　(2026-09-23 01:00)
+- D:/ZCODE/兒童YT頻道/腳本-S1-第04章-家是最安全的地方-初稿-2026-09-23.md　(2026-09-23 02:24)
+- D:/ZCODE/兒童YT頻道/腳本-S1-第05章-把功課拆成小怪-初稿-2026-09-23.md　(2026-09-23 02:24)
+- D:/ZCODE/兒童YT頻道/腳本-S1-第06章-口袋裡的分享-初稿-2026-09-23.md　(2026-09-23 03:04)
+- D:/ZCODE/兒童YT頻道/腳本-S1-第07章-輸了可以再來-初稿-2026-09-23.md　(2026-09-23 02:26)
+- D:/ZCODE/兒童YT頻道/腳本-S1-第08章-專注的小魔法-初稿-2026-09-23.md　(2026-09-23 02:28)
+- D:/ZCODE/兒童YT頻道/腳本-S1-第09章-被看見的我-初稿-2026-09-23.md　(2026-09-23 02:28)
+- D:/ZCODE/兒童YT頻道/腳本-S1-第10章-求助不是軟弱-初稿-2026-09-23.md　(2026-09-23 02:29)
+- D:/ZCODE/兒童YT頻道/腳本-S1-第11章-合作比搶贏更厲害-初稿-2026-09-23.md　(2026-09-23 02:32)
+- D:/ZCODE/兒童YT頻道/腳本-S1-第12章-季終三神殿亮-初稿-2026-09-23.md　(2026-09-23 02:32)
 
 ## 4. 目前儀表板狀態（更新前）
-- guru｜股流Radar｜stage=Active｜progress=65％｜next=依上線測試計畫跑 Go/No-Go 驗收，把凱基即時行情從 PoC 接成正式資料源
+- guru｜股流Radar｜stage=Active｜progress=68％｜next=週四（9/24）交付測試員開跑驗收（Go/No-Go）；驗收後把凱基即時行情從 PoC 接成正式資料源
 - poker｜Poker Trainer｜stage=MVP｜progress=18％｜next=確認第一個訓練循環
 - ig-car｜中古車選品師 IG｜stage=Explore｜progress=15％｜next=設定顯示名稱／Bio／專業帳號／兩步驗證，產出首波 9 篇 Carousel
 - ig-travel｜旅遊選品師 IG｜stage=Idea｜progress=8％｜next=建立 IG 帳號（travel.curator_chris）並製作卡通地圖頭貼
-- yt-kids｜神仙童萌會（YT）｜stage=Idea｜progress=12％｜next=填全書大綱（工坊 outline），再接第 1 集腳本（三太子×情緒管理）
+- yt-kids｜神仙童萌會（YT）｜stage=Idea｜progress=16％｜next=依 12 章大綱續寫第 3 集起腳本，NotebookLM 逐章內容審核後進入錄製
 - 其他：ideas=2 tasks=26 notes=10 goals=6 timeline=10
