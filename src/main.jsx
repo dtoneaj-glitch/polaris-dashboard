@@ -188,7 +188,7 @@ function goalProgress(g, projects) {
 
 // ── 初始資料 ──────────────────────────────────────────
 const initialProjects = [
-  { id: 'guru', name: '股流Radar', description: '兩段式台股交易工作台：雷達（熱度四成分→熱區分層）＋ g研判（PA Facts Layer＋Coach Engine 條件式情境）。上週完成資料正確性修正（BFI82U／當日行情／除權息口徑／散戶多空比）、自選股遷 SQLite、資安強化與凱基 PoC；今日主軸＝上線測試備妥：新增測試員操作手冊與站長操作單，Cloudflare Tunnel 一鍵通道讓外部測試連得上，每日存檔排程統一週一至五 21:00（行情／法人／籌碼齊備時段）。', stage: 'Active', color: '#e76f51', progress: 68, lastUpdated: Date.now(), next: '週四（9/24）交付測試員開跑驗收（Go/No-Go）；驗收後把凱基即時行情從 PoC 接成正式資料源' },
+  { id: 'guru', name: '股流Radar', description: '兩段式台股交易工作台（雷達＋g研判）。今日主軸＝資料底盤加固：每日存檔排程改高可靠（沒登入也照跑、錯過自動補跑、休眠可喚醒），修正休市日誤標與上櫃漲跌幅口徑不一致，並新增歷史回補腳本；目標讓測試期間每天行情／籌碼穩定入庫不缺漏。', stage: 'Active', color: '#e76f51', progress: 70, lastUpdated: Date.now(), next: '確認排程連續數日自動入庫正常、補齊缺漏資料；驗收後把凱基即時行情從 PoC 接成正式資料源' },
   { id: 'poker', name: 'Poker Trainer', description: '讓決策練習變得有趣（獨立案子保留）。', stage: 'MVP', color: '#7087a3', progress: 18, lastUpdated: Date.now(), next: '確認第一個訓練循環' },
   { id: 'ig-car', name: '中古車選品師 IG', description: '客里斯｜中古車選品師（@uc.curator_chris）。核心：「不教你搶便宜車，教你避開買錯車。」服務：代客尋車／代拍／拍賣代銷（和運、行將 SAA）。漏斗：Reels/圖文 → 私訊關鍵字 → 買賣家問卷 → 1對1 諮詢簽約 → 拍場執行。現況：帳號已建，品牌／Bio／頭貼／Notion 計畫完成；待補顯示名稱、Bio、專業帳號、兩步驗證與首波 9 篇 Carousel（首發：買車痛點篇）。', stage: 'Explore', color: '#0066FF', progress: 15, next: '設定顯示名稱／Bio／專業帳號／兩步驗證，產出首波 9 篇 Carousel', lastUpdated: Date.now() },
   { id: 'ig-travel', name: '旅遊選品師 IG', description: '客里斯｜旅遊選品師（旅遊避雷針）。定位：旅遊界的選品店（Select Shop），替高時間價值客群做全台旅行社行程健檢與優劣對比。漏斗：Carousel/Reels → 留言關鍵字（國家名／健檢）→ DM 誘餌 → LINE OpenChat → 1對1 健檢 → 訂購分潤。現況：品牌、Bio、頭貼方向、九宮格架構、第 9 篇開店宣言皆已定稿，帳號尚未建立。', stage: 'Idea', color: '#2aa198', progress: 8, next: '建立 IG 帳號（travel.curator_chris）並製作卡通地圖頭貼', lastUpdated: Date.now() },

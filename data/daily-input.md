@@ -1,10 +1,16 @@
 # 北極星 自動收集輸入（給 AI 讀）
-> 產生時間：2026-09-27 23:51　範圍：最近 3 天
+> 產生時間：2026-09-28 23:50　範圍：最近 3 天
 > 用途：AI 讀完後，把各專案濃縮成「一行方向＋進度」，寫進 daily-brief.txt 或 worklog。
 
 ## 1. Git commit（自動）
 ### 股流Radar（guru）
-（近期無 commit）
+```
+9a0cddd | 2026-09-28 | fix(schedule): 排程改 S4U 登出也能執行; run-daily-archive.bat 修正退出碼(成功回 0 失敗回非 0)
+d57035e | 2026-09-28 | feat: 新增回補腳本 scripts/backfill-history.ts、匯出 fetchTwseDailyByDate、修正上櫃漲跌幅未走 deriveChange 的不一致
+9bc799f | 2026-09-28 | fix(taifex): findLatestTradingDate 改用回應內 Date（該端點忽略 date 參數），修正休市日被誤標有資料的問題（籌碼曾標成 09-28 休市日）
+3a83b9b | 2026-09-28 | fix(schedule): register-daily-task.ps1 改為自建任務 XML 匯入（避免 MismatchedPSTypeName 與解析問題），確實套用 StartWhenAvailable/WakeToRun/允許電池
+dbe9b2c | 2026-09-28 | fix(schedule): 排程可靠性 — 新增 register-daily-task.ps1(StartWhenAvailable 錯過補跑 / WakeToRun 喚醒 / 允許電池)，bat 改為薄包裝；避免電腦未開機時漏抓資料
+```
 
 ## 2. 來源工作檔／企劃（讀取重點）
 ### 進度總覽（跨專案總表）（all）
@@ -73,11 +79,16 @@
 ```
 
 - ⚠ 神仙童萌會 YT（yt-kids）找不到：C:/Users/amydo/OneDrive/桌面/內容自媒體/兒童神話動畫頻道運營企劃書.md
-## 3. 今日（2026-09-27 起）有異動的檔案
-### workspace（3 個）
-- C:/Users/amydo/.openclaw-autoclaw/workspace/.cluster/expert-playbook.md　(2026-09-27 22:58)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/.opencode/config.json　(2026-09-27 22:54)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/config/mcporter.json　(2026-09-27 22:55)
+## 3. 今日（2026-09-28 起）有異動的檔案
+### workspace（8 個）
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.cluster/expert-playbook.md　(2026-09-28 23:11)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20260928-101817-d578a2b4-b75-S__118693910.jpg　(2026-09-28 10:16)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.opencode/config.json　(2026-09-28 23:08)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/config/mcporter.json　(2026-09-28 23:08)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/弘川藏酒閣_dm30秒開場話術卡.html　(2026-09-28 10:20)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/弘川藏酒閣_加盟展精準客戶成交流程_討論稿_v0.1.html　(2026-09-28 02:04)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/弘川藏酒閣_加盟展精準客戶邀約流程_sop_v1.0.html　(2026-09-28 02:55)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/弘川藏酒閣_加盟展精準客戶邀約流程_sop_v1.1.html　(2026-09-28 03:13)
 ### D:/ZCODE/IG運營（0 個）
 （今日無異動）
 ### D:/ZCODE/兒童YT頻道（0 個）
