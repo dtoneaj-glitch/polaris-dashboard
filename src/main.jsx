@@ -255,8 +255,8 @@ const initialGoals = [
   { id: 'goal-2', title: '收齊 20 則股流決策筆記', description: '累積成判斷資料庫', targetDate: todayStr(11), progress: 30, color: '#6f8f78', projectId: 'guru' },
   { id: 'goal-3', title: 'SUNO 頻道連續 4 週每週一首', description: '先做出有辨識度的聲音，再談規模', targetDate: todayStr(8), progress: 25, color: '#6f8f78' },
   { id: 'goal-4', title: '找到第一個付費使用者', description: '股流 Radar 痛點驗證', targetDate: todayStr(25), progress: 5, color: '#7087a3', projectId: 'guru' },
-  { id: 'goal-ig-launch', title: '兩個 IG 帳號上線並發布首波內容', description: '中古車＋旅遊各完成帳號設定與首波 9 篇 Carousel', targetDate: todayStr(17), progress: 10, color: '#0066FF', projectId: 'ig-car' },
-  { id: 'goal-yt-launch', title: '神仙童萌會頻道上線（首季 12–15 支）', description: '完成頻道建置、Q 版神明 IP 與首季內容上架', targetDate: todayStr(125), progress: 5, color: '#b06bd6', projectId: 'yt-kids' }
+  { id: 'goal-ig-launch', title: '兩個 IG 帳號上線並發布首波內容', description: '中古車＋旅遊各完成帳號設定與首波 9 篇 Carousel', targetDate: todayStr(15), progress: 10, color: '#0066FF', projectId: 'ig-car' },
+  { id: 'goal-yt-launch', title: '神仙童萌會頻道上線（首季 12–15 支）', description: '完成頻道建置、Q 版神明 IP 與首季內容上架', targetDate: todayStr(123), progress: 5, color: '#b06bd6', projectId: 'yt-kids' }
 ]
 const navItems = [
   { id: 'home', label: 'Home', icon: Gauge },

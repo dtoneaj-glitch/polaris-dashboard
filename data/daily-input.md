@@ -1,5 +1,5 @@
 # 北極星 自動收集輸入（給 AI 讀）
-> 產生時間：2026-09-28 23:50　範圍：最近 3 天
+> 產生時間：2026-09-30 00:20　範圍：最近 3 天
 > 用途：AI 讀完後，把各專案濃縮成「一行方向＋進度」，寫進 daily-brief.txt 或 worklog。
 
 ## 1. Git commit（自動）
@@ -79,23 +79,18 @@ dbe9b2c | 2026-09-28 | fix(schedule): 排程可靠性 — 新增 register-daily-
 ```
 
 - ⚠ 神仙童萌會 YT（yt-kids）找不到：C:/Users/amydo/OneDrive/桌面/內容自媒體/兒童神話動畫頻道運營企劃書.md
-## 3. 今日（2026-09-28 起）有異動的檔案
-### workspace（8 個）
-- C:/Users/amydo/.openclaw-autoclaw/workspace/.cluster/expert-playbook.md　(2026-09-28 23:11)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20260928-101817-d578a2b4-b75-S__118693910.jpg　(2026-09-28 10:16)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/.opencode/config.json　(2026-09-28 23:08)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/config/mcporter.json　(2026-09-28 23:08)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/弘川藏酒閣_dm30秒開場話術卡.html　(2026-09-28 10:20)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/弘川藏酒閣_加盟展精準客戶成交流程_討論稿_v0.1.html　(2026-09-28 02:04)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/弘川藏酒閣_加盟展精準客戶邀約流程_sop_v1.0.html　(2026-09-28 02:55)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/弘川藏酒閣_加盟展精準客戶邀約流程_sop_v1.1.html　(2026-09-28 03:13)
+## 3. 今日（2026-09-30 起）有異動的檔案
+### workspace（3 個）
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.cluster/expert-playbook.md　(2026-09-30 00:17)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.opencode/config.json　(2026-09-30 00:14)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/config/mcporter.json　(2026-09-30 00:14)
 ### D:/ZCODE/IG運營（0 個）
 （今日無異動）
 ### D:/ZCODE/兒童YT頻道（0 個）
 （今日無異動）
 
 ## 4. 目前儀表板狀態（更新前）
-- guru｜股流Radar｜stage=Active｜progress=68％｜next=週四（9/24）交付測試員開跑驗收（Go/No-Go）；驗收後把凱基即時行情從 PoC 接成正式資料源
+- guru｜股流Radar｜stage=Active｜progress=70％｜next=確認排程連續數日自動入庫正常、補齊缺漏資料；驗收後把凱基即時行情從 PoC 接成正式資料源
 - poker｜Poker Trainer｜stage=MVP｜progress=18％｜next=確認第一個訓練循環
 - ig-car｜中古車選品師 IG｜stage=Explore｜progress=15％｜next=設定顯示名稱／Bio／專業帳號／兩步驗證，產出首波 9 篇 Carousel
 - ig-travel｜旅遊選品師 IG｜stage=Idea｜progress=8％｜next=建立 IG 帳號（travel.curator_chris）並製作卡通地圖頭貼
