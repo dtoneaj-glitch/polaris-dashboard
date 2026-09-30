@@ -1,5 +1,5 @@
 # 北極星 自動收集輸入（給 AI 讀）
-> 產生時間：2026-09-30 00:20　範圍：最近 3 天
+> 產生時間：2026-09-30 23:56　範圍：最近 3 天
 > 用途：AI 讀完後，把各專案濃縮成「一行方向＋進度」，寫進 daily-brief.txt 或 worklog。
 
 ## 1. Git commit（自動）
@@ -80,14 +80,31 @@ dbe9b2c | 2026-09-28 | fix(schedule): 排程可靠性 — 新增 register-daily-
 
 - ⚠ 神仙童萌會 YT（yt-kids）找不到：C:/Users/amydo/OneDrive/桌面/內容自媒體/兒童神話動畫頻道運營企劃書.md
 ## 3. 今日（2026-09-30 起）有異動的檔案
-### workspace（3 個）
-- C:/Users/amydo/.openclaw-autoclaw/workspace/.cluster/expert-playbook.md　(2026-09-30 00:17)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/.opencode/config.json　(2026-09-30 00:14)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/config/mcporter.json　(2026-09-30 00:14)
+### workspace（4 個）
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.cluster/expert-playbook.md　(2026-09-30 12:34)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.opencode/config.json　(2026-09-30 12:31)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/autoclaw-support-letter-2026-09-30.md　(2026-09-30 01:14)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/config/mcporter.json　(2026-09-30 12:31)
 ### D:/ZCODE/IG運營（0 個）
 （今日無異動）
-### D:/ZCODE/兒童YT頻道（0 個）
-（今日無異動）
+### D:/ZCODE/兒童YT頻道（17 個）
+- D:/ZCODE/兒童YT頻道/上架企劃-S1-13週週更規劃-2026-09-30.md　(2026-09-30 23:01)
+- D:/ZCODE/兒童YT頻道/取題對照表-100課題-2026-09-21.md　(2026-09-30 23:02)
+- D:/ZCODE/兒童YT頻道/口播稿-S1-第01章-火氣變成超能力-B版延長樣稿-2026-09-30.md　(2026-09-30 22:20)
+- D:/ZCODE/兒童YT頻道/口播稿-S1-第03章-家是最安全的地方-單聲道示範-2026-09-30.md　(2026-09-30 18:28)
+- D:/ZCODE/兒童YT頻道/口播稿-轉換規範-單聲道版.md　(2026-09-30 02:26)
+- D:/ZCODE/兒童YT頻道/腳本-S1-序章初遇-定稿-工坊版-2026-09-22.md　(2026-09-30 16:15)
+- D:/ZCODE/兒童YT頻道/腳本-S1-第01章-火氣變成超能力-定稿-2026-09-22.md　(2026-09-30 18:29)
+- D:/ZCODE/兒童YT頻道/腳本-S1-第02章-不完美也可以-定稿-2026-09-23.md　(2026-09-30 22:19)
+- D:/ZCODE/兒童YT頻道/腳本-S1-第03章-家是最安全的地方-初稿-2026-09-23.md　(2026-09-30 22:19)
+- D:/ZCODE/兒童YT頻道/腳本-S1-第04章-把功課拆成小怪-初稿-2026-09-23.md　(2026-09-30 22:19)
+- D:/ZCODE/兒童YT頻道/腳本-S1-第05章-口袋裡的分享-初稿-2026-09-23.md　(2026-09-30 22:19)
+- D:/ZCODE/兒童YT頻道/腳本-S1-第06章-輸了可以再來-初稿-2026-09-23.md　(2026-09-30 22:19)
+- D:/ZCODE/兒童YT頻道/腳本-S1-第07章-專注的小魔法-初稿-2026-09-23.md　(2026-09-30 22:19)
+- D:/ZCODE/兒童YT頻道/腳本-S1-第08章-被看見的我-初稿-2026-09-23.md　(2026-09-30 22:19)
+- D:/ZCODE/兒童YT頻道/腳本-S1-第09章-求助不是軟弱-初稿-2026-09-23.md　(2026-09-30 22:19)
+- D:/ZCODE/兒童YT頻道/腳本-S1-第10章-合作比搶贏更厲害-初稿-2026-09-23.md　(2026-09-30 18:28)
+- D:/ZCODE/兒童YT頻道/腳本-S1-第11章-季終三神殿亮-初稿-2026-09-23.md　(2026-09-30 18:28)
 
 ## 4. 目前儀表板狀態（更新前）
 - guru｜股流Radar｜stage=Active｜progress=70％｜next=確認排程連續數日自動入庫正常、補齊缺漏資料；驗收後把凱基即時行情從 PoC 接成正式資料源

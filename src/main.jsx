@@ -192,7 +192,7 @@ const initialProjects = [
   { id: 'poker', name: 'Poker Trainer', description: '讓決策練習變得有趣（獨立案子保留）。', stage: 'MVP', color: '#7087a3', progress: 18, lastUpdated: Date.now(), next: '確認第一個訓練循環' },
   { id: 'ig-car', name: '中古車選品師 IG', description: '客里斯｜中古車選品師（@uc.curator_chris）。核心：「不教你搶便宜車，教你避開買錯車。」服務：代客尋車／代拍／拍賣代銷（和運、行將 SAA）。漏斗：Reels/圖文 → 私訊關鍵字 → 買賣家問卷 → 1對1 諮詢簽約 → 拍場執行。現況：帳號已建，品牌／Bio／頭貼／Notion 計畫完成；待補顯示名稱、Bio、專業帳號、兩步驗證與首波 9 篇 Carousel（首發：買車痛點篇）。', stage: 'Explore', color: '#0066FF', progress: 15, next: '設定顯示名稱／Bio／專業帳號／兩步驗證，產出首波 9 篇 Carousel', lastUpdated: Date.now() },
   { id: 'ig-travel', name: '旅遊選品師 IG', description: '客里斯｜旅遊選品師（旅遊避雷針）。定位：旅遊界的選品店（Select Shop），替高時間價值客群做全台旅行社行程健檢與優劣對比。漏斗：Carousel/Reels → 留言關鍵字（國家名／健檢）→ DM 誘餌 → LINE OpenChat → 1對1 健檢 → 訂購分潤。現況：品牌、Bio、頭貼方向、九宮格架構、第 9 篇開店宣言皆已定稿，帳號尚未建立。', stage: 'Idea', color: '#2aa198', progress: 8, next: '建立 IG 帳號（travel.curator_chris）並製作卡通地圖頭貼', lastUpdated: Date.now() },
-  { id: 'yt-kids', name: '神仙童萌會（YT）', description: '兒童神話動畫《神仙童萌會》（4–12 歲品格教育、去宗教化；S1 萌神：三太子／土地公／文昌帝君），產線定位「有聲書先行、動畫節錄」。S1 第一季口白腳本全數到齊：第 3 集《不完美也可以》今日定稿，第 4–12 集初稿（《家是最安全的地方》～《季終·三神殿亮》）一次補齊，全季沿用慢速睡前語速與三段式（現代困境→神話典故→現代感悟）格式。', stage: 'Idea', color: '#b06bd6', progress: 28, next: '把第 4–12 章初稿潤成定稿，NotebookLM 逐章內容審核後，進入配音錄製與角色定裝／分鏡', lastUpdated: Date.now() }
+  { id: 'yt-kids', name: '神仙童萌會（YT）', description: '兒童神話動畫《神仙童萌會》（4–12 歲品格教育、去宗教化；S1 萌神：三太子／土地公／文昌帝君），產線定位「有聲書先行、動畫節錄」。今日定案 S1 上架企劃 v2：13 週 × 每週 2 正片＋1 口訣短影音（26 集）；並啟動口播稿產線——單聲道轉換規範建立、第 1 集 B 版 20 分鐘睡前延長樣稿與第 3 章《家是最安全的地方》示範稿完成。', stage: 'Idea', color: '#b06bd6', progress: 32, next: '10 月衝刺第一批：批次轉換第 3–10 章 B 版口播延長稿、新章第 11–14 章腳本；20 分鐘 B 版格式定案後開始 TTS 錄音', lastUpdated: Date.now() }
 ]
 const initialIdeas = [
   { id: 'idea-2', title: '法人買賣超追蹤', note: '整合外資、投信、自營商的進出場訊號，建立權責歸屬圖。', type: '系統', score: 85, created: '昨天', ready: true },
@@ -255,8 +255,8 @@ const initialGoals = [
   { id: 'goal-2', title: '收齊 20 則股流決策筆記', description: '累積成判斷資料庫', targetDate: todayStr(11), progress: 30, color: '#6f8f78', projectId: 'guru' },
   { id: 'goal-3', title: 'SUNO 頻道連續 4 週每週一首', description: '先做出有辨識度的聲音，再談規模', targetDate: todayStr(8), progress: 25, color: '#6f8f78' },
   { id: 'goal-4', title: '找到第一個付費使用者', description: '股流 Radar 痛點驗證', targetDate: todayStr(25), progress: 5, color: '#7087a3', projectId: 'guru' },
-  { id: 'goal-ig-launch', title: '兩個 IG 帳號上線並發布首波內容', description: '中古車＋旅遊各完成帳號設定與首波 9 篇 Carousel', targetDate: todayStr(15), progress: 10, color: '#0066FF', projectId: 'ig-car' },
-  { id: 'goal-yt-launch', title: '神仙童萌會頻道上線（首季 12–15 支）', description: '完成頻道建置、Q 版神明 IP 與首季內容上架', targetDate: todayStr(123), progress: 5, color: '#b06bd6', projectId: 'yt-kids' }
+  { id: 'goal-ig-launch', title: '兩個 IG 帳號上線並發布首波內容', description: '中古車＋旅遊各完成帳號設定與首波 9 篇 Carousel', targetDate: todayStr(14), progress: 10, color: '#0066FF', projectId: 'ig-car' },
+  { id: 'goal-yt-launch', title: '神仙童萌會頻道上線（首季 12–15 支）', description: '完成頻道建置、Q 版神明 IP 與首季內容上架', targetDate: todayStr(122), progress: 5, color: '#b06bd6', projectId: 'yt-kids' }
 ]
 const navItems = [
   { id: 'home', label: 'Home', icon: Gauge },
