@@ -42,6 +42,8 @@ const SCAN_DIRS = [
 ]
 const EXCLUDE = /node_modules|\\\.git\\|\.openclaw\\tmp|\.openclaw\\media|\\dist\\/
 
+const INBOX = 'D:/ZCODE/北極星收件匣'
+
 const NOW = Date.now()
 const today0 = new Date(); today0.setHours(0, 0, 0, 0)
 const sinceMs = NOW - DAYS * 86400000
@@ -74,6 +76,26 @@ L.push(`> 產生時間：${fmt(new Date())}　範圍：最近 ${DAYS} 天`)
 L.push(`> 用途：AI 讀完後，把各專案濃縮成「一行方向＋進度」，寫進 daily-brief.txt 或 worklog。`)
 L.push('')
 
+// 0) 北極星收件匣（其他 AI／外部工具交辦）
+L.push(`## 0. 北極星收件匣（其他 AI 交辦；資料夾：${INBOX}）`)
+if (exists(INBOX)) {
+  const knownIds = (() => { try { const st = JSON.parse(fs.readFileSync(STATE, 'utf-8')); return new Set((st.projects || []).map(p => p.id)) } catch { return new Set() } })()
+  const inboxFiles = fs.readdirSync(INBOX).filter(f => /\.md$/i.test(f) && !f.startsWith('_'))
+  const recentInbox = inboxFiles.map(f => ({ f, m: mtime(resolve(INBOX, f)) })).filter(x => x.m && x.m.getTime() >= sinceMs).sort((a, b) => a.m - b.m)
+  if (!recentInbox.length) L.push(`- （近 ${DAYS} 天沒有新檔案）`)
+  for (const x of recentInbox) {
+    let raw = ''
+    try { raw = fs.readFileSync(resolve(INBOX, x.f), 'utf-8').trim() } catch {}
+    const idm = raw.match(/id\s*[：:=]\s*([A-Za-z0-9_-]+)/) || x.f.match(/^([A-Za-z0-9_-]+?)-20\d{2}/)
+    const pid = idm ? idm[1] : ''
+    const isNew = pid && !knownIds.has(pid)
+    const tag = isNew ? `　🆕 未註冊的新專案 → 請在 daily-brief 寫一行：${pid}: <進度>% | <摘要> | <下一步> | name=<名稱> | stage=<階段>（儀表板會自動新增）` : ''
+    L.push(`### ${x.f}（${fmt(x.m)}）${tag}`)
+    if (raw) L.push(raw)
+    L.push('')
+  }
+} else { L.push(`- ⚠ 找不到收件匣資料夾：${INBOX}`) }
+L.push('')
 // 1) Git commits
 L.push(`## 1. Git commit（自動）`)
 let anyRepo = false

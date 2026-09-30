@@ -16,7 +16,7 @@
  *   node scripts/daily-report.js --no-push    # 更新 + build，但不 commit / push
  *
  * daily-brief.txt 每行格式：
- *   <專案id>: <進度%> | <方向摘要> | <下一步>
+ *   <專案id>: <進度%> | <方向摘要> | <下一步>　（可選：| name=<名稱> | stage=<階段>；新專案自動註冊用）
  *   - 「#」開頭或空行會忽略
  *   - 任一欄留空 = 沿用目前值（不會覆蓋）
  */
@@ -58,11 +58,22 @@ for (const raw of lines) {
   const m = line.match(/^([\w-]+)\s*[:：]\s*(.*)$/)
   if (!m) { console.warn(`⚠ 略過無法解析的行：${line}`); continue }
   const id = m[1]
-  const [progressRaw = '', note = '', next = ''] = m[2].split('|').map(s => s.trim())
+  const parts = m[2].split('|').map(s => s.trim())
+  const [progressRaw = '', note = '', next = ''] = parts
+  let nameToken = '', stageToken = ''
+  for (const part of parts.slice(3)) {
+    const mn = part.match(/^name\s*[:=]\s*(.+)$/i)
+    if (mn) nameToken = mn[1].trim()
+    const ms = part.match(/^stage\s*[:=]\s*(.+)$/i)
+    if (ms) stageToken = ms[1].trim()
+  }
   const cur = byId[id] || {}
   const entry = { id }
   if (cur.name) entry.name = cur.name
+  else if (nameToken) entry.name = nameToken
+  else entry.name = id
   if (cur.stage) entry.stage = cur.stage
+  else if (stageToken) entry.stage = stageToken
   if (cur.color) entry.color = cur.color
   const prog = parseInt(String(progressRaw).replace(/[^\d]/g, ''), 10)
   if (!Number.isNaN(prog)) entry.progress = prog
