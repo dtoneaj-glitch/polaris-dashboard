@@ -192,7 +192,8 @@ const initialProjects = [
   { id: 'poker', name: 'Poker Trainer', description: '讓決策練習變得有趣（獨立案子保留）。', stage: 'MVP', color: '#7087a3', progress: 18, lastUpdated: Date.now(), next: '確認第一個訓練循環' },
   { id: 'ig-car', name: '中古車選品師 IG', description: '客里斯｜中古車選品師（@uc.curator_chris）。核心：「不教你搶便宜車，教你避開買錯車。」服務：代客尋車／代拍／拍賣代銷（和運、行將 SAA）。漏斗：Reels/圖文 → 私訊關鍵字 → 買賣家問卷 → 1對1 諮詢簽約 → 拍場執行。現況：帳號已建，品牌／Bio／頭貼／Notion 計畫完成；待補顯示名稱、Bio、專業帳號、兩步驗證與首波 9 篇 Carousel（首發：買車痛點篇）。', stage: 'Explore', color: '#0066FF', progress: 15, next: '設定顯示名稱／Bio／專業帳號／兩步驗證，產出首波 9 篇 Carousel', lastUpdated: Date.now() },
   { id: 'ig-travel', name: '旅遊選品師 IG', description: '客里斯｜旅遊選品師（旅遊避雷針）。定位：旅遊界的選品店（Select Shop），替高時間價值客群做全台旅行社行程健檢與優劣對比。漏斗：Carousel/Reels → 留言關鍵字（國家名／健檢）→ DM 誘餌 → LINE OpenChat → 1對1 健檢 → 訂購分潤。現況：品牌、Bio、頭貼方向、九宮格架構、第 9 篇開店宣言皆已定稿，帳號尚未建立。', stage: 'Idea', color: '#2aa198', progress: 8, next: '建立 IG 帳號（travel.curator_chris）並製作卡通地圖頭貼', lastUpdated: Date.now() },
-  { id: 'yt-kids', name: '神仙童萌會（YT）', description: '兒童神話動畫《神仙童萌會》（4–12 歲品格教育、去宗教化；S1 萌神：三太子／土地公／文昌帝君），產線定位「有聲書先行、動畫節錄」。今日定案 S1 上架企劃 v2：13 週 × 每週 2 正片＋1 口訣短影音（26 集）；並啟動口播稿產線——單聲道轉換規範建立、第 1 集 B 版 20 分鐘睡前延長樣稿與第 3 章《家是最安全的地方》示範稿完成。', stage: 'Idea', color: '#b06bd6', progress: 32, next: '10 月衝刺第一批：批次轉換第 3–10 章 B 版口播延長稿、新章第 11–14 章腳本；20 分鐘 B 版格式定案後開始 TTS 錄音', lastUpdated: Date.now() }
+  { id: 'yt-kids', name: '神仙童萌會（YT）', description: '兒童神話動畫《神仙童萌會》（4–12 歲品格教育、去宗教化；S1 萌神：三太子／土地公／文昌帝君），產線定位「有聲書先行、動畫節錄」。今日定案 S1 上架企劃 v2：13 週 × 每週 2 正片＋1 口訣短影音（26 集）；並啟動口播稿產線——單聲道轉換規範建立、第 1 集 B 版 20 分鐘睡前延長樣稿與第 3 章《家是最安全的地方》示範稿完成。', stage: 'Idea', color: '#b06bd6', progress: 32, next: '10 月衝刺第一批：批次轉換第 3–10 章 B 版口播延長稿、新章第 11–14 章腳本；20 分鐘 B 版格式定案後開始 TTS 錄音', lastUpdated: Date.now() },
+  { id: 'jiuqu', name: '咻揪趣', description: '把社群收藏變成真的會去的行程：貼上 IG／Threads／TikTok 連結或截圖 → 自動解析打點 → 親友實測避雷 → 一鍵排行程；含管理後台、PWA 分享面板與 iOS 捷徑。MVP 已完成（v0.31.0）：端到端驗收 30/30、邀請連結、截圖 OCR、LINE 登入程式端；部署檔（Docker／Caddy／systemd）齊備。', stage: 'MVP', color: '#C96442', progress: 60, lastUpdated: Date.now(), next: '選定主機平台＋網域即可部署上線（部署後跑 preflight＋smoke）；可選配 LLM／Places 金鑰提升解析；LINE 登入待填 Channel Secret' }
 ]
 const initialIdeas = [
   { id: 'idea-2', title: '法人買賣超追蹤', note: '整合外資、投信、自營商的進出場訊號，建立權責歸屬圖。', type: '系統', score: 85, created: '昨天', ready: true },
@@ -224,7 +225,9 @@ const initialTasks = [
   { id: 'task-ytkids-1', title: '建置 YouTube 頻道（名稱／簡介／去宗教化聲明）', projectId: 'yt-kids', due: '', priority: '中', done: false, createdAt: Date.now(), updatedAt: Date.now() },
   { id: 'task-ytkids-2', title: '設計 Q 版神明 IP（三太子／文昌／關公／媽祖／土地公）＋主角設定', projectId: 'yt-kids', due: '', priority: '中', done: false, createdAt: Date.now(), updatedAt: Date.now() },
   { id: 'task-ytkids-3', title: '產出第 1 集腳本＋分鏡（三太子・情緒管理）', projectId: 'yt-kids', due: '', priority: '高', done: false, createdAt: Date.now(), updatedAt: Date.now() },
-  { id: 'task-ytkids-4', title: '規劃首季 12–15 支影片上架排程與 Shorts 單元', projectId: 'yt-kids', due: '', priority: '低', done: false, createdAt: Date.now(), updatedAt: Date.now() }
+  { id: 'task-ytkids-4', title: '規劃首季 12–15 支影片上架排程與 Shorts 單元', projectId: 'yt-kids', due: '', priority: '低', done: false, createdAt: Date.now(), updatedAt: Date.now() },
+  { id: 'task-jiuqu-1', title: '選定主機平台＋網域（咻揪趣上線前置）', projectId: 'jiuqu', due: '', priority: '高', done: false, createdAt: Date.now(), updatedAt: Date.now() },
+  { id: 'task-jiuqu-2', title: '上線後手機實測：從 IG 分享一則貼文 → 確認圖釘落地', projectId: 'jiuqu', due: '', priority: '中', done: false, createdAt: Date.now(), updatedAt: Date.now() }
 ]
 const initialNotes = [
   { id: 'note-1', title: '股流Radar 核心概念', content: '加入群組的主流、蓄勢、乘流、靜流，整個產品語彙統一在水流宇宙，使用者學一次就懂。', tags: ['股流', '概念'], projectId: 'guru', createdAt: Date.now() - 1 * DAY },
@@ -236,10 +239,12 @@ const initialNotes = [
   { id: 'note-igcar-1', title: '中古車選品師 IG：品牌與商業模式', content: '品牌「客里斯｜中古車選品師」，內容主軸「不教你搶便宜車；教你避開買錯車」。收費：代拍固定服務費 1.5~2 萬；代銷服務費＋超額分潤；意向定金 3 萬（流標全退）。色調走方案三科技數據感（深灰 #1A1A1A＋冰川藍 #0066FF）。首發破冰：買車痛點篇。暖機規則：每天≤2則、不大量追蹤按讚、固定裝置。', tags: ['IG', '中古車', '品牌'], projectId: 'ig-car', createdAt: Date.now() },
   { id: 'note-igtravel-1', title: '旅遊選品師 IG：品牌與漏斗', content: '品牌「客里斯｜旅遊選品師（旅遊避雷針）」，核心是旅遊界的選品店。服務：行程健檢（優劣對比、隱藏成本拆解）＋選品推薦＋跟團訂購。客群：高時間價值上班族、怕踩雷跟團族、質感旅遊者。首波 9 篇全 Carousel（7-9 認識我 → 4-6 信任我 → 1-3 跟著我買）。', tags: ['IG', '旅遊', '品牌'], projectId: 'ig-travel', createdAt: Date.now() },
   { id: 'note-ytkids-1', title: '神仙童萌會 YT：企劃重點', content: '兒童神話動畫《神明小夥伴》。單集 6–8 分鐘三段式：現代困境 → 神話典故 → 現代感悟。首季神明對應議題：三太子（情緒管理）、文昌帝君（誠實累積）、關聖帝君（誠信守諾）、天上聖母（包容同理）、福德正神（珍惜感恩）。變現軌道：AdSense → 故事精選包（節慶包／品格專題包／教學延伸包）→ 品牌與政府專案 → 出版與 IP 授權。去宗教化定位為護城河。', tags: ['YT', '兒童', '動畫'], projectId: 'yt-kids', createdAt: Date.now() },
-  { id: 'note-polaris-track-1', title: '北極星追蹤範圍定案（2026-09-17）', content: '北極星改為追蹤真實運營中的專案：股流Radar、中古車選品師 IG、旅遊選品師 IG、神仙童萌會 YT。Poker Trainer 為獨立案子保留；SUNO Music 移入靈感庫。IG 兩帳以 D:\ZCODE\IG運營 的工作檔為上下文；YT 企劃在 OneDrive\桌面\內容自媒體\兒童神話動畫頻道運營企劃書.md。', tags: ['北極星', '決策'], projectId: '', createdAt: Date.now() }
+  { id: 'note-polaris-track-1', title: '北極星追蹤範圍定案（2026-09-17）', content: '北極星改為追蹤真實運營中的專案：股流Radar、中古車選品師 IG、旅遊選品師 IG、神仙童萌會 YT。Poker Trainer 為獨立案子保留；SUNO Music 移入靈感庫。IG 兩帳以 D:\ZCODE\IG運營 的工作檔為上下文；YT 企劃在 OneDrive\桌面\內容自媒體\兒童神話動畫頻道運營企劃書.md。', tags: ['北極星', '決策'], projectId: '', createdAt: Date.now() },
+  { id: 'note-polaris-track-2', title: '北極星追蹤擴編（2026-10-01）：咻揪趣入列', content: '北極星新增第 6 個追蹤專案：咻揪趣（mapsync-mvp，產品名取自台語「揪朋友一起去」＋多一點趣味）。專案位於 workspace/projects/mapsync-mvp；每日收集器已納入其 git 記錄與 README。', tags: ['北極星', '決策'], projectId: '', createdAt: Date.now() }
 ]
 const initialTimelineEvents = [
   { id: 'ev-ytkids-1', date: todayStr(-2), title: '神仙童萌會 YT 運營企劃書完成', type: 'milestone', projectId: 'yt-kids', color: '#b06bd6', createdAt: Date.now() },
+  { id: 'ev-jiuqu-1', date: todayStr(-7), title: '咻揪趣 MVP 完成（v0.31.0）：邀請連結、截圖 OCR、LINE 登入程式端', type: 'milestone', projectId: 'jiuqu', color: '#C96442' },
   { id: 'ev-20260911', date: todayStr(-2), title: 'Update: 大盤儀表板/大盤籌碼頁重新整合真實資料、水池成本價、觀察股水池命名、籌碼分歧引擎、VIX判讀等功能', type: 'milestone', projectId: 'guru', color: '#e76f51', createdAt: Date.now() },
   { id: 'ev-6', date: todayStr(-6), type: 'milestone', title: '股流 Radar 整體架構規格書完成（Architecture v1.0 + 系統規格 + 策略 v2）', projectId: 'guru', color: '#e76f51' },
   { id: 'ev-5', date: todayStr(-8), type: 'milestone', title: 'SUNO 第一首歌完成 demo', projectId: '', color: '#6f8f78' },

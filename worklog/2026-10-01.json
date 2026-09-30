@@ -32,11 +32,11 @@
     {
       "id": "yt-kids",
       "name": "神仙童萌會（YT）",
-      "stage": "Idea",
+      "stage": "MVP",
       "color": "#b06bd6",
-      "progress": 32,
-      "description": "兒童神話動畫《神仙童萌會》（4–12 歲品格教育、去宗教化；S1 萌神：三太子／土地公／文昌帝君），產線定位「有聲書先行、動畫節錄」。今日定案 S1 上架企劃 v2：13 週 × 每週 2 正片＋1 口訣短影音（26 集）；並啟動口播稿產線——單聲道轉換規範建立、第 1 集 B 版 20 分鐘睡前延長樣稿與第 3 章《家是最安全的地方》示範稿完成。",
-      "next": "10 月衝刺第一批：批次轉換第 3–10 章 B 版口播延長稿、新章第 11–14 章腳本；20 分鐘 B 版格式定案後開始 TTS 錄音"
+      "progress": 35,
+      "description": "兒童神話動畫《神仙童萌會》（4–12 歲、去宗教化；S1 三萌神：三太子／土地公／文昌帝君，產線＝有聲書先行、動畫節錄）。內容產線已就緒：S1 擴編 26 集、100 課題池＋8 域＋D9、既有 12 章腳本（序章/01/02 定稿、03–11 初稿）、B 版 20 分睡前口播稿模板（第 01 章樣稿＋第 03 章單聲道示範）。2026-10-01 定案：表定開播 10/7；YT 頻道、相關適合平台（Podcast/有聲書通路）與頻道主視覺（Logo/banner/縮圖/神明角色圖）皆尚未進行。",
+      "next": "10/7 開播衝刺：①建立 YT 頻道＋主視覺 ②開 Podcast/有聲書通路（Apple/Spotify/KKBOX 經 Firstory/SoundOn）③批次轉 B 版延長稿（第 3–10 章）＋新章 11–14 腳本 ④B 版格式定案後 TTS 錄音。三項未動＝開播瓶頸，需 10/5 前完成"
     },
     {
       "id": "poker",
@@ -46,6 +46,76 @@
       "progress": 18,
       "description": "讓決策練習變得有趣（獨立案子保留）。",
       "next": "確認第一個訓練循環"
+    }
+  ],
+  "goals": [
+    {
+      "id": "goal-yt-launch",
+      "title": "神仙童萌會首季開播（表定 10/7）",
+      "description": "內容產線已就緒（S1 26 集企劃、12 章腳本、B 版口播模板）；但 YT 頻道、相關適合平台（Podcast/有聲書通路）、頻道主視覺（Logo/banner/縮圖/神明角色圖）三者尚未進行，為 10/7 開播關鍵瓶頸。",
+      "targetDate": "2026-10-07",
+      "progress": 10
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-ytkids-1",
+      "title": "建置 YouTube 頻道（名稱／簡介／去宗教化聲明／兩步驗證）",
+      "projectId": "yt-kids",
+      "due": "2026-10-05",
+      "priority": "高",
+      "done": false
+    },
+    {
+      "id": "task-ytkids-4",
+      "title": "規劃首季上架排程與 Shorts 單元（13 週 × 2 正片＋週日口訣短影音）",
+      "projectId": "yt-kids",
+      "due": "2026-09-30",
+      "priority": "中",
+      "done": true
+    },
+    {
+      "id": "task-ytkids-5",
+      "title": "開立相關適合平台：Podcast/有聲書通路（Apple/Spotify/KKBOX 經 Firstory/SoundOn）＋YT 有聲繪本",
+      "projectId": "yt-kids",
+      "due": "2026-10-05",
+      "priority": "高",
+      "done": false
+    },
+    {
+      "id": "task-ytkids-6",
+      "title": "產出頻道主視覺：Logo／Banner／縮圖風格／三萌神＋Q比B寶角色圖（人物角色資料夾仍空）",
+      "projectId": "yt-kids",
+      "due": "2026-10-05",
+      "priority": "高",
+      "done": false
+    },
+    {
+      "id": "task-ytkids-7",
+      "title": "10 月衝刺第一批：批次轉第 3–10 章 B 版口播延長稿＋新章 11–14 章腳本",
+      "projectId": "yt-kids",
+      "due": "2026-10-05",
+      "priority": "高",
+      "done": false
+    }
+  ],
+  "notes": [
+    {
+      "id": "note-ytkids-107",
+      "title": "神仙童萌會：表定開播 10/7（2026-10-01 定案）",
+      "content": "內容產線已就緒：S1 擴編 26 集、100 課題池＋8 域＋D9、既有 12 章腳本（序章/01/02 定稿、03–11 初稿）、B 版 20 分睡前口播稿模板（第 01 章樣稿、第 03 章單聲道示範）。但開播前三項未動：①YT 頻道未建立 ②相關適合平台（Podcast/有聲書通路）未開 ③頻道主視覺（Logo/banner/縮圖/神明角色圖）未做。開播日 10/7 距現在僅 6 天，這三項為關鍵瓶頸，須 10/5 前完成。",
+      "tags": ["YT", "兒童", "開播", "神仙童萌會"],
+      "projectId": "yt-kids"
+    }
+  ],
+  "timelineEvents": [
+    {
+      "id": "ev-ytkids-107",
+      "date": "2026-10-01",
+      "title": "神仙童萌會 定案表定開播 10/7；YT 頻道／適合平台／主視覺 三項尚未進行",
+      "type": "note",
+      "projectId": "yt-kids",
+      "color": "#b06bd6"
     }
   ]
 }

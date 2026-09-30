@@ -25,13 +25,15 @@ const DAYS = dArg ? (parseInt((dArg.split(/[= ]/)[1] || '3'), 10) || 3) : 3
 // ── 來源設定（要加專案就改這裡）─────────────────────────
 const REPOS = [
   { id: 'guru', name: '股流Radar', path: 'D:/個人台/股流Radar/guliu-radar-local' },
+  { id: 'jiuqu', name: '咻揪趣', path: 'C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp' },
 ]
 const DOCS = [
     { id: 'all', name: '進度總覽（跨專案總表）', path: 'D:/ZCODE/專案儀錶版/polaris-dashboard/進度總覽.md' },
 { id: 'ig-car',    name: '中古車選品師 IG', path: 'D:/ZCODE/IG運營/中古車選品師IG.md' },
   { id: 'ig-travel', name: '旅遊選品師 IG',   path: 'D:/ZCODE/IG運營/旅遊選品師IG.md' },
   { id: 'ig-all',    name: 'IG 進度總覽',     path: 'D:/ZCODE/IG運營/進度總覽.md' },
-  { id: 'yt-kids',   name: '神仙童萌會 YT',   path: 'C:/Users/amydo/OneDrive/桌面/內容自媒體/兒童神話動畫頻道運營企劃書.md' },
+  { id: 'yt-kids',   name: '神仙童萌會 YT',   path: 'D:/ZCODE/兒童YT頻道/上架企劃-S1-13週週更規劃-2026-09-30.md' },
+  { id: 'jiuqu', name: '咻揪趣 README', path: 'C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/README.md' },
 ]
 const SCAN_DIRS = [
   { label: 'workspace', path: 'C:/Users/amydo/.openclaw-autoclaw/workspace' },
