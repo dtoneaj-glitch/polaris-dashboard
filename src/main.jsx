@@ -280,17 +280,52 @@ const navItems = [
 
 const defaultSettings = { userName: 'Chris' }
 
+// ── 種子優先自動合併：最新進度自動流入、保留本地新增與勾選（開啟即最新，不需手動重置）──
+function mergeWithSeed(saved) {
+  const byId = (list) => { const m = new Map(); (list || []).forEach((x) => { if (x && x.id) m.set(x.id, x) }); return m }
+  const union = (seedList, localList) => {
+    const localMap = byId(localList)
+    const seedIds = new Set()
+    const out = (seedList || []).map((s) => { seedIds.add(s.id); const l = localMap.get(s.id); return l ? { ...l, ...s } : { ...s } })
+    ;(localList || []).forEach((l) => { if (!seedIds.has(l.id)) out.push(l) })
+    return out
+  }
+  const mergeTasks = (seedList, localList) => {
+    const localMap = byId(localList)
+    const seedIds = new Set()
+    const out = (seedList || []).map((s) => {
+      seedIds.add(s.id)
+      const l = localMap.get(s.id)
+      if (!l) return { ...s }
+      const done = !!(s.done || l.done)
+      return { ...l, ...s, done, completedAt: done ? (l.completedAt || s.completedAt) : undefined }
+    })
+    ;(localList || []).forEach((l) => { if (!seedIds.has(l.id)) out.push(l) })
+    return out
+  }
+  return {
+    ...saved,
+    projects: union(initialProjects, saved.projects),
+    ideas: union(initialIdeas, saved.ideas),
+    tasks: mergeTasks(initialTasks, saved.tasks),
+    notes: union(initialNotes, saved.notes),
+    timelineEvents: union(initialTimelineEvents, saved.timelineEvents),
+    goals: union(initialGoals, saved.goals),
+  }
+}
+
 function loadState() {
   try {
     const saved = JSON.parse(localStorage.getItem(STORAGE_KEY))
     if (saved?.projects && saved?.ideas && saved?.tasks) {
+      const merged = mergeWithSeed(saved)
       return {
         settings: defaultSettings,
-        ...saved,
+        ...merged,
         reviews: saved.reviews || [],
         snapshots: saved.snapshots || [],
-        tasks: saved.tasks.map((t) => ({ ...t, due: migrateDue(t.due) })),
-        projects: saved.projects.map((p) => ({ ...p, lastUpdated: migrateTs(p.lastUpdated ?? p.lastUpdate) })),
+        tasks: merged.tasks.map((t) => ({ ...t, due: migrateDue(t.due) })),
+        projects: merged.projects.map((p) => ({ ...p, lastUpdated: migrateTs(p.lastUpdated ?? p.lastUpdate) })),
       }
     }
   } catch {}
