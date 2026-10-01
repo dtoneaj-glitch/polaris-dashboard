@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-02",
+  "source": "daily-brief",
+  "projects": [
+    {
+      "id": "guru",
+      "name": "股流Radar",
+      "stage": "Active",
+      "color": "#e76f51",
+      "progress": 72,
+      "description": "兩段式台股交易工作台（雷達＋g研判）。資料底盤加固後進入實測：09-29、09-30 每日存檔準時入庫；10-01 晚間未開機漏跑、10-02 凌晨自動補跑成功，連續數日行情／籌碼入庫不缺漏。",
+      "next": "持續觀察自動入庫與補跑穩定、補齊歷史缺漏；驗收後把凱基即時行情從 PoC 接成正式資料源"
+    },
+    {
+      "id": "jiuqu",
+      "name": "咻揪趣",
+      "stage": "MVP",
+      "color": "#C96442",
+      "progress": 60,
+      "description": "把社群收藏變成真的會去的行程：貼上 IG／Threads／TikTok 連結或截圖 → 自動解析打點 → 親友實測避雷 → 一鍵排行程；含管理後台、PWA 分享面板與 iOS 捷徑。MVP 已完成（v0.31.0）：端到端驗收 30/30、邀請連結、截圖 OCR、LINE 登入程式端；部署檔（Docker／Caddy／systemd）齊備。",
+      "next": "選定主機平台＋網域即可部署上線（部署後跑 preflight＋smoke）；可選配 LLM／Places 金鑰提升解析；LINE 登入待填 Channel Secret"
+    },
+    {
+      "id": "ig-car",
+      "name": "中古車選品師 IG",
+      "stage": "Explore",
+      "color": "#0066FF",
+      "progress": 15,
+      "description": "客里斯｜中古車選品師（@uc.curator_chris）。核心：「不教你搶便宜車，教你避開買錯車。」服務：代客尋車／代拍／拍賣代銷（和運、行將 SAA）。漏斗：Reels/圖文 → 私訊關鍵字 → 買賣家問卷 → 1對1 諮詢簽約 → 拍場執行。現況：帳號已建，品牌／Bio／頭貼／Notion 計畫完成；待補顯示名稱、Bio、專業帳號、兩步驗證與首波 9 篇 Carousel（首發：買車痛點篇）。",
+      "next": "設定顯示名稱／Bio／專業帳號／兩步驗證，產出首波 9 篇 Carousel"
+    },
+    {
+      "id": "ig-travel",
+      "name": "旅遊選品師 IG",
+      "stage": "Idea",
+      "color": "#2aa198",
+      "progress": 8,
+      "description": "客里斯｜旅遊選品師（旅遊避雷針）。定位：旅遊界的選品店（Select Shop），替高時間價值客群做全台旅行社行程健檢與優劣對比。漏斗：Carousel/Reels → 留言關鍵字（國家名／健檢）→ DM 誘餌 → LINE OpenChat → 1對1 健檢 → 訂購分潤。現況：品牌、Bio、頭貼方向、九宮格架構、第 9 篇開店宣言皆已定稿，帳號尚未建立。",
+      "next": "建立 IG 帳號（travel.curator_chris）並製作卡通地圖頭貼"
+    },
+    {
+      "id": "yt-kids",
+      "name": "神仙童萌會（YT）",
+      "stage": "MVP",
+      "color": "#b06bd6",
+      "progress": 40,
+      "description": "兒童神話動畫《神仙童萌會》（4–12 歲、去宗教化；S1 三萌神：三太子／土地公／文昌帝君；產線＝有聲書先行、動畫節錄）。10-01 完成口播稿第一批大批次：序章＋第 01–10 章 B 版 19–20 分睡前延長稿與 TTS 貼上版全數轉出；轉換規範更新（含回憶盒外框、TTS 用字）、NotebookLM 上手腳本就緒。表定 10/7 開播；YT 頻道、Podcast/有聲書通路與頻道主視覺仍未動。",
+      "next": "10/7 開播衝刺（10/5 前需清三項瓶頸）：建立 YT 頻道＋主視覺、開 Podcast/有聲書通路；B 版與 TTS 稿已備妥 11 單元，可啟動錄音試跑；續寫新章腳本第一批（第 11–14 章）"
+    },
+    {
+      "id": "poker",
+      "name": "Poker Trainer",
+      "stage": "MVP",
+      "color": "#7087a3",
+      "progress": 18,
+      "description": "讓決策練習變得有趣（獨立案子保留）。",
+      "next": "確認第一個訓練循環"
+    }
+  ]
+}
