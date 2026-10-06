@@ -188,7 +188,7 @@ function goalProgress(g, projects) {
 
 // ── 初始資料 ──────────────────────────────────────────
 const initialProjects = [
-  { id: 'guru', name: '股流Radar', description: '兩段式台股交易工作台（雷達＋g研判）。資料底盤加固後進入實測：09-29、09-30 每日存檔準時入庫；10-01 晚間未開機漏跑、10-02 凌晨自動補跑成功，連續數日行情／籌碼入庫不缺漏。', stage: 'Active', color: '#e76f51', progress: 72, lastUpdated: Date.now(), next: '持續觀察自動入庫與補跑穩定、補齊歷史缺漏；驗收後把凱基即時行情從 PoC 接成正式資料源' },
+  { id: 'guru', name: '股流Radar', description: '兩段式台股交易工作台（雷達＋g研判）。資料底盤實測續跑：10/2 凌晨關機後停機至 10/6（期間未入庫）；10/6 晚間開機後排程自動補跑成功——補上 10/5 大盤籌碼／散戶留倉、10/6 行情／法人正常入庫；仍缺 10/2、10/5 行情／法人與部分籌碼空窗待回補。', stage: 'Active', color: '#e76f51', progress: 72, lastUpdated: Date.now(), next: '用回補腳本補齊 10/2、10/5 行情／法人（連同籌碼空窗）；持續觀察排程＋補跑穩定；驗收後把凱基即時行情從 PoC 接成正式資料源' },
   { id: 'poker', name: 'Poker Trainer', description: '讓決策練習變得有趣（獨立案子保留）。', stage: 'MVP', color: '#7087a3', progress: 18, lastUpdated: Date.now(), next: '確認第一個訓練循環' },
   { id: 'ig-car', name: '中古車選品師 IG', description: '客里斯｜中古車選品師（@uc.curator_chris）。核心：「不教你搶便宜車，教你避開買錯車。」服務：代客尋車／代拍／拍賣代銷（和運、行將 SAA）。漏斗：Reels/圖文 → 私訊關鍵字 → 買賣家問卷 → 1對1 諮詢簽約 → 拍場執行。現況：帳號已建，品牌／Bio／頭貼／Notion 計畫完成；待補顯示名稱、Bio、專業帳號、兩步驗證與首波 9 篇 Carousel（首發：買車痛點篇）。', stage: 'Explore', color: '#0066FF', progress: 15, next: '設定顯示名稱／Bio／專業帳號／兩步驗證，產出首波 9 篇 Carousel', lastUpdated: Date.now() },
   { id: 'ig-travel', name: '旅遊選品師 IG', description: '客里斯｜旅遊選品師（旅遊避雷針）。定位：旅遊界的選品店（Select Shop），替高時間價值客群做全台旅行社行程健檢與優劣對比。漏斗：Carousel/Reels → 留言關鍵字（國家名／健檢）→ DM 誘餌 → LINE OpenChat → 1對1 健檢 → 訂購分潤。現況：品牌、Bio、頭貼方向、九宮格架構、第 9 篇開店宣言皆已定稿，帳號尚未建立。', stage: 'Idea', color: '#2aa198', progress: 8, next: '建立 IG 帳號（travel.curator_chris）並製作卡通地圖頭貼', lastUpdated: Date.now() },
@@ -200,15 +200,15 @@ const initialIdeas = [
   { id: 'idea-suno', title: 'SUNO Music', note: '用音樂保存正在發生的生活。方向：深夜氛圍、人聲少一點、留空間給低頻。（2026-09-17 由專案移入靈感庫）', type: '創作', score: 60, created: '2026-09-17', ready: false }
 ]
 const initialTasks = [
-  { id: 'task-1', title: '完成第一版監控面板', projectId: 'guru', due: todayStr(-4), priority: '高', done: true, completedAt: Date.now() },
-  { id: 'task-2', title: '定義股流指標參數', projectId: 'guru', due: todayStr(-4), priority: '中', done: false },
-  { id: 'task-3', title: '完成一首 SUNO demo', projectId: '', due: todayStr(3), priority: '中', done: false },
-  { id: 'task-4', title: '確認第一個訓練循環', projectId: 'poker', due: todayStr(5), priority: '低', done: false },
-  { id: 'task-g1', title: '盤點主流/蓄勢/乘流/靜流指標', projectId: 'guru', due: todayStr(-4), priority: '中', done: false },
-  { id: 'task-g2', title: '建立股流歷史模式庫', projectId: 'guru', due: todayStr(-4), priority: '低', done: false },
-  { id: 'task-a1', title: '整理股流 Radar 整體架構規格書（Architecture + 系統規格v1.0）', projectId: 'guru', due: todayStr(-6), priority: '高', done: true, completedAt: Date.now() },
-  { id: 'task-a2', title: '完成 v2 四套指標型戰法規格（回湧/破堤/鯨躍/洋流）', projectId: 'guru', due: todayStr(-6), priority: '高', done: true, completedAt: Date.now() },
-  { id: 'task-a3', title: '產出 UI/UX 優化建議書並同步到儀表板', projectId: 'guru', due: todayStr(-5), priority: '中', done: true, completedAt: Date.now() },
+  { id: 'task-1', title: '完成第一版監控面板', projectId: 'guru', due: todayStr(-6), priority: '高', done: true, completedAt: Date.now() },
+  { id: 'task-2', title: '定義股流指標參數', projectId: 'guru', due: todayStr(-6), priority: '中', done: false },
+  { id: 'task-3', title: '完成一首 SUNO demo', projectId: '', due: todayStr(1), priority: '中', done: false },
+  { id: 'task-4', title: '確認第一個訓練循環', projectId: 'poker', due: todayStr(3), priority: '低', done: false },
+  { id: 'task-g1', title: '盤點主流/蓄勢/乘流/靜流指標', projectId: 'guru', due: todayStr(-6), priority: '中', done: false },
+  { id: 'task-g2', title: '建立股流歷史模式庫', projectId: 'guru', due: todayStr(-6), priority: '低', done: false },
+  { id: 'task-a1', title: '整理股流 Radar 整體架構規格書（Architecture + 系統規格v1.0）', projectId: 'guru', due: todayStr(-8), priority: '高', done: true, completedAt: Date.now() },
+  { id: 'task-a2', title: '完成 v2 四套指標型戰法規格（回湧/破堤/鯨躍/洋流）', projectId: 'guru', due: todayStr(-8), priority: '高', done: true, completedAt: Date.now() },
+  { id: 'task-a3', title: '產出 UI/UX 優化建議書並同步到儀表板', projectId: 'guru', due: todayStr(-7), priority: '中', done: true, completedAt: Date.now() },
   { id: 'task-20260911-大盤儀表板/大盤籌碼', title: '大盤儀表板/大盤籌碼頁重新整合真實資料、水池成本價、觀察股水池命名、籌碼分歧引擎、VIX判讀等功能', projectId: 'guru', due: '', priority: '中', done: true, createdAt: Date.now(), updatedAt: Date.now(), completedAt: Date.now() },
   { id: 'task-20260912-研判邏輯修正：PA六', title: '研判邏輯修正：PA六段對齊分數把關、戰法統一接上九戰法、補齊停損缺口、移動停利功能', projectId: 'guru', due: '', priority: '高', done: true, createdAt: Date.now(), updatedAt: Date.now(), completedAt: Date.now() },
   { id: 'task-20260912-大盤籌碼本週改用自己', title: '大盤籌碼本週改用自己資料庫', projectId: 'guru', due: '', priority: '中', done: true, createdAt: Date.now(), updatedAt: Date.now(), completedAt: Date.now() },
@@ -222,15 +222,15 @@ const initialTasks = [
   { id: 'task-igtravel-2', title: '製作卡通地圖頭貼（imagegen）', projectId: 'ig-travel', due: '', priority: '中', done: false, createdAt: Date.now(), updatedAt: Date.now() },
   { id: 'task-igtravel-3', title: '產出首波 9 篇 Carousel（第 9 篇開店宣言已定稿）', projectId: 'ig-travel', due: '', priority: '高', done: false, createdAt: Date.now(), updatedAt: Date.now() },
   { id: 'task-igtravel-4', title: 'LINE OpenChat 建群＋入群歡迎語、自動回覆關鍵字、避雷手冊 PDF', projectId: 'ig-travel', due: '', priority: '中', done: false, createdAt: Date.now(), updatedAt: Date.now() },
-  { id: 'task-ytkids-1', title: '建置 YouTube 頻道（名稱／簡介／去宗教化聲明／兩步驗證）', projectId: 'yt-kids', due: todayStr(3), priority: '高', done: false, createdAt: Date.now(), updatedAt: Date.now() },
+  { id: 'task-ytkids-1', title: '建置 YouTube 頻道（名稱／簡介／去宗教化聲明／兩步驗證）', projectId: 'yt-kids', due: todayStr(-2), priority: '高', done: false, createdAt: Date.now(), updatedAt: Date.now() },
   { id: 'task-ytkids-2', title: '設計 Q 版神明 IP（三太子／文昌／關公／媽祖／土地公）＋主角設定', projectId: 'yt-kids', due: '', priority: '中', done: false, createdAt: Date.now(), updatedAt: Date.now() },
   { id: 'task-ytkids-3', title: '產出第 1 集腳本＋分鏡（三太子・情緒管理）', projectId: 'yt-kids', due: '', priority: '高', done: false, createdAt: Date.now(), updatedAt: Date.now() },
-  { id: 'task-ytkids-4', title: '規劃首季上架排程與 Shorts 單元（13 週 × 2 正片＋週日口訣短影音）', projectId: 'yt-kids', due: todayStr(-2), priority: '中', done: true, createdAt: Date.now(), updatedAt: Date.now(), completedAt: Date.now() },
+  { id: 'task-ytkids-4', title: '規劃首季上架排程與 Shorts 單元（13 週 × 2 正片＋週日口訣短影音）', projectId: 'yt-kids', due: todayStr(-7), priority: '中', done: true, createdAt: Date.now(), updatedAt: Date.now(), completedAt: Date.now() },
   { id: 'task-jiuqu-1', title: '選定主機平台＋網域（咻揪趣上線前置）', projectId: 'jiuqu', due: '', priority: '高', done: false, createdAt: Date.now(), updatedAt: Date.now() },
   { id: 'task-jiuqu-2', title: '上線後手機實測：從 IG 分享一則貼文 → 確認圖釘落地', projectId: 'jiuqu', due: '', priority: '中', done: false, createdAt: Date.now(), updatedAt: Date.now() },
-  { id: 'task-ytkids-5', title: '開立相關適合平台：Podcast/有聲書通路（Apple/Spotify/KKBOX 經 Firstory/SoundOn）＋YT 有聲繪本', projectId: 'yt-kids', due: todayStr(3), priority: '高', done: false, createdAt: Date.now(), updatedAt: Date.now() },
-  { id: 'task-ytkids-6', title: '產出頻道主視覺：Logo／Banner／縮圖風格／三萌神＋Q比B寶角色圖（人物角色資料夾仍空）', projectId: 'yt-kids', due: todayStr(3), priority: '高', done: false, createdAt: Date.now(), updatedAt: Date.now() },
-  { id: 'task-ytkids-7', title: '10 月衝刺第一批：批次轉第 3–10 章 B 版口播延長稿＋新章 11–14 章腳本', projectId: 'yt-kids', due: todayStr(3), priority: '高', done: false, createdAt: Date.now(), updatedAt: Date.now() }
+  { id: 'task-ytkids-5', title: '開立相關適合平台：Podcast/有聲書通路（Apple/Spotify/KKBOX 經 Firstory/SoundOn）＋YT 有聲繪本', projectId: 'yt-kids', due: todayStr(-2), priority: '高', done: false, createdAt: Date.now(), updatedAt: Date.now() },
+  { id: 'task-ytkids-6', title: '產出頻道主視覺：Logo／Banner／縮圖風格／三萌神＋Q比B寶角色圖（人物角色資料夾仍空）', projectId: 'yt-kids', due: todayStr(-2), priority: '高', done: false, createdAt: Date.now(), updatedAt: Date.now() },
+  { id: 'task-ytkids-7', title: '10 月衝刺第一批：批次轉第 3–10 章 B 版口播延長稿＋新章 11–14 章腳本', projectId: 'yt-kids', due: todayStr(-2), priority: '高', done: false, createdAt: Date.now(), updatedAt: Date.now() }
 ]
 const initialNotes = [
   { id: 'note-1', title: '股流Radar 核心概念', content: '加入群組的主流、蓄勢、乘流、靜流，整個產品語彙統一在水流宇宙，使用者學一次就懂。', tags: ['股流', '概念'], projectId: 'guru', createdAt: Date.now() - 1 * DAY },
@@ -247,26 +247,26 @@ const initialNotes = [
   { id: 'note-ytkids-107', title: '神仙童萌會：表定開播 10/7（2026-10-01 定案）', content: '內容產線已就緒：S1 擴編 26 集、100 課題池＋8 域＋D9、既有 12 章腳本（序章/01/02 定稿、03–11 初稿）、B 版 20 分睡前口播稿模板（第 01 章樣稿、第 03 章單聲道示範）。但開播前三項未動：①YT 頻道未建立 ②相關適合平台（Podcast/有聲書通路）未開 ③頻道主視覺（Logo/banner/縮圖/神明角色圖）未做。開播日 10/7 距現在僅 6 天，這三項為關鍵瓶頸，須 10/5 前完成。', tags: ['YT', '兒童', '開播', '神仙童萌會'], projectId: 'yt-kids', createdAt: Date.now() }
 ]
 const initialTimelineEvents = [
-  { id: 'ev-ytkids-107', date: '2026-10-01', title: '神仙童萌會 定案表定開播 10/7；YT 頻道／適合平台／主視覺 三項尚未進行', type: 'note', projectId: 'yt-kids', color: '#b06bd6', createdAt: Date.now() },
-  { id: 'ev-ytkids-1', date: todayStr(-2), title: '神仙童萌會 YT 運營企劃書完成', type: 'milestone', projectId: 'yt-kids', color: '#b06bd6', createdAt: Date.now() },
-  { id: 'ev-20260911', date: todayStr(-2), title: 'Update: 大盤儀表板/大盤籌碼頁重新整合真實資料、水池成本價、觀察股水池命名、籌碼分歧引擎、VIX判讀等功能', type: 'milestone', projectId: 'guru', color: '#e76f51', createdAt: Date.now() },
-  { id: 'ev-6', date: todayStr(-6), type: 'milestone', title: '股流 Radar 整體架構規格書完成（Architecture v1.0 + 系統規格 + 策略 v2）', projectId: 'guru', color: '#e76f51' },
-  { id: 'ev-jiuqu-1', date: todayStr(-7), title: '咻揪趣 MVP 完成（v0.31.0）：邀請連結、截圖 OCR、LINE 登入程式端', type: 'milestone', projectId: 'jiuqu', color: '#C96442' },
-  { id: 'ev-5', date: todayStr(-8), type: 'milestone', title: 'SUNO 第一首歌完成 demo', projectId: '', color: '#6f8f78' },
-  { id: 'ev-4', date: todayStr(-10), type: 'note', title: '股流 Radar 監控面板上線準備', projectId: 'guru', color: '#e76f51' },
-  { id: 'ev-3', date: todayStr(-12), type: 'milestone', title: '完成第一版原型介面', projectId: 'guru', color: '#6f8f78' },
-  { id: 'ev-2', date: todayStr(-24), type: 'note', title: '確定「主流／蓄勢／乘流／靜流」四階段語彙', projectId: 'guru', color: '#e76f51' },
-  { id: 'ev-igcar-1', date: todayStr(-25), title: '中古車選品師 IG 帳號建立＋品牌定案', type: 'milestone', projectId: 'ig-car', color: '#0066FF', createdAt: Date.now() },
-  { id: 'ev-igtravel-1', date: todayStr(-25), title: '旅遊選品師品牌定案（Bio／頭貼／九宮格）', type: 'milestone', projectId: 'ig-travel', color: '#2aa198', createdAt: Date.now() },
-  { id: 'ev-1', date: todayStr(-34), type: 'milestone', title: '股流 Radar 概念成型', projectId: 'guru', color: '#6f8f78' }
+  { id: 'ev-ytkids-1', date: todayStr(-4), title: '神仙童萌會 YT 運營企劃書完成', type: 'milestone', projectId: 'yt-kids', color: '#b06bd6', createdAt: Date.now() },
+  { id: 'ev-20260911', date: todayStr(-4), title: 'Update: 大盤儀表板/大盤籌碼頁重新整合真實資料、水池成本價、觀察股水池命名、籌碼分歧引擎、VIX判讀等功能', type: 'milestone', projectId: 'guru', color: '#e76f51', createdAt: Date.now() },
+  { id: 'ev-ytkids-107', date: todayStr(-6), title: '神仙童萌會 定案表定開播 10/7；YT 頻道／適合平台／主視覺 三項尚未進行', type: 'note', projectId: 'yt-kids', color: '#b06bd6', createdAt: Date.now() },
+  { id: 'ev-6', date: todayStr(-8), type: 'milestone', title: '股流 Radar 整體架構規格書完成（Architecture v1.0 + 系統規格 + 策略 v2）', projectId: 'guru', color: '#e76f51' },
+  { id: 'ev-jiuqu-1', date: todayStr(-9), title: '咻揪趣 MVP 完成（v0.31.0）：邀請連結、截圖 OCR、LINE 登入程式端', type: 'milestone', projectId: 'jiuqu', color: '#C96442' },
+  { id: 'ev-5', date: todayStr(-10), type: 'milestone', title: 'SUNO 第一首歌完成 demo', projectId: '', color: '#6f8f78' },
+  { id: 'ev-4', date: todayStr(-12), type: 'note', title: '股流 Radar 監控面板上線準備', projectId: 'guru', color: '#e76f51' },
+  { id: 'ev-3', date: todayStr(-14), type: 'milestone', title: '完成第一版原型介面', projectId: 'guru', color: '#6f8f78' },
+  { id: 'ev-2', date: todayStr(-26), type: 'note', title: '確定「主流／蓄勢／乘流／靜流」四階段語彙', projectId: 'guru', color: '#e76f51' },
+  { id: 'ev-igcar-1', date: todayStr(-27), title: '中古車選品師 IG 帳號建立＋品牌定案', type: 'milestone', projectId: 'ig-car', color: '#0066FF', createdAt: Date.now() },
+  { id: 'ev-igtravel-1', date: todayStr(-27), title: '旅遊選品師品牌定案（Bio／頭貼／九宮格）', type: 'milestone', projectId: 'ig-travel', color: '#2aa198', createdAt: Date.now() },
+  { id: 'ev-1', date: todayStr(-36), type: 'milestone', title: '股流 Radar 概念成型', projectId: 'guru', color: '#6f8f78' }
 ]
 const initialGoals = [
-  { id: 'goal-1', title: '股流 Radar 第一版上線', description: '能被實際使用的監控面板程度（含熱區/PA事實層/g研判/v2戰法）', targetDate: todayStr(-5), progress: 55, color: '#e76f51', projectId: 'guru' },
-  { id: 'goal-2', title: '收齊 20 則股流決策筆記', description: '累積成判斷資料庫', targetDate: todayStr(11), progress: 30, color: '#6f8f78', projectId: 'guru' },
-  { id: 'goal-3', title: 'SUNO 頻道連續 4 週每週一首', description: '先做出有辨識度的聲音，再談規模', targetDate: todayStr(8), progress: 25, color: '#6f8f78' },
-  { id: 'goal-4', title: '找到第一個付費使用者', description: '股流 Radar 痛點驗證', targetDate: todayStr(25), progress: 5, color: '#7087a3', projectId: 'guru' },
-  { id: 'goal-ig-launch', title: '兩個 IG 帳號上線並發布首波內容', description: '中古車＋旅遊各完成帳號設定與首波 9 篇 Carousel', targetDate: todayStr(13), progress: 10, color: '#0066FF', projectId: 'ig-car' },
-  { id: 'goal-yt-launch', title: '神仙童萌會首季開播（表定 10/7）', description: '內容產線已就緒（S1 26 集企劃、12 章腳本、B 版口播模板）；但 YT 頻道、相關適合平台（Podcast/有聲書通路）、頻道主視覺（Logo/banner/縮圖/神明角色圖）三者尚未進行，為 10/7 開播關鍵瓶頸。', targetDate: todayStr(5), progress: 10, color: '#b06bd6', projectId: 'yt-kids' }
+  { id: 'goal-1', title: '股流 Radar 第一版上線', description: '能被實際使用的監控面板程度（含熱區/PA事實層/g研判/v2戰法）', targetDate: todayStr(-7), progress: 55, color: '#e76f51', projectId: 'guru' },
+  { id: 'goal-2', title: '收齊 20 則股流決策筆記', description: '累積成判斷資料庫', targetDate: todayStr(9), progress: 30, color: '#6f8f78', projectId: 'guru' },
+  { id: 'goal-3', title: 'SUNO 頻道連續 4 週每週一首', description: '先做出有辨識度的聲音，再談規模', targetDate: todayStr(6), progress: 25, color: '#6f8f78' },
+  { id: 'goal-4', title: '找到第一個付費使用者', description: '股流 Radar 痛點驗證', targetDate: todayStr(23), progress: 5, color: '#7087a3', projectId: 'guru' },
+  { id: 'goal-ig-launch', title: '兩個 IG 帳號上線並發布首波內容', description: '中古車＋旅遊各完成帳號設定與首波 9 篇 Carousel', targetDate: todayStr(7), progress: 10, color: '#0066FF', projectId: 'ig-car' },
+  { id: 'goal-yt-launch', title: '神仙童萌會首季開播（表定 10/7）', description: '內容產線已就緒（S1 26 集企劃、12 章腳本、B 版口播模板）；但 YT 頻道、相關適合平台（Podcast/有聲書通路）、頻道主視覺（Logo/banner/縮圖/神明角色圖）三者尚未進行，為 10/7 開播關鍵瓶頸。', targetDate: '2026-10-07', progress: 10, color: '#b06bd6', projectId: 'yt-kids' }
 ]
 const navItems = [
   { id: 'home', label: 'Home', icon: Gauge },

@@ -1,5 +1,5 @@
 # 北極星 自動收集輸入（給 AI 讀）
-> 產生時間：2026-10-02 01:53　範圍：最近 3 天
+> 產生時間：2026-10-06 21:47　範圍：最近 3 天
 > 用途：AI 讀完後，把各專案濃縮成「一行方向＋進度」，寫進 daily-brief.txt 或 worklog。
 
 ## 0. 北極星收件匣（其他 AI 交辦；資料夾：D:/ZCODE/北極星收件匣）
@@ -7,20 +7,14 @@
 
 ## 1. Git commit（自動）
 ### 股流Radar（guru）
-```
-9a0cddd | 2026-09-28 | fix(schedule): 排程改 S4U 登出也能執行; run-daily-archive.bat 修正退出碼(成功回 0 失敗回非 0)
-d57035e | 2026-09-28 | feat: 新增回補腳本 scripts/backfill-history.ts、匯出 fetchTwseDailyByDate、修正上櫃漲跌幅未走 deriveChange 的不一致
-9bc799f | 2026-09-28 | fix(taifex): findLatestTradingDate 改用回應內 Date（該端點忽略 date 參數），修正休市日被誤標有資料的問題（籌碼曾標成 09-28 休市日）
-3a83b9b | 2026-09-28 | fix(schedule): register-daily-task.ps1 改為自建任務 XML 匯入（避免 MismatchedPSTypeName 與解析問題），確實套用 StartWhenAvailable/WakeToRun/允許電池
-dbe9b2c | 2026-09-28 | fix(schedule): 排程可靠性 — 新增 register-daily-task.ps1(StartWhenAvailable 錯過補跑 / WakeToRun 喚醒 / 允許電池)，bat 改為薄包裝；避免電腦未開機時漏抓資料
-```
+（近期無 commit）
 ### 咻揪趣（jiuqu）
 （近期無 commit）
 
 ## 2. 來源工作檔／企劃（讀取重點）
 ### 進度總覽（跨專案總表）（all）
 - 檔案：`D:/ZCODE/專案儀錶版/polaris-dashboard/進度總覽.md`
-- 最後修改：2026-10-01 02:43　🟡 近期有動
+- 最後修改：2026-10-01 02:43
 - 章節：
 ```
 # 進度總覽
@@ -102,21 +96,21 @@ dbe9b2c | 2026-09-28 | fix(schedule): 排程可靠性 — 新增 register-daily-
 ## 已知限制（MVP 刻意取捨）
 ```
 
-## 3. 今日（2026-10-02 起）有異動的檔案
+## 3. 今日（2026-10-06 起）有異動的檔案
 ### workspace（3 個）
-- C:/Users/amydo/.openclaw-autoclaw/workspace/.cluster/expert-playbook.md　(2026-10-02 01:48)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/.opencode/config.json　(2026-10-02 01:48)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/config/mcporter.json　(2026-10-02 01:48)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.cluster/expert-playbook.md　(2026-10-06 21:43)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.opencode/config.json　(2026-10-06 21:40)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/config/mcporter.json　(2026-10-06 21:40)
 ### D:/ZCODE/IG運營（0 個）
 （今日無異動）
 ### D:/ZCODE/兒童YT頻道（0 個）
 （今日無異動）
 
 ## 4. 目前儀表板狀態（更新前）
-- guru｜股流Radar｜stage=Active｜progress=70％｜next=確認排程連續數日自動入庫正常、補齊缺漏資料；驗收後把凱基即時行情從 PoC 接成正式資料源
+- guru｜股流Radar｜stage=Active｜progress=72％｜next=持續觀察自動入庫與補跑穩定、補齊歷史缺漏；驗收後把凱基即時行情從 PoC 接成正式資料源
 - poker｜Poker Trainer｜stage=MVP｜progress=18％｜next=確認第一個訓練循環
 - ig-car｜中古車選品師 IG｜stage=Explore｜progress=15％｜next=設定顯示名稱／Bio／專業帳號／兩步驗證，產出首波 9 篇 Carousel
 - ig-travel｜旅遊選品師 IG｜stage=Idea｜progress=8％｜next=建立 IG 帳號（travel.curator_chris）並製作卡通地圖頭貼
-- yt-kids｜神仙童萌會（YT）｜stage=MVP｜progress=35％｜next=10/7 開播衝刺：①建立 YT 頻道＋主視覺 ②開 Podcast/有聲書通路（Apple/Spotify/KKBOX 經 Firstory/SoundOn）③批次轉 B 版延長稿（第 3–10 章）＋新章 11–14 腳本 ④B 版格式定案後 TTS 錄音。三項未動＝開播瓶頸，需 10/5 前完成
+- yt-kids｜神仙童萌會（YT）｜stage=MVP｜progress=40％｜next=10/7 開播衝刺（10/5 前需清三項瓶頸）：建立 YT 頻道＋主視覺、開 Podcast/有聲書通路；B 版與 TTS 稿已備妥 11 單元，可啟動錄音試跑；續寫新章腳本第一批（第 11–14 章）
 - jiuqu｜咻揪趣｜stage=MVP｜progress=60％｜next=選定主機平台＋網域即可部署上線（部署後跑 preflight＋smoke）；可選配 LLM／Places 金鑰提升解析；LINE 登入待填 Channel Secret
 - 其他：ideas=2 tasks=31 notes=12 goals=6 timeline=12
