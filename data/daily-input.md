@@ -1,5 +1,5 @@
 # 北極星 自動收集輸入（給 AI 讀）
-> 產生時間：2026-10-06 21:47　範圍：最近 3 天
+> 產生時間：2026-10-06 23:50　範圍：最近 3 天
 > 用途：AI 讀完後，把各專案濃縮成「一行方向＋進度」，寫進 daily-brief.txt 或 worklog。
 
 ## 0. 北極星收件匣（其他 AI 交辦；資料夾：D:/ZCODE/北極星收件匣）
@@ -107,7 +107,7 @@
 （今日無異動）
 
 ## 4. 目前儀表板狀態（更新前）
-- guru｜股流Radar｜stage=Active｜progress=72％｜next=持續觀察自動入庫與補跑穩定、補齊歷史缺漏；驗收後把凱基即時行情從 PoC 接成正式資料源
+- guru｜股流Radar｜stage=Active｜progress=72％｜next=用回補腳本補齊 10/2、10/5 行情／法人（連同籌碼空窗）；持續觀察排程＋補跑穩定；驗收後把凱基即時行情從 PoC 接成正式資料源
 - poker｜Poker Trainer｜stage=MVP｜progress=18％｜next=確認第一個訓練循環
 - ig-car｜中古車選品師 IG｜stage=Explore｜progress=15％｜next=設定顯示名稱／Bio／專業帳號／兩步驗證，產出首波 9 篇 Carousel
 - ig-travel｜旅遊選品師 IG｜stage=Idea｜progress=8％｜next=建立 IG 帳號（travel.curator_chris）並製作卡通地圖頭貼
