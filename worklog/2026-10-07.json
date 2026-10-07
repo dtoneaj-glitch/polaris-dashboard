@@ -1,0 +1,117 @@
+{
+  "date": "2026-10-07",
+  "source": "daily-brief",
+  "projects": [
+    {
+      "id": "yt-kids",
+      "name": "神仙童萌會（YT）",
+      "stage": "MVP",
+      "color": "#b06bd6",
+      "progress": 40,
+      "description": "兒童神話動畫《神仙童萌會》（4–12 歲、去宗教化；S1 三萌神：三太子／土地公／文昌帝君，產線＝有聲書先行、動畫節錄）。進度（2026-10-07 回查）：B 版口播稿＋TTS 貼上版各 11 檔（序章＋01–10）；腳本定稿 3 份（序章/01/02）、初稿 9 份（03–11）；新制 11–25 章 15 集未動筆；音檔 0、A 版 0；YT 頻道／平台／主視覺三項未動。2026-10-07 定案：開播日延後至 10/16，採輕量開播門檻（門面＋序章＋第 1 集 A 版＋B 版音檔首批 7 集），B 版 12 集門檻改為開播後兩週內補齊。",
+      "next": "10/16 開播 9 天衝刺：①10/9 前 YT 頻道＋Podcast 通路開立 ②10/10 主視覺（PixAI＋工坊 imgPrompt）③10/12 TTS 第一批 7 集＋新章 11–12 腳本 ④10/14 A 版第 1 集 ⑤10/15 上架準備 ⑥10/16 開播"
+    }
+  ],
+  "goals": [
+    {
+      "id": "goal-yt-launch",
+      "title": "神仙童萌會首季開播（表定 10/16）",
+      "description": "2026-10-07 定案延後（原 10/7）。輕量開播門檻：門面（YT 頻道＋主視覺）＋序章＋第 1 集 A 版＋B 版音檔首批 7 集；B 版 12 集門檻改為開播後兩週內補齊。",
+      "targetDate": "2026-10-16",
+      "progress": 15
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-ytkids-1",
+      "title": "建置 YouTube 頻道（名稱／簡介／去宗教化聲明／兩步驗證）",
+      "projectId": "yt-kids",
+      "due": "2026-10-09",
+      "priority": "高",
+      "done": false
+    },
+    {
+      "id": "task-ytkids-5",
+      "title": "開立相關適合平台：Podcast/有聲書通路（Apple/Spotify/KKBOX 經 Firstory/SoundOn）＋YT 有聲繪本",
+      "projectId": "yt-kids",
+      "due": "2026-10-09",
+      "priority": "高",
+      "done": false
+    },
+    {
+      "id": "task-ytkids-6",
+      "title": "產出頻道主視覺：Logo／Banner／縮圖風格／三萌神＋Q比B寶角色圖（PixAI＋工坊 imgPrompt；人物角色資料夾仍空）",
+      "projectId": "yt-kids",
+      "due": "2026-10-10",
+      "priority": "高",
+      "done": false
+    },
+    {
+      "id": "task-ytkids-7",
+      "title": "10 月衝刺第一批：批次轉第 3–10 章 B 版口播延長稿（10/1 已完成 11 檔；新章 11–12 拆至 task-ytkids-9）",
+      "projectId": "yt-kids",
+      "due": "2026-10-01",
+      "priority": "高",
+      "done": true
+    },
+    {
+      "id": "task-ytkids-8",
+      "title": "TTS 配音第一批：序章＋第 01–06 章（用 TTS 貼上版 txt）→ 音檔 7 集",
+      "projectId": "yt-kids",
+      "due": "2026-10-12",
+      "priority": "高",
+      "done": false
+    },
+    {
+      "id": "task-ytkids-9",
+      "title": "新章腳本：第 11–12 章初稿（B 版庫存補至 12＋集）",
+      "projectId": "yt-kids",
+      "due": "2026-10-12",
+      "priority": "中",
+      "done": false
+    },
+    {
+      "id": "task-ytkids-10",
+      "title": "A 版第 1 集：第 01 章 B 版節錄 6–8 分＋重配＋縮圖",
+      "projectId": "yt-kids",
+      "due": "2026-10-14",
+      "priority": "高",
+      "done": false
+    },
+    {
+      "id": "task-ytkids-11",
+      "title": "開播上架：序章＋第 1 集 A 版＋音檔同步 Podcast 通路＋三播放清單＋頻道簡介",
+      "projectId": "yt-kids",
+      "due": "2026-10-15",
+      "priority": "高",
+      "done": false
+    },
+    {
+      "id": "task-ytkids-12",
+      "title": "第 3–10 章腳本定稿複審（補初稿→定稿審核鏈，開播後進行）",
+      "projectId": "yt-kids",
+      "due": "2026-10-20",
+      "priority": "中",
+      "done": false
+    }
+  ],
+  "notes": [
+    {
+      "id": "note-ytkids-1016",
+      "title": "神仙童萌會：開播日延後至 10/16（2026-10-07 定案）",
+      "content": "原表定 10/7，因 YT 頻道／相關平台／主視覺三項未動，且音檔 0、A 版 0（回查 2026-10-07），延後至 10/16。採輕量開播門檻：門面（YT 頻道＋主視覺）＋序章＋第 1 集 A 版＋B 版音檔首批 7 集（序章＋01–06）；B 版 12 集門檻改為開播後兩週內補齊（新章 11–12 腳本→B 版→TTS）。9 天衝刺：10/9 頻道＋平台、10/10 主視覺、10/12 TTS 第一批＋新章腳本、10/14 A 版第 1 集、10/15 上架準備、10/16 開播。",
+      "tags": ["YT", "兒童", "開播", "神仙童萌會"],
+      "projectId": "yt-kids"
+    }
+  ],
+  "timelineEvents": [
+    {
+      "id": "ev-ytkids-1016",
+      "date": "2026-10-07",
+      "title": "神仙童萌會 開播日延後：10/7 → 10/16（輕量開播門檻定案）",
+      "type": "note",
+      "projectId": "yt-kids",
+      "color": "#b06bd6"
+    }
+  ]
+}

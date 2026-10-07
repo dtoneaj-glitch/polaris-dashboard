@@ -208,8 +208,11 @@ function renderVal(v) {
   if (typeof v === 'string') {
     const match = v.match(/^(\d{4})-(\d{2})-(\d{2})$/)
     if (match) {
-      const target = new Date(v)
-      const diffDays = Math.round((target - NOW) / DAY_MS)
+      // 以本地午夜錨定（new Date('YYYY-MM-DD') 會解析成 UTC，+0800 晚間執行時未來日期會少算 1 天）
+      const target = new Date(Number(match[1]), Number(match[2]) - 1, Number(match[3]))
+      const startToday = new Date(NOW)
+      startToday.setHours(0, 0, 0, 0)
+      const diffDays = Math.round((target - startToday) / DAY_MS)
       if (diffDays !== 0 && Math.abs(diffDays) <= 365) {
         return `todayStr(${diffDays})`
       }
