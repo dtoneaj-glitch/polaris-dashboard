@@ -1,5 +1,5 @@
 # 北極星 自動收集輸入（給 AI 讀）
-> 產生時間：2026-10-07 23:50　範圍：最近 3 天
+> 產生時間：2026-10-08 00:05　範圍：最近 3 天
 > 用途：AI 讀完後，把各專案濃縮成「一行方向＋進度」，寫進 daily-brief.txt 或 worklog。
 
 ## 0. 北極星收件匣（其他 AI 交辦；資料夾：D:/ZCODE/北極星收件匣）
@@ -14,7 +14,7 @@
 ## 2. 來源工作檔／企劃（讀取重點）
 ### 進度總覽（跨專案總表）（all）
 - 檔案：`D:/ZCODE/專案儀錶版/polaris-dashboard/進度總覽.md`
-- 最後修改：2026-10-01 02:43
+- 最後修改：2026-10-07 23:55　🟡 近期有動
 - 章節：
 ```
 # 進度總覽
@@ -23,7 +23,7 @@
 ### 股流Radar（`guru`）— Active 55%
 ### 中古車選品師 IG（`ig-car`）— Explore 15%
 ### 旅遊選品師 IG（`ig-travel`）— Idea 8%
-### 神仙童萌會 YT（`yt-kids`）— Idea 5%　★目前重心
+### 神仙童萌會 YT（`yt-kids`）— MVP 40%　★目前重心
 ### Poker Trainer（`poker`）— MVP 18%
 ### 咻揪趣（`jiuqu`）— MVP 60%
 ## 三、目標（Goals）
@@ -96,7 +96,7 @@
 ## 已知限制（MVP 刻意取捨）
 ```
 
-## 3. 今日（2026-10-07 起）有異動的檔案
+## 3. 今日（2026-10-08 起）有異動的檔案
 ### workspace（0 個）
 （今日無異動）
 ### D:/ZCODE/IG運營（0 個）
@@ -109,6 +109,6 @@
 - poker｜Poker Trainer｜stage=MVP｜progress=18％｜next=確認第一個訓練循環
 - ig-car｜中古車選品師 IG｜stage=Explore｜progress=15％｜next=設定顯示名稱／Bio／專業帳號／兩步驗證，產出首波 9 篇 Carousel
 - ig-travel｜旅遊選品師 IG｜stage=Idea｜progress=8％｜next=建立 IG 帳號（travel.curator_chris）並製作卡通地圖頭貼
-- yt-kids｜神仙童萌會（YT）｜stage=MVP｜progress=40％｜next=10/7 開播衝刺（10/5 前需清三項瓶頸）：建立 YT 頻道＋主視覺、開 Podcast/有聲書通路；B 版與 TTS 稿已備妥 11 單元，可啟動錄音試跑；續寫新章腳本第一批（第 11–14 章）
+- yt-kids｜神仙童萌會（YT）｜stage=MVP｜progress=40％｜next=10/16 開播 9 天衝刺：①10/9 前 YT 頻道＋Podcast 通路開立 ②10/10 主視覺（PixAI＋工坊 imgPrompt）③10/12 TTS 第一批 7 集＋新章 11–12 腳本 ④10/14 A 版第 1 集 ⑤10/15 上架準備 ⑥10/16 開播
 - jiuqu｜咻揪趣｜stage=MVP｜progress=60％｜next=選定主機平台＋網域即可部署上線（部署後跑 preflight＋smoke）；可選配 LLM／Places 金鑰提升解析；LINE 登入待填 Channel Secret
-- 其他：ideas=2 tasks=31 notes=12 goals=6 timeline=12
+- 其他：ideas=2 tasks=36 notes=13 goals=6 timeline=13

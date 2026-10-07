@@ -222,20 +222,20 @@ const initialTasks = [
   { id: 'task-igtravel-2', title: '製作卡通地圖頭貼（imagegen）', projectId: 'ig-travel', due: '', priority: '中', done: false, createdAt: Date.now(), updatedAt: Date.now() },
   { id: 'task-igtravel-3', title: '產出首波 9 篇 Carousel（第 9 篇開店宣言已定稿）', projectId: 'ig-travel', due: '', priority: '高', done: false, createdAt: Date.now(), updatedAt: Date.now() },
   { id: 'task-igtravel-4', title: 'LINE OpenChat 建群＋入群歡迎語、自動回覆關鍵字、避雷手冊 PDF', projectId: 'ig-travel', due: '', priority: '中', done: false, createdAt: Date.now(), updatedAt: Date.now() },
-  { id: 'task-ytkids-1', title: '建置 YouTube 頻道（名稱／簡介／去宗教化聲明／兩步驗證）', projectId: 'yt-kids', due: todayStr(2), priority: '高', done: false, createdAt: Date.now(), updatedAt: Date.now() },
+  { id: 'task-ytkids-1', title: '建置 YouTube 頻道（名稱／簡介／去宗教化聲明／兩步驗證）', projectId: 'yt-kids', due: todayStr(1), priority: '高', done: false, createdAt: Date.now(), updatedAt: Date.now() },
   { id: 'task-ytkids-2', title: '設計 Q 版神明 IP（三太子／文昌／關公／媽祖／土地公）＋主角設定', projectId: 'yt-kids', due: '', priority: '中', done: false, createdAt: Date.now(), updatedAt: Date.now() },
   { id: 'task-ytkids-3', title: '產出第 1 集腳本＋分鏡（三太子・情緒管理）', projectId: 'yt-kids', due: '', priority: '高', done: false, createdAt: Date.now(), updatedAt: Date.now() },
-  { id: 'task-ytkids-4', title: '規劃首季上架排程與 Shorts 單元（13 週 × 2 正片＋週日口訣短影音）', projectId: 'yt-kids', due: todayStr(-7), priority: '中', done: true, createdAt: Date.now(), updatedAt: Date.now(), completedAt: Date.now() },
+  { id: 'task-ytkids-4', title: '規劃首季上架排程與 Shorts 單元（13 週 × 2 正片＋週日口訣短影音）', projectId: 'yt-kids', due: todayStr(-8), priority: '中', done: true, createdAt: Date.now(), updatedAt: Date.now(), completedAt: Date.now() },
   { id: 'task-jiuqu-1', title: '選定主機平台＋網域（咻揪趣上線前置）', projectId: 'jiuqu', due: '', priority: '高', done: false, createdAt: Date.now(), updatedAt: Date.now() },
   { id: 'task-jiuqu-2', title: '上線後手機實測：從 IG 分享一則貼文 → 確認圖釘落地', projectId: 'jiuqu', due: '', priority: '中', done: false, createdAt: Date.now(), updatedAt: Date.now() },
-  { id: 'task-ytkids-5', title: '開立相關適合平台：Podcast/有聲書通路（Apple/Spotify/KKBOX 經 Firstory/SoundOn）＋YT 有聲繪本', projectId: 'yt-kids', due: todayStr(2), priority: '高', done: false, createdAt: Date.now(), updatedAt: Date.now() },
-  { id: 'task-ytkids-6', title: '產出頻道主視覺：Logo／Banner／縮圖風格／三萌神＋Q比B寶角色圖（PixAI＋工坊 imgPrompt；人物角色資料夾仍空）', projectId: 'yt-kids', due: todayStr(3), priority: '高', done: false, createdAt: Date.now(), updatedAt: Date.now() },
-  { id: 'task-ytkids-7', title: '10 月衝刺第一批：批次轉第 3–10 章 B 版口播延長稿（10/1 已完成 11 檔；新章 11–12 拆至 task-ytkids-9）', projectId: 'yt-kids', due: todayStr(-6), priority: '高', done: true, createdAt: Date.now(), updatedAt: Date.now(), completedAt: Date.now() },
-  { id: 'task-ytkids-8', title: 'TTS 配音第一批：序章＋第 01–06 章（用 TTS 貼上版 txt）→ 音檔 7 集', projectId: 'yt-kids', due: todayStr(5), priority: '高', done: false, createdAt: Date.now(), updatedAt: Date.now() },
-  { id: 'task-ytkids-9', title: '新章腳本：第 11–12 章初稿（B 版庫存補至 12＋集）', projectId: 'yt-kids', due: todayStr(5), priority: '中', done: false, createdAt: Date.now(), updatedAt: Date.now() },
-  { id: 'task-ytkids-10', title: 'A 版第 1 集：第 01 章 B 版節錄 6–8 分＋重配＋縮圖', projectId: 'yt-kids', due: todayStr(7), priority: '高', done: false, createdAt: Date.now(), updatedAt: Date.now() },
-  { id: 'task-ytkids-11', title: '開播上架：序章＋第 1 集 A 版＋音檔同步 Podcast 通路＋三播放清單＋頻道簡介', projectId: 'yt-kids', due: todayStr(8), priority: '高', done: false, createdAt: Date.now(), updatedAt: Date.now() },
-  { id: 'task-ytkids-12', title: '第 3–10 章腳本定稿複審（補初稿→定稿審核鏈，開播後進行）', projectId: 'yt-kids', due: todayStr(13), priority: '中', done: false, createdAt: Date.now(), updatedAt: Date.now() }
+  { id: 'task-ytkids-5', title: '開立相關適合平台：Podcast/有聲書通路（Apple/Spotify/KKBOX 經 Firstory/SoundOn）＋YT 有聲繪本', projectId: 'yt-kids', due: todayStr(1), priority: '高', done: false, createdAt: Date.now(), updatedAt: Date.now() },
+  { id: 'task-ytkids-6', title: '產出頻道主視覺：Logo／Banner／縮圖風格／三萌神＋Q比B寶角色圖（PixAI＋工坊 imgPrompt；人物角色資料夾仍空）', projectId: 'yt-kids', due: todayStr(2), priority: '高', done: false, createdAt: Date.now(), updatedAt: Date.now() },
+  { id: 'task-ytkids-7', title: '10 月衝刺第一批：批次轉第 3–10 章 B 版口播延長稿（10/1 已完成 11 檔；新章 11–12 拆至 task-ytkids-9）', projectId: 'yt-kids', due: todayStr(-7), priority: '高', done: true, createdAt: Date.now(), updatedAt: Date.now(), completedAt: Date.now() },
+  { id: 'task-ytkids-8', title: 'TTS 配音第一批：序章＋第 01–06 章（用 TTS 貼上版 txt）→ 音檔 7 集', projectId: 'yt-kids', due: todayStr(4), priority: '高', done: false, createdAt: Date.now(), updatedAt: Date.now() },
+  { id: 'task-ytkids-9', title: '新章腳本：第 11–12 章初稿（B 版庫存補至 12＋集）', projectId: 'yt-kids', due: todayStr(4), priority: '中', done: false, createdAt: Date.now(), updatedAt: Date.now() },
+  { id: 'task-ytkids-10', title: 'A 版第 1 集：第 01 章 B 版節錄 6–8 分＋重配＋縮圖', projectId: 'yt-kids', due: todayStr(6), priority: '高', done: false, createdAt: Date.now(), updatedAt: Date.now() },
+  { id: 'task-ytkids-11', title: '開播上架：序章＋第 1 集 A 版＋音檔同步 Podcast 通路＋三播放清單＋頻道簡介', projectId: 'yt-kids', due: todayStr(7), priority: '高', done: false, createdAt: Date.now(), updatedAt: Date.now() },
+  { id: 'task-ytkids-12', title: '第 3–10 章腳本定稿複審（補初稿→定稿審核鏈，開播後進行）', projectId: 'yt-kids', due: todayStr(12), priority: '中', done: false, createdAt: Date.now(), updatedAt: Date.now() }
 ]
 const initialNotes = [
   { id: 'note-1', title: '股流Radar 核心概念', content: '加入群組的主流、蓄勢、乘流、靜流，整個產品語彙統一在水流宇宙，使用者學一次就懂。', tags: ['股流', '概念'], projectId: 'guru', createdAt: Date.now() - 1 * DAY },
@@ -272,8 +272,8 @@ const initialGoals = [
   { id: 'goal-2', title: '收齊 20 則股流決策筆記', description: '累積成判斷資料庫', targetDate: todayStr(4), progress: 30, color: '#6f8f78', projectId: 'guru' },
   { id: 'goal-3', title: 'SUNO 頻道連續 4 週每週一首', description: '先做出有辨識度的聲音，再談規模', targetDate: todayStr(1), progress: 25, color: '#6f8f78' },
   { id: 'goal-4', title: '找到第一個付費使用者', description: '股流 Radar 痛點驗證', targetDate: todayStr(18), progress: 5, color: '#7087a3', projectId: 'guru' },
-  { id: 'goal-ig-launch', title: '兩個 IG 帳號上線並發布首波內容', description: '中古車＋旅遊各完成帳號設定與首波 9 篇 Carousel', targetDate: todayStr(8), progress: 10, color: '#0066FF', projectId: 'ig-car' },
-  { id: 'goal-yt-launch', title: '神仙童萌會首季開播（表定 10/16）', description: '2026-10-07 定案延後（原 10/7）。輕量開播門檻：門面（YT 頻道＋主視覺）＋序章＋第 1 集 A 版＋B 版音檔首批 7 集；B 版 12 集門檻改為開播後兩週內補齊。', targetDate: todayStr(9), progress: 15, color: '#b06bd6', projectId: 'yt-kids' }
+  { id: 'goal-ig-launch', title: '兩個 IG 帳號上線並發布首波內容', description: '中古車＋旅遊各完成帳號設定與首波 9 篇 Carousel', targetDate: todayStr(7), progress: 10, color: '#0066FF', projectId: 'ig-car' },
+  { id: 'goal-yt-launch', title: '神仙童萌會首季開播（表定 10/16）', description: '2026-10-07 定案延後（原 10/7）。輕量開播門檻：門面（YT 頻道＋主視覺）＋序章＋第 1 集 A 版＋B 版音檔首批 7 集；B 版 12 集門檻改為開播後兩週內補齊。', targetDate: todayStr(8), progress: 15, color: '#b06bd6', projectId: 'yt-kids' }
 ]
 const navItems = [
   { id: 'home', label: 'Home', icon: Gauge },
