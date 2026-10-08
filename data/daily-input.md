@@ -1,5 +1,5 @@
 # 北極星 自動收集輸入（給 AI 讀）
-> 產生時間：2026-10-08 00:05　範圍：最近 3 天
+> 產生時間：2026-10-08 23:50　範圍：最近 3 天
 > 用途：AI 讀完後，把各專案濃縮成「一行方向＋進度」，寫進 daily-brief.txt 或 worklog。
 
 ## 0. 北極星收件匣（其他 AI 交辦；資料夾：D:/ZCODE/北極星收件匣）
@@ -97,10 +97,12 @@
 ```
 
 ## 3. 今日（2026-10-08 起）有異動的檔案
-### workspace（0 個）
-（今日無異動）
-### D:/ZCODE/IG運營（0 個）
-（今日無異動）
+### workspace（3 個）
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.cluster/expert-playbook.md　(2026-10-08 23:40)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.opencode/config.json　(2026-10-08 23:36)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/config/mcporter.json　(2026-10-08 23:37)
+### D:/ZCODE/IG運營（1 個）
+- D:/ZCODE/IG運營/創號待辦清單.md　(2026-10-08 17:32)
 ### D:/ZCODE/兒童YT頻道（0 個）
 （今日無異動）
 
