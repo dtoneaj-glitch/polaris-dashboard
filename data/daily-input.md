@@ -1,5 +1,5 @@
 # 北極星 自動收集輸入（給 AI 讀）
-> 產生時間：2026-10-16 00:48　範圍：最近 3 天
+> 產生時間：2026-10-16 23:50　範圍：最近 3 天
 > 用途：AI 讀完後，把各專案濃縮成「一行方向＋進度」，寫進 daily-brief.txt 或 worklog。
 
 ## 0. 北極星收件匣（其他 AI 交辦；資料夾：D:/ZCODE/北極星收件匣）
@@ -97,14 +97,41 @@
 ```
 
 ## 3. 今日（2026-10-16 起）有異動的檔案
-### workspace（3 個）
-- C:/Users/amydo/.openclaw-autoclaw/workspace/.cluster/expert-playbook.md　(2026-10-16 00:34)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/.opencode/config.json　(2026-10-16 00:31)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/config/mcporter.json　(2026-10-16 00:32)
+### workspace（15 個）
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.cluster/expert-playbook.md　(2026-10-16 22:25)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20261016-223611-f03940cd-c2c-Snip_20261016_223441.png　(2026-10-16 22:34)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20261016-225624-0b4c78c0-c4d-Beav2.png　(2026-10-16 21:29)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20261016-225624-2bc48f90-876-Beav5.png　(2026-10-16 21:30)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20261016-225624-6ab6674c-34d-Beav6.png　(2026-10-16 21:30)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20261016-225624-754b6123-899-Beav3.png　(2026-10-16 21:29)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20261016-225624-b8199f3f-ceb-Beav1.png　(2026-10-16 21:28)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20261016-225624-dc6e650f-06d-Beav4.png　(2026-10-16 21:30)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.opencode/config.json　(2026-10-16 22:22)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/AGENTS.md　(2026-10-16 15:36)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/config/mcp-tools-cache.json　(2026-10-16 15:36)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/config/mcporter.json　(2026-10-16 22:22)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/dtone/README.md　(2026-10-16 22:58)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/projects.md　(2026-10-16 22:58)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/skills/autoclaw-mcp-tools/SKILL.md　(2026-10-16 15:36)
 ### D:/ZCODE/IG運營（0 個）
 （今日無異動）
-### D:/ZCODE/兒童YT頻道（0 個）
-（今日無異動）
+### D:/ZCODE/兒童YT頻道（16 個）
+- D:/ZCODE/兒童YT頻道/人物角色/角色畫風參考圖/11.jpg　(2026-10-16 01:30)
+- D:/ZCODE/兒童YT頻道/人物角色/角色畫風參考圖/S__53624836_0.jpg　(2026-10-16 01:30)
+- D:/ZCODE/兒童YT頻道/人物角色/角色畫風參考圖/S__53624839_0.jpg　(2026-10-16 01:30)
+- D:/ZCODE/兒童YT頻道/人物角色/角色畫風參考圖/S__53624840_0.jpg　(2026-10-16 01:30)
+- D:/ZCODE/兒童YT頻道/人物角色/角色畫風參考圖/S__53624841_0.jpg　(2026-10-16 01:30)
+- D:/ZCODE/兒童YT頻道/人物角色/角色畫風參考圖/汪神.jpg　(2026-10-16 01:30)
+- D:/ZCODE/兒童YT頻道/人物角色/角色畫風參考圖/變色龍.jpg　(2026-10-16 01:30)
+- D:/ZCODE/兒童YT頻道/人物角色/角色試搞/ChatGPT 圖像 2026年10月16日 上午02_09_56.png　(2026-10-16 02:09)
+- D:/ZCODE/兒童YT頻道/人物角色/角色試搞/ChatGPT 圖像 2026年10月16日 上午02_10_04.png　(2026-10-16 02:10)
+- D:/ZCODE/兒童YT頻道/人物角色/角色試搞/ChatGPT 圖像 2026年10月16日 上午02_10_26.png　(2026-10-16 02:10)
+- D:/ZCODE/兒童YT頻道/人物角色/角色試搞/ChatGPT 圖像 2026年10月16日 上午02_10_35.png　(2026-10-16 02:10)
+- D:/ZCODE/兒童YT頻道/人物角色/角色試搞/ChatGPT 圖像 2026年10月16日 上午02_10_45.png　(2026-10-16 02:10)
+- D:/ZCODE/兒童YT頻道/人物角色/角色試搞/ChatGPT 圖像 2026年10月16日 上午02_11_09.png　(2026-10-16 02:11)
+- D:/ZCODE/兒童YT頻道/人物角色/角色試搞/土地公三視圖.png　(2026-10-16 02:09)
+- D:/ZCODE/兒童YT頻道/人物角色/角色試搞/潮流吉祥物-五人主視覺-v1.png　(2026-10-16 02:28)
+- D:/ZCODE/兒童YT頻道/人物角色/角色試搞/男主角三視圖.png　(2026-10-16 02:07)
 
 ## 4. 目前儀表板狀態（更新前）
 - guru｜股流Radar｜stage=Active｜progress=72％｜next=用回補腳本補齊 10/2、10/5 行情／法人（連同籌碼空窗）；持續觀察排程＋補跑穩定；驗收後把凱基即時行情從 PoC 接成正式資料源
