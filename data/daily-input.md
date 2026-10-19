@@ -1,5 +1,5 @@
 # 北極星 自動收集輸入（給 AI 讀）
-> 產生時間：2026-10-16 23:50　範圍：最近 3 天
+> 產生時間：2026-10-19 23:50　範圍：最近 3 天
 > 用途：AI 讀完後，把各專案濃縮成「一行方向＋進度」，寫進 daily-brief.txt 或 worklog。
 
 ## 0. 北極星收件匣（其他 AI 交辦；資料夾：D:/ZCODE/北極星收件匣）
@@ -96,48 +96,60 @@
 ## 已知限制（MVP 刻意取捨）
 ```
 
-## 3. 今日（2026-10-16 起）有異動的檔案
-### workspace（15 個）
-- C:/Users/amydo/.openclaw-autoclaw/workspace/.cluster/expert-playbook.md　(2026-10-16 22:25)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20261016-223611-f03940cd-c2c-Snip_20261016_223441.png　(2026-10-16 22:34)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20261016-225624-0b4c78c0-c4d-Beav2.png　(2026-10-16 21:29)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20261016-225624-2bc48f90-876-Beav5.png　(2026-10-16 21:30)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20261016-225624-6ab6674c-34d-Beav6.png　(2026-10-16 21:30)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20261016-225624-754b6123-899-Beav3.png　(2026-10-16 21:29)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20261016-225624-b8199f3f-ceb-Beav1.png　(2026-10-16 21:28)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/.openclaw-attachments/20261016-225624-dc6e650f-06d-Beav4.png　(2026-10-16 21:30)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/.opencode/config.json　(2026-10-16 22:22)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/AGENTS.md　(2026-10-16 15:36)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/config/mcp-tools-cache.json　(2026-10-16 15:36)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/config/mcporter.json　(2026-10-16 22:22)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects/dtone/README.md　(2026-10-16 22:58)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/projects.md　(2026-10-16 22:58)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/skills/autoclaw-mcp-tools/SKILL.md　(2026-10-16 15:36)
-### D:/ZCODE/IG運營（0 個）
+## 3. 今日（2026-10-19 起）有異動的檔案
+### workspace（3 個）
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.cluster/expert-playbook.md　(2026-10-19 22:13)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.opencode/config.json　(2026-10-19 22:10)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/config/mcporter.json　(2026-10-19 22:11)
+### D:/ZCODE/IG運營（122 個）
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/00_九宮格總覽_3x3.png　(2026-10-19 22:24)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/00_交付總覽.md　(2026-10-19 22:35)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/tools/make_grid3x3.py　(2026-10-19 22:24)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/tools/qa_specs.py　(2026-10-19 22:23)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/tools/render_cards_v2.py　(2026-10-19 22:21)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/tools/specs/第01篇_開店宣言.json　(2026-10-19 22:22)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/tools/specs/第02篇_客里斯是誰.json　(2026-10-19 22:20)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/tools/specs/第03篇_服務流程.json　(2026-10-19 22:20)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/tools/specs/第04篇_文字遊戲.json　(2026-10-19 22:20)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/tools/specs/第05篇_五萬對八萬.json　(2026-10-19 22:21)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/tools/specs/第06篇_選品眼光.json　(2026-10-19 22:20)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/tools/specs/第07篇_本月主打.json　(2026-10-19 22:23)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/tools/specs/第08篇_私群限定.json　(2026-10-19 22:20)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/tools/specs/第09篇_行動號召.json　(2026-10-19 22:16)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/tools/spec_qa_report.txt　(2026-10-19 22:27)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/_BRIEF.md　(2026-10-19 22:14)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/圖卡/第01篇_開店宣言/00_預覽_8張.png　(2026-10-19 22:23)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/圖卡/第01篇_開店宣言/01_封面.png　(2026-10-19 22:23)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/圖卡/第01篇_開店宣言/02_痛點一_比價焦慮.png　(2026-10-19 22:23)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/圖卡/第01篇_開店宣言/03_痛點二_話術陷阱.png　(2026-10-19 22:23)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/圖卡/第01篇_開店宣言/04_痛點三_試錯代價.png　(2026-10-19 22:23)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/圖卡/第01篇_開店宣言/05_定位_旅遊界的選品店.png　(2026-10-19 22:23)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/圖卡/第01篇_開店宣言/06_選品標準_三條鐵律.png　(2026-10-19 22:23)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/圖卡/第01篇_開店宣言/07_客里斯是誰_不露臉的選品職人.png　(2026-10-19 22:23)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/圖卡/第01篇_開店宣言/08_CTA.png　(2026-10-19 22:23)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/圖卡/第02篇_客里斯是誰/00_預覽_8張.png　(2026-10-19 22:20)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/圖卡/第02篇_客里斯是誰/01_封面.png　(2026-10-19 22:20)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/圖卡/第02篇_客里斯是誰/02_畫面_你常看到的畫面.png　(2026-10-19 22:20)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/圖卡/第02篇_客里斯是誰/03_原因一_職人邏輯.png　(2026-10-19 22:20)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/圖卡/第02篇_客里斯是誰/04_原因二_立場邏輯.png　(2026-10-19 22:20)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/圖卡/第02篇_客里斯是誰/05_露面時機_什麼時候露面.png　(2026-10-19 22:20)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/圖卡/第02篇_客里斯是誰/06_先說好_照實講.png　(2026-10-19 22:20)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/圖卡/第02篇_客里斯是誰/07_信任_信任的順序.png　(2026-10-19 22:20)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/圖卡/第02篇_客里斯是誰/08_CTA.png　(2026-10-19 22:20)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/圖卡/第03篇_服務流程/00_預覽_8張.png　(2026-10-19 22:20)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/圖卡/第03篇_服務流程/01_封面.png　(2026-10-19 22:20)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/圖卡/第03篇_服務流程/02_第一步_丟行程.png　(2026-10-19 22:20)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/圖卡/第03篇_服務流程/03_第二步_我拆行程.png　(2026-10-19 22:20)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/圖卡/第03篇_服務流程/04_我的順序_先缺點後優惠.png　(2026-10-19 22:20)
+- D:/ZCODE/IG運營/首發九篇_2026-10-19/圖卡/第03篇_服務流程/05_第三步_你決定.png　(2026-10-19 22:20)
+### D:/ZCODE/兒童YT頻道（0 個）
 （今日無異動）
-### D:/ZCODE/兒童YT頻道（16 個）
-- D:/ZCODE/兒童YT頻道/人物角色/角色畫風參考圖/11.jpg　(2026-10-16 01:30)
-- D:/ZCODE/兒童YT頻道/人物角色/角色畫風參考圖/S__53624836_0.jpg　(2026-10-16 01:30)
-- D:/ZCODE/兒童YT頻道/人物角色/角色畫風參考圖/S__53624839_0.jpg　(2026-10-16 01:30)
-- D:/ZCODE/兒童YT頻道/人物角色/角色畫風參考圖/S__53624840_0.jpg　(2026-10-16 01:30)
-- D:/ZCODE/兒童YT頻道/人物角色/角色畫風參考圖/S__53624841_0.jpg　(2026-10-16 01:30)
-- D:/ZCODE/兒童YT頻道/人物角色/角色畫風參考圖/汪神.jpg　(2026-10-16 01:30)
-- D:/ZCODE/兒童YT頻道/人物角色/角色畫風參考圖/變色龍.jpg　(2026-10-16 01:30)
-- D:/ZCODE/兒童YT頻道/人物角色/角色試搞/ChatGPT 圖像 2026年10月16日 上午02_09_56.png　(2026-10-16 02:09)
-- D:/ZCODE/兒童YT頻道/人物角色/角色試搞/ChatGPT 圖像 2026年10月16日 上午02_10_04.png　(2026-10-16 02:10)
-- D:/ZCODE/兒童YT頻道/人物角色/角色試搞/ChatGPT 圖像 2026年10月16日 上午02_10_26.png　(2026-10-16 02:10)
-- D:/ZCODE/兒童YT頻道/人物角色/角色試搞/ChatGPT 圖像 2026年10月16日 上午02_10_35.png　(2026-10-16 02:10)
-- D:/ZCODE/兒童YT頻道/人物角色/角色試搞/ChatGPT 圖像 2026年10月16日 上午02_10_45.png　(2026-10-16 02:10)
-- D:/ZCODE/兒童YT頻道/人物角色/角色試搞/ChatGPT 圖像 2026年10月16日 上午02_11_09.png　(2026-10-16 02:11)
-- D:/ZCODE/兒童YT頻道/人物角色/角色試搞/土地公三視圖.png　(2026-10-16 02:09)
-- D:/ZCODE/兒童YT頻道/人物角色/角色試搞/潮流吉祥物-五人主視覺-v1.png　(2026-10-16 02:28)
-- D:/ZCODE/兒童YT頻道/人物角色/角色試搞/男主角三視圖.png　(2026-10-16 02:07)
 
 ## 4. 目前儀表板狀態（更新前）
 - guru｜股流Radar｜stage=Active｜progress=72％｜next=用回補腳本補齊 10/2、10/5 行情／法人（連同籌碼空窗）；持續觀察排程＋補跑穩定；驗收後把凱基即時行情從 PoC 接成正式資料源
 - poker｜Poker Trainer｜stage=MVP｜progress=18％｜next=確認第一個訓練循環
 - ig-car｜中古車選品師 IG｜stage=Explore｜progress=20％｜next=審〈買車痛點篇〉8 張樣卡 → 60 篇規格轉 spec＋批次出圖；完成帳號設定（顯示名稱、Bio、頭貼、專業帳號、2FA）＋裝 OpenCLI 擴充；60 篇排程依開跑日重排
 - ig-travel｜旅遊選品師 IG｜stage=Idea｜progress=15％｜next=完成註冊＋5 步（travel.curator_chris → 名稱／Bio／頭貼 → 專業帳號『旅遊顧問』 → 2FA）；審〈開店宣言〉8 張樣卡與 Reels v1.1（IG App 加趨勢音測試）→ 批次產出；建 LINE OpenChat
-- yt-kids｜神仙童萌會（YT）｜stage=MVP｜progress=40％｜next=10/16 開播 9 天衝刺：①10/9 前 YT 頻道＋Podcast 通路開立 ②10/10 主視覺（PixAI＋工坊 imgPrompt）③10/12 TTS 第一批 7 集＋新章 11–12 腳本 ④10/14 A 版第 1 集 ⑤10/15 上架準備 ⑥10/16 開播
+- yt-kids｜神仙童萌會（YT）｜stage=MVP｜progress=40％｜next=角色試稿收斂→定稿（三視圖定稿、主視覺 v2）；續推未驗收項（通路門面、TTS 首批 7 集、A 版第 1 集）；開播後兩週內補齊 B 版 12 集音檔
 - jiuqu｜咻揪趣｜stage=MVP｜progress=60％｜next=選定主機平台＋網域即可部署上線（部署後跑 preflight＋smoke）；可選配 LLM／Places 金鑰提升解析；LINE 登入待填 Channel Secret
 - 其他：ideas=2 tasks=36 notes=13 goals=6 timeline=13

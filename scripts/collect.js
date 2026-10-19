@@ -32,7 +32,7 @@ const DOCS = [
 { id: 'ig-car',    name: '中古車選品師 IG', path: 'D:/ZCODE/IG運營/中古車選品師IG.md' },
   { id: 'ig-travel', name: '旅遊選品師 IG',   path: 'D:/ZCODE/IG運營/旅遊選品師IG.md' },
   { id: 'ig-all',    name: 'IG 進度總覽',     path: 'D:/ZCODE/IG運營/進度總覽.md' },
-  { id: 'yt-kids',   name: '神仙童萌會 YT',   path: 'D:/ZCODE/兒童YT頻道/上架企劃-S1-13週週更規劃-2026-09-30.md' },
+  { id: 'yt-kids',   name: '神仙童萌會 YT',   path: 'D:/ZCODE/兒童YT頻道/企劃規劃/上架企劃-S1-13週週更規劃-2026-09-30.md' },
   { id: 'jiuqu', name: '咻揪趣 README', path: 'C:/Users/amydo/.openclaw-autoclaw/workspace/projects/mapsync-mvp/README.md' },
 ]
 const SCAN_DIRS = [
