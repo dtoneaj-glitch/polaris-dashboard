@@ -1,5 +1,5 @@
 # 北極星 自動收集輸入（給 AI 讀）
-> 產生時間：2026-10-21 02:35　範圍：最近 3 天
+> 產生時間：2026-10-27 23:50　範圍：最近 3 天
 > 用途：AI 讀完後，把各專案濃縮成「一行方向＋進度」，寫進 daily-brief.txt 或 worklog。
 
 ## 0. 北極星收件匣（其他 AI 交辦；資料夾：D:/ZCODE/北極星收件匣）
@@ -37,7 +37,7 @@
 - ⚠ IG 進度總覽（ig-all）找不到：D:/ZCODE/IG運營/進度總覽.md
 ### 神仙童萌會 YT（yt-kids）
 - 檔案：`D:/ZCODE/兒童YT頻道/企劃規劃/上架企劃-S1-13週週更規劃-2026-09-30.md`
-- 最後修改：2026-10-01 01:11
+- 最後修改：2026-10-25 23:31　🟡 近期有動
 - 章節：
 ```
 # 《神仙童萌會》S1 上架企劃 v3——13 週 × 每週 2 正片（全季 27 集）
@@ -68,11 +68,16 @@
 ## 已知限制（MVP 刻意取捨）
 ```
 
-## 3. 今日（2026-10-21 起）有異動的檔案
-### workspace（3 個）
-- C:/Users/amydo/.openclaw-autoclaw/workspace/.cluster/expert-playbook.md　(2026-10-21 02:31)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/.opencode/config.json　(2026-10-21 02:27)
-- C:/Users/amydo/.openclaw-autoclaw/workspace/config/mcporter.json　(2026-10-21 02:28)
+## 3. 今日（2026-10-27 起）有異動的檔案
+### workspace（8 個）
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.cluster/expert-playbook.md　(2026-10-27 17:30)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/.opencode/config.json　(2026-10-27 17:27)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/AGENTS.md　(2026-10-27 19:47)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/config/mcp-tools-cache.json　(2026-10-27 19:47)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/config/mcporter.json　(2026-10-27 17:27)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/deliverables/ig-cta-2026/旅遊選品師ig_40選題cta計畫_2026-2027.html　(2026-10-27 19:57)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/deliverables/ig-cta-2026/旅遊選品師ig_40選題cta計畫_2026-2027.md　(2026-10-27 19:58)
+- C:/Users/amydo/.openclaw-autoclaw/workspace/skills/autoclaw-mcp-tools/SKILL.md　(2026-10-27 19:47)
 ### D:/ZCODE/IG運營（0 個）
 （今日無異動）
 ### D:/ZCODE/兒童YT頻道（0 個）
@@ -82,7 +87,7 @@
 - guru｜股流Radar｜stage=Active｜progress=72％｜next=用回補腳本補齊 10/2、10/5 行情／法人（連同籌碼空窗）；持續觀察排程＋補跑穩定；驗收後把凱基即時行情從 PoC 接成正式資料源
 - poker｜Poker Trainer｜stage=MVP｜progress=18％｜next=確認第一個訓練循環
 - ig-car｜中古車選品師 IG｜stage=Explore｜progress=20％｜next=審〈買車痛點篇〉8 張樣卡 → 60 篇規格轉 spec＋批次出圖；完成帳號設定（顯示名稱、Bio、頭貼、專業帳號、2FA）＋裝 OpenCLI 擴充；60 篇排程依開跑日重排
-- ig-travel｜旅遊選品師 IG｜stage=Idea｜progress=30％｜next=今晚完成帳號設定（新 Bio／頭貼／轉專業帳號「旅遊顧問」／2FA）＋兩份 PDF 上傳 Drive 取連結；10/20 暖機並貼 8 組關鍵字自動回覆；10/21 21:00 發第01篇開店宣言，之後一天一篇到 10/29
+- ig-travel｜旅遊選品師 IG｜stage=Idea｜progress=30％｜next=今天先建帳號並跑完五步設定（Chrome 登入→使用者名稱→Bio＋頭貼→轉專業帳號「旅遊顧問」→2FA）；沒建成就會開天窗：21:00 第01篇開店宣言發不出去，暖機與 10/21–10/29 九宮格排程一起順延
 - yt-kids｜神仙童萌會（YT）｜stage=MVP｜progress=40％｜next=角色試稿收斂→定稿（三視圖定稿、主視覺 v2）；續推未驗收項（通路門面、TTS 首批 7 集、A 版第 1 集）；開播後兩週內補齊 B 版 12 集音檔
 - jiuqu｜咻揪趣｜stage=MVP｜progress=60％｜next=選定主機平台＋網域即可部署上線（部署後跑 preflight＋smoke）；可選配 LLM／Places 金鑰提升解析；LINE 登入待填 Channel Secret
 - 其他：ideas=2 tasks=36 notes=13 goals=6 timeline=13
