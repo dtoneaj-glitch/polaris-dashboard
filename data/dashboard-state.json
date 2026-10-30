@@ -3,12 +3,12 @@
     {
       "id": "guru",
       "name": "股流Radar",
-      "description": "兩段式台股交易工作台（雷達＋g研判）。資料底盤續穩：10/14、10/15 每日歸檔＋備份 rc=0（大盤籌碼／散戶留倉入庫至 10/14）；10/8 收尾 rc=1 未再現。仍缺 10/2、10/5 行情／法人與部分籌碼空窗待回補。",
+      "description": "兩段式台股交易工作台（雷達＋g研判）。資料底盤：10/28–10/30 每日歸檔＋備份連續 rc=0，行情／法人已更新至 10/29；先前 10/2、10/5 缺漏仍未見回補紀錄。",
       "stage": "Active",
       "color": "#e76f51",
       "progress": 72,
-      "lastUpdated": 1793116252393,
-      "next": "用回補腳本補齊 10/2、10/5 行情／法人（連同籌碼空窗）；持續觀察排程＋補跑穩定；驗收後把凱基即時行情從 PoC 接成正式資料源"
+      "lastUpdated": 1793386793508,
+      "next": "確認 10/2、10/5 行情／法人回補；持續觀察排程穩定；驗收後把凱基即時行情從 PoC 接成正式資料源"
     },
     {
       "id": "poker",
@@ -17,7 +17,7 @@
       "stage": "MVP",
       "color": "#7087a3",
       "progress": 18,
-      "lastUpdated": 1793116252393,
+      "lastUpdated": 1793386793508,
       "next": "確認第一個訓練循環"
     },
     {
@@ -28,27 +28,27 @@
       "color": "#0066FF",
       "progress": 20,
       "next": "審〈買車痛點篇〉8 張樣卡 → 60 篇規格轉 spec＋批次出圖；完成帳號設定（顯示名稱、Bio、頭貼、專業帳號、2FA）＋裝 OpenCLI 擴充；60 篇排程依開跑日重排",
-      "lastUpdated": 1793116252393
+      "lastUpdated": 1793386793508
     },
     {
       "id": "ig-travel",
       "name": "旅遊選品師 IG",
-      "description": "40 篇 CTA 選題計畫定稿：含 2026–2027 法規校正表（日本先付後退、離境稅、EES／ETIAS、韓國醫美退稅）、13 週排程與 CTA 文案庫，可直接照表量產",
+      "description": "旅遊選品師 IG（@travel.curator_chris，10/28 定案；多建的 kelisi.travel 待刪）。首發九篇 72 張圖卡＋9 篇文案＋排程＋誘餌 PDF 已就緒，第 01 篇 B 版 8 張圖卡與 spec 完成；帳號五步設定（顯示名稱／Bio／頭貼／專業帳號／2FA）尚未做，九宮格未開跑。",
       "stage": "Idea",
       "color": "#2aa198",
-      "progress": 35,
-      "next": "先確認帳號五步設定是否完成；完成後照 13 週排程開跑第 1 週（01／02／07）",
-      "lastUpdated": 1793116252393
+      "progress": 40,
+      "next": "完成五步設定＋刪重複帳號＋裝 OpenCLI 擴充；設定完成後隔天起每天一篇，9 天補完九宮格",
+      "lastUpdated": 1793386793508
     },
     {
       "id": "yt-kids",
       "name": "神仙童萌會（YT）",
-      "description": "兒童神話動畫《神仙童萌會》（4–12 歲、去宗教化；S1 三萌神：三太子／土地公／文昌帝君；產線＝有聲書先行、動畫節錄）。10/16 角色視覺線啟動：畫風參考圖入庫＋男主角／土地公三視圖試稿＋潮流吉祥物五人主視覺 v1（皆試稿階段）；開播門檻（門面／TTS 首批 7 集／A 版第 1 集）仍無可驗收新檔，開播狀態待回報。",
+      "description": "兒童神話動畫《神仙童萌會》（4–12 歲、去宗教化；S1 三萌神：三太子／土地公／文昌帝君）。S1 重製定案：20 集章表 v2（序章＋18 主題章＋季終）＋序章母稿 v1＋第 01–19 章母稿草稿完成（10/26）；開播門檻（頻道門面、TTS 首批 7 集、A 版第 1 集）仍無可驗收新檔。",
       "stage": "MVP",
       "color": "#b06bd6",
-      "progress": 40,
-      "next": "角色試稿收斂→定稿（三視圖定稿、主視覺 v2）；續推未驗收項（通路門面、TTS 首批 7 集、A 版第 1 集）；開播後兩週內補齊 B 版 12 集音檔",
-      "lastUpdated": 1793116252393
+      "progress": 45,
+      "next": "母稿複審定稿→TTS 首批 7 集→A 版第 1 集；同步補頻道門面與上架素材",
+      "lastUpdated": 1793386793508
     },
     {
       "id": "jiuqu",
@@ -57,8 +57,18 @@
       "stage": "MVP",
       "color": "#C96442",
       "progress": 60,
-      "lastUpdated": 1793116252393,
+      "lastUpdated": 1793386793508,
       "next": "選定主機平台＋網域即可部署上線（部署後跑 preflight＋smoke）；可選配 LLM／Places 金鑰提升解析；LINE 登入待填 Channel Secret"
+    },
+    {
+      "id": "ai-workspace",
+      "name": "AI 工作區（AIOS）",
+      "description": "AI 工作區（AIOS）營運層：每日 09:00 自動清收巡檢、跨專案 INDEX 與停滯偵測已常態運作；目前兩個 cloud-kit zip 逾期 18 天未匯入，多數專案 >14 天未動。",
+      "stage": "營運",
+      "color": "#6f8f78",
+      "progress": 30,
+      "next": "確認 wenshin／yt-kids 的 cloud-kit 是否已匯入（是則移出 INBOX／歸檔 02_KNOWLEDGE）；停滯專案標「無變更」或降週更；同步 guru 的最近更新日期",
+      "lastUpdated": 1793386793508
     }
   ],
   "ideas": [
@@ -86,16 +96,16 @@
       "id": "task-1",
       "title": "完成第一版監控面板",
       "projectId": "guru",
-      "due": "2026-10-16",
+      "due": "2026-10-20",
       "priority": "高",
       "done": true,
-      "completedAt": 1793116252393
+      "completedAt": 1793386793509
     },
     {
       "id": "task-2",
       "title": "定義股流指標參數",
       "projectId": "guru",
-      "due": "2026-10-16",
+      "due": "2026-10-20",
       "priority": "中",
       "done": false
     },
@@ -103,7 +113,7 @@
       "id": "task-3",
       "title": "完成一首 SUNO demo",
       "projectId": "",
-      "due": "2026-10-24",
+      "due": "2026-10-28",
       "priority": "中",
       "done": false
     },
@@ -111,7 +121,7 @@
       "id": "task-4",
       "title": "確認第一個訓練循環",
       "projectId": "poker",
-      "due": "2026-10-28",
+      "due": "2026-11-01",
       "priority": "低",
       "done": false
     },
@@ -119,7 +129,7 @@
       "id": "task-g1",
       "title": "盤點主流/蓄勢/乘流/靜流指標",
       "projectId": "guru",
-      "due": "2026-10-16",
+      "due": "2026-10-20",
       "priority": "中",
       "done": false
     },
@@ -127,7 +137,7 @@
       "id": "task-g2",
       "title": "建立股流歷史模式庫",
       "projectId": "guru",
-      "due": "2026-10-16",
+      "due": "2026-10-20",
       "priority": "低",
       "done": false
     },
@@ -135,28 +145,28 @@
       "id": "task-a1",
       "title": "整理股流 Radar 整體架構規格書（Architecture + 系統規格v1.0）",
       "projectId": "guru",
-      "due": "2026-10-14",
+      "due": "2026-10-18",
       "priority": "高",
       "done": true,
-      "completedAt": 1793116252393
+      "completedAt": 1793386793509
     },
     {
       "id": "task-a2",
       "title": "完成 v2 四套指標型戰法規格（回湧/破堤/鯨躍/洋流）",
       "projectId": "guru",
-      "due": "2026-10-14",
+      "due": "2026-10-18",
       "priority": "高",
       "done": true,
-      "completedAt": 1793116252393
+      "completedAt": 1793386793509
     },
     {
       "id": "task-a3",
       "title": "產出 UI/UX 優化建議書並同步到儀表板",
       "projectId": "guru",
-      "due": "2026-10-15",
+      "due": "2026-10-19",
       "priority": "中",
       "done": true,
-      "completedAt": 1793116252393
+      "completedAt": 1793386793509
     },
     {
       "id": "task-20260911-大盤儀表板/大盤籌碼",
@@ -165,9 +175,9 @@
       "due": "",
       "priority": "中",
       "done": true,
-      "createdAt": 1793116252393,
-      "updatedAt": 1793116252393,
-      "completedAt": 1793116252394
+      "createdAt": 1793386793509,
+      "updatedAt": 1793386793509,
+      "completedAt": 1793386793509
     },
     {
       "id": "task-20260912-研判邏輯修正：PA六",
@@ -176,9 +186,9 @@
       "due": "",
       "priority": "高",
       "done": true,
-      "createdAt": 1793116252394,
-      "updatedAt": 1793116252394,
-      "completedAt": 1793116252394
+      "createdAt": 1793386793509,
+      "updatedAt": 1793386793509,
+      "completedAt": 1793386793509
     },
     {
       "id": "task-20260912-大盤籌碼本週改用自己",
@@ -187,9 +197,9 @@
       "due": "",
       "priority": "中",
       "done": true,
-      "createdAt": 1793116252394,
-      "updatedAt": 1793116252394,
-      "completedAt": 1793116252394
+      "createdAt": 1793386793509,
+      "updatedAt": 1793386793509,
+      "completedAt": 1793386793509
     },
     {
       "id": "task-backtest",
@@ -198,8 +208,8 @@
       "due": "",
       "priority": "medium",
       "done": false,
-      "createdAt": 1793116252394,
-      "updatedAt": 1793116252394
+      "createdAt": 1793386793509,
+      "updatedAt": 1793386793509
     },
     {
       "id": "task-realtime",
@@ -208,8 +218,8 @@
       "due": "",
       "priority": "medium",
       "done": false,
-      "createdAt": 1793116252394,
-      "updatedAt": 1793116252394
+      "createdAt": 1793386793509,
+      "updatedAt": 1793386793509
     },
     {
       "id": "task-igcar-1",
@@ -218,8 +228,8 @@
       "due": "",
       "priority": "高",
       "done": false,
-      "createdAt": 1793116252394,
-      "updatedAt": 1793116252394
+      "createdAt": 1793386793509,
+      "updatedAt": 1793386793509
     },
     {
       "id": "task-igcar-2",
@@ -228,8 +238,8 @@
       "due": "",
       "priority": "高",
       "done": false,
-      "createdAt": 1793116252394,
-      "updatedAt": 1793116252394
+      "createdAt": 1793386793509,
+      "updatedAt": 1793386793509
     },
     {
       "id": "task-igcar-3",
@@ -238,8 +248,8 @@
       "due": "",
       "priority": "高",
       "done": false,
-      "createdAt": 1793116252394,
-      "updatedAt": 1793116252394
+      "createdAt": 1793386793509,
+      "updatedAt": 1793386793509
     },
     {
       "id": "task-igcar-4",
@@ -248,8 +258,8 @@
       "due": "",
       "priority": "中",
       "done": false,
-      "createdAt": 1793116252394,
-      "updatedAt": 1793116252394
+      "createdAt": 1793386793509,
+      "updatedAt": 1793386793509
     },
     {
       "id": "task-igtravel-1",
@@ -258,8 +268,8 @@
       "due": "",
       "priority": "高",
       "done": false,
-      "createdAt": 1793116252394,
-      "updatedAt": 1793116252394
+      "createdAt": 1793386793509,
+      "updatedAt": 1793386793509
     },
     {
       "id": "task-igtravel-2",
@@ -268,8 +278,8 @@
       "due": "",
       "priority": "中",
       "done": false,
-      "createdAt": 1793116252394,
-      "updatedAt": 1793116252394
+      "createdAt": 1793386793509,
+      "updatedAt": 1793386793509
     },
     {
       "id": "task-igtravel-3",
@@ -278,8 +288,8 @@
       "due": "",
       "priority": "高",
       "done": false,
-      "createdAt": 1793116252394,
-      "updatedAt": 1793116252394
+      "createdAt": 1793386793509,
+      "updatedAt": 1793386793509
     },
     {
       "id": "task-igtravel-4",
@@ -288,8 +298,8 @@
       "due": "",
       "priority": "中",
       "done": false,
-      "createdAt": 1793116252394,
-      "updatedAt": 1793116252394
+      "createdAt": 1793386793509,
+      "updatedAt": 1793386793509
     },
     {
       "id": "task-ytkids-1",
@@ -298,8 +308,8 @@
       "due": "2026-10-09",
       "priority": "高",
       "done": false,
-      "createdAt": 1793116252394,
-      "updatedAt": 1793116252394
+      "createdAt": 1793386793509,
+      "updatedAt": 1793386793509
     },
     {
       "id": "task-ytkids-2",
@@ -308,8 +318,8 @@
       "due": "",
       "priority": "中",
       "done": false,
-      "createdAt": 1793116252394,
-      "updatedAt": 1793116252394
+      "createdAt": 1793386793509,
+      "updatedAt": 1793386793509
     },
     {
       "id": "task-ytkids-3",
@@ -318,8 +328,8 @@
       "due": "",
       "priority": "高",
       "done": false,
-      "createdAt": 1793116252394,
-      "updatedAt": 1793116252394
+      "createdAt": 1793386793509,
+      "updatedAt": 1793386793509
     },
     {
       "id": "task-ytkids-4",
@@ -328,9 +338,9 @@
       "due": "2026-09-30",
       "priority": "中",
       "done": true,
-      "createdAt": 1793116252394,
-      "updatedAt": 1793116252394,
-      "completedAt": 1793116252394
+      "createdAt": 1793386793509,
+      "updatedAt": 1793386793509,
+      "completedAt": 1793386793509
     },
     {
       "id": "task-jiuqu-1",
@@ -339,8 +349,8 @@
       "due": "",
       "priority": "高",
       "done": false,
-      "createdAt": 1793116252394,
-      "updatedAt": 1793116252394
+      "createdAt": 1793386793509,
+      "updatedAt": 1793386793509
     },
     {
       "id": "task-jiuqu-2",
@@ -349,8 +359,8 @@
       "due": "",
       "priority": "中",
       "done": false,
-      "createdAt": 1793116252394,
-      "updatedAt": 1793116252394
+      "createdAt": 1793386793509,
+      "updatedAt": 1793386793509
     },
     {
       "id": "task-ytkids-5",
@@ -359,8 +369,8 @@
       "due": "2026-10-09",
       "priority": "高",
       "done": false,
-      "createdAt": 1793116252394,
-      "updatedAt": 1793116252394
+      "createdAt": 1793386793509,
+      "updatedAt": 1793386793509
     },
     {
       "id": "task-ytkids-6",
@@ -369,8 +379,8 @@
       "due": "2026-10-10",
       "priority": "高",
       "done": false,
-      "createdAt": 1793116252394,
-      "updatedAt": 1793116252394
+      "createdAt": 1793386793509,
+      "updatedAt": 1793386793509
     },
     {
       "id": "task-ytkids-7",
@@ -379,9 +389,9 @@
       "due": "2026-10-01",
       "priority": "高",
       "done": true,
-      "createdAt": 1793116252394,
-      "updatedAt": 1793116252394,
-      "completedAt": 1793116252394
+      "createdAt": 1793386793509,
+      "updatedAt": 1793386793509,
+      "completedAt": 1793386793509
     },
     {
       "id": "task-ytkids-8",
@@ -390,8 +400,8 @@
       "due": "2026-10-12",
       "priority": "高",
       "done": false,
-      "createdAt": 1793116252394,
-      "updatedAt": 1793116252394
+      "createdAt": 1793386793509,
+      "updatedAt": 1793386793509
     },
     {
       "id": "task-ytkids-9",
@@ -400,8 +410,8 @@
       "due": "2026-10-12",
       "priority": "中",
       "done": false,
-      "createdAt": 1793116252394,
-      "updatedAt": 1793116252394
+      "createdAt": 1793386793509,
+      "updatedAt": 1793386793509
     },
     {
       "id": "task-ytkids-10",
@@ -410,8 +420,8 @@
       "due": "2026-10-14",
       "priority": "高",
       "done": false,
-      "createdAt": 1793116252394,
-      "updatedAt": 1793116252394
+      "createdAt": 1793386793509,
+      "updatedAt": 1793386793509
     },
     {
       "id": "task-ytkids-11",
@@ -420,8 +430,8 @@
       "due": "2026-10-15",
       "priority": "高",
       "done": false,
-      "createdAt": 1793116252394,
-      "updatedAt": 1793116252394
+      "createdAt": 1793386793509,
+      "updatedAt": 1793386793509
     },
     {
       "id": "task-ytkids-12",
@@ -430,8 +440,8 @@
       "due": "2026-10-20",
       "priority": "中",
       "done": false,
-      "createdAt": 1793116252394,
-      "updatedAt": 1793116252394
+      "createdAt": 1793386793509,
+      "updatedAt": 1793386793509
     }
   ],
   "notes": [
@@ -444,7 +454,7 @@
         "概念"
       ],
       "projectId": "guru",
-      "createdAt": 1793029852394
+      "createdAt": 1793300393509
     },
     {
       "id": "note-2",
@@ -455,7 +465,7 @@
         "決策"
       ],
       "projectId": "guru",
-      "createdAt": 1792857052394
+      "createdAt": 1793127593509
     },
     {
       "id": "note-3",
@@ -466,7 +476,7 @@
         "音樂"
       ],
       "projectId": "",
-      "createdAt": 1792511452394
+      "createdAt": 1792781993509
     },
     {
       "id": "note-a1",
@@ -477,7 +487,7 @@
         "架構"
       ],
       "projectId": "guru",
-      "createdAt": 1793116252394
+      "createdAt": 1793386793509
     },
     {
       "id": "note-20260912-股流更新：研判邏",
@@ -488,7 +498,7 @@
         "更新"
       ],
       "projectId": "guru",
-      "createdAt": 1793116252394
+      "createdAt": 1793386793509
     },
     {
       "id": "note-20260912-股流更新：大盤籌",
@@ -499,7 +509,7 @@
         "儀表板"
       ],
       "projectId": "guru",
-      "createdAt": 1793116252394
+      "createdAt": 1793386793509
     },
     {
       "id": "note-igcar-1",
@@ -511,7 +521,7 @@
         "品牌"
       ],
       "projectId": "ig-car",
-      "createdAt": 1793116252394
+      "createdAt": 1793386793509
     },
     {
       "id": "note-igtravel-1",
@@ -523,7 +533,7 @@
         "品牌"
       ],
       "projectId": "ig-travel",
-      "createdAt": 1793116252394
+      "createdAt": 1793386793509
     },
     {
       "id": "note-ytkids-1",
@@ -535,7 +545,7 @@
         "動畫"
       ],
       "projectId": "yt-kids",
-      "createdAt": 1793116252394
+      "createdAt": 1793386793509
     },
     {
       "id": "note-polaris-track-1",
@@ -546,7 +556,7 @@
         "決策"
       ],
       "projectId": "",
-      "createdAt": 1793116252394
+      "createdAt": 1793386793509
     },
     {
       "id": "note-polaris-track-2",
@@ -557,7 +567,7 @@
         "決策"
       ],
       "projectId": "",
-      "createdAt": 1793116252394
+      "createdAt": 1793386793509
     },
     {
       "id": "note-ytkids-107",
@@ -570,7 +580,7 @@
         "神仙童萌會"
       ],
       "projectId": "yt-kids",
-      "createdAt": 1793116252394
+      "createdAt": 1793386793509
     },
     {
       "id": "note-ytkids-1016",
@@ -583,49 +593,49 @@
         "神仙童萌會"
       ],
       "projectId": "yt-kids",
-      "createdAt": 1793116252394
+      "createdAt": 1793386793509
     }
   ],
   "timelineEvents": [
     {
       "id": "ev-ytkids-107",
-      "date": "2026-10-21",
+      "date": "2026-10-25",
       "title": "神仙童萌會 定案表定開播 10/7；YT 頻道／適合平台／主視覺 三項尚未進行",
       "type": "note",
       "projectId": "yt-kids",
       "color": "#b06bd6",
-      "createdAt": 1793116252394
+      "createdAt": 1793386793510
     },
     {
       "id": "ev-ytkids-1",
-      "date": "2026-10-21",
+      "date": "2026-10-25",
       "title": "神仙童萌會 YT 運營企劃書完成",
       "type": "milestone",
       "projectId": "yt-kids",
       "color": "#b06bd6",
-      "createdAt": 1793116252394
+      "createdAt": 1793386793510
     },
     {
       "id": "ev-20260911",
-      "date": "2026-10-21",
+      "date": "2026-10-25",
       "title": "Update: 大盤儀表板/大盤籌碼頁重新整合真實資料、水池成本價、觀察股水池命名、籌碼分歧引擎、VIX判讀等功能",
       "type": "milestone",
       "projectId": "guru",
       "color": "#e76f51",
-      "createdAt": 1793116252394
+      "createdAt": 1793386793510
     },
     {
       "id": "ev-ytkids-1016",
-      "date": "2026-10-20",
+      "date": "2026-10-24",
       "title": "神仙童萌會 開播日延後：10/7 → 10/16（輕量開播門檻定案）",
       "type": "note",
       "projectId": "yt-kids",
       "color": "#b06bd6",
-      "createdAt": 1793116252394
+      "createdAt": 1793386793510
     },
     {
       "id": "ev-6",
-      "date": "2026-10-17",
+      "date": "2026-10-21",
       "type": "milestone",
       "title": "股流 Radar 整體架構規格書完成（Architecture v1.0 + 系統規格 + 策略 v2）",
       "projectId": "guru",
@@ -633,7 +643,7 @@
     },
     {
       "id": "ev-jiuqu-1",
-      "date": "2026-10-16",
+      "date": "2026-10-20",
       "title": "咻揪趣 MVP 完成（v0.31.0）：邀請連結、截圖 OCR、LINE 登入程式端",
       "type": "milestone",
       "projectId": "jiuqu",
@@ -641,7 +651,7 @@
     },
     {
       "id": "ev-5",
-      "date": "2026-10-15",
+      "date": "2026-10-19",
       "type": "milestone",
       "title": "SUNO 第一首歌完成 demo",
       "projectId": "",
@@ -649,7 +659,7 @@
     },
     {
       "id": "ev-4",
-      "date": "2026-10-13",
+      "date": "2026-10-17",
       "type": "note",
       "title": "股流 Radar 監控面板上線準備",
       "projectId": "guru",
@@ -657,7 +667,7 @@
     },
     {
       "id": "ev-3",
-      "date": "2026-10-11",
+      "date": "2026-10-15",
       "type": "milestone",
       "title": "完成第一版原型介面",
       "projectId": "guru",
@@ -665,7 +675,7 @@
     },
     {
       "id": "ev-2",
-      "date": "2026-09-29",
+      "date": "2026-10-03",
       "type": "note",
       "title": "確定「主流／蓄勢／乘流／靜流」四階段語彙",
       "projectId": "guru",
@@ -673,25 +683,25 @@
     },
     {
       "id": "ev-igcar-1",
-      "date": "2026-09-28",
+      "date": "2026-10-02",
       "title": "中古車選品師 IG 帳號建立＋品牌定案",
       "type": "milestone",
       "projectId": "ig-car",
       "color": "#0066FF",
-      "createdAt": 1793116252394
+      "createdAt": 1793386793510
     },
     {
       "id": "ev-igtravel-1",
-      "date": "2026-09-28",
+      "date": "2026-10-02",
       "title": "旅遊選品師品牌定案（Bio／頭貼／九宮格）",
       "type": "milestone",
       "projectId": "ig-travel",
       "color": "#2aa198",
-      "createdAt": 1793116252394
+      "createdAt": 1793386793510
     },
     {
       "id": "ev-1",
-      "date": "2026-09-19",
+      "date": "2026-09-23",
       "type": "milestone",
       "title": "股流 Radar 概念成型",
       "projectId": "guru",
@@ -703,7 +713,7 @@
       "id": "goal-1",
       "title": "股流 Radar 第一版上線",
       "description": "能被實際使用的監控面板程度（含熱區/PA事實層/g研判/v2戰法）",
-      "targetDate": "2026-10-15",
+      "targetDate": "2026-10-19",
       "progress": 55,
       "color": "#e76f51",
       "projectId": "guru"
@@ -712,7 +722,7 @@
       "id": "goal-2",
       "title": "收齊 20 則股流決策筆記",
       "description": "累積成判斷資料庫",
-      "targetDate": "2026-10-31",
+      "targetDate": "2026-11-04",
       "progress": 30,
       "color": "#6f8f78",
       "projectId": "guru"
@@ -721,7 +731,7 @@
       "id": "goal-3",
       "title": "SUNO 頻道連續 4 週每週一首",
       "description": "先做出有辨識度的聲音，再談規模",
-      "targetDate": "2026-10-28",
+      "targetDate": "2026-11-01",
       "progress": 25,
       "color": "#6f8f78"
     },
@@ -729,7 +739,7 @@
       "id": "goal-4",
       "title": "找到第一個付費使用者",
       "description": "股流 Radar 痛點驗證",
-      "targetDate": "2026-11-14",
+      "targetDate": "2026-11-18",
       "progress": 5,
       "color": "#7087a3",
       "projectId": "guru"
@@ -753,7 +763,7 @@
       "projectId": "yt-kids"
     }
   ],
-  "exportedAt": "2026-10-27T15:50:52.394Z",
+  "exportedAt": "2026-10-30T18:59:53.510Z",
   "schema": "polaris-dashboard-state/v1",
   "note": "由 scripts/export-state.js 從 src/main.jsx seed 匯出；給 AI / ZCode 讀取的儀表板內容快照。"
 }

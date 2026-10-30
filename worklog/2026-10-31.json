@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-31",
+  "source": "daily-brief",
+  "projects": [
+    {
+      "id": "guru",
+      "name": "股流Radar",
+      "stage": "Active",
+      "color": "#e76f51",
+      "progress": 72,
+      "description": "兩段式台股交易工作台（雷達＋g研判）。資料底盤：10/28–10/30 每日歸檔＋備份連續 rc=0，行情／法人已更新至 10/29；先前 10/2、10/5 缺漏仍未見回補紀錄。",
+      "next": "確認 10/2、10/5 行情／法人回補；持續觀察排程穩定；驗收後把凱基即時行情從 PoC 接成正式資料源"
+    },
+    {
+      "id": "jiuqu",
+      "name": "咻揪趣",
+      "stage": "MVP",
+      "color": "#C96442",
+      "progress": 60,
+      "description": "把社群收藏變成真的會去的行程：貼上 IG／Threads／TikTok 連結或截圖 → 自動解析打點 → 親友實測避雷 → 一鍵排行程；含管理後台、PWA 分享面板與 iOS 捷徑。MVP 已完成（v0.31.0）：端到端驗收 30/30、邀請連結、截圖 OCR、LINE 登入程式端；部署檔（Docker／Caddy／systemd）齊備。",
+      "next": "選定主機平台＋網域即可部署上線（部署後跑 preflight＋smoke）；可選配 LLM／Places 金鑰提升解析；LINE 登入待填 Channel Secret"
+    },
+    {
+      "id": "ig-car",
+      "name": "中古車選品師 IG",
+      "stage": "Explore",
+      "color": "#0066FF",
+      "progress": 20,
+      "description": "客里斯｜中古車選品師（@uc.curator_chris）。核心：「不教你搶便宜車，教你避開買錯車。」服務：代客尋車／代拍／拍賣代銷（和運、行將 SAA）。漏斗：Reels/圖文 → 私訊關鍵字 → 買賣家問卷 → 1對1 諮詢簽約 → 拍場執行。現況（10/13）：出圖瓶頸解除——Pollo 退役、Pillow 字卡產線建立；首發〈買車痛點篇〉8 張樣卡 v0.1 已交付待審；帳號已建，設定與 60 篇排程待完成。",
+      "next": "審〈買車痛點篇〉8 張樣卡 → 60 篇規格轉 spec＋批次出圖；完成帳號設定（顯示名稱、Bio、頭貼、專業帳號、2FA）＋裝 OpenCLI 擴充；60 篇排程依開跑日重排"
+    },
+    {
+      "id": "ig-travel",
+      "name": "旅遊選品師 IG",
+      "stage": "Idea",
+      "color": "#2aa198",
+      "progress": 40,
+      "description": "旅遊選品師 IG（@travel.curator_chris，10/28 定案；多建的 kelisi.travel 待刪）。首發九篇 72 張圖卡＋9 篇文案＋排程＋誘餌 PDF 已就緒，第 01 篇 B 版 8 張圖卡與 spec 完成；帳號五步設定（顯示名稱／Bio／頭貼／專業帳號／2FA）尚未做，九宮格未開跑。",
+      "next": "完成五步設定＋刪重複帳號＋裝 OpenCLI 擴充；設定完成後隔天起每天一篇，9 天補完九宮格"
+    },
+    {
+      "id": "yt-kids",
+      "name": "神仙童萌會（YT）",
+      "stage": "MVP",
+      "color": "#b06bd6",
+      "progress": 45,
+      "description": "兒童神話動畫《神仙童萌會》（4–12 歲、去宗教化；S1 三萌神：三太子／土地公／文昌帝君）。S1 重製定案：20 集章表 v2（序章＋18 主題章＋季終）＋序章母稿 v1＋第 01–19 章母稿草稿完成（10/26）；開播門檻（頻道門面、TTS 首批 7 集、A 版第 1 集）仍無可驗收新檔。",
+      "next": "母稿複審定稿→TTS 首批 7 集→A 版第 1 集；同步補頻道門面與上架素材"
+    },
+    {
+      "id": "poker",
+      "name": "Poker Trainer",
+      "stage": "MVP",
+      "color": "#7087a3",
+      "progress": 18,
+      "description": "讓決策練習變得有趣（獨立案子保留）。",
+      "next": "確認第一個訓練循環"
+    },
+    {
+      "id": "ai-workspace",
+      "name": "AI 工作區（AIOS）",
+      "stage": "營運",
+      "progress": 30,
+      "description": "AI 工作區（AIOS）營運層：每日 09:00 自動清收巡檢、跨專案 INDEX 與停滯偵測已常態運作；目前兩個 cloud-kit zip 逾期 18 天未匯入，多數專案 >14 天未動。",
+      "next": "確認 wenshin／yt-kids 的 cloud-kit 是否已匯入（是則移出 INBOX／歸檔 02_KNOWLEDGE）；停滯專案標「無變更」或降週更；同步 guru 的最近更新日期"
+    }
+  ]
+}
