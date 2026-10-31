@@ -7,7 +7,7 @@
       "stage": "Active",
       "color": "#e76f51",
       "progress": 72,
-      "lastUpdated": 1793386793508,
+      "lastUpdated": 1793462015897,
       "next": "確認 10/2、10/5 行情／法人回補；持續觀察排程穩定；驗收後把凱基即時行情從 PoC 接成正式資料源"
     },
     {
@@ -17,7 +17,7 @@
       "stage": "MVP",
       "color": "#7087a3",
       "progress": 18,
-      "lastUpdated": 1793386793508,
+      "lastUpdated": 1793462015897,
       "next": "確認第一個訓練循環"
     },
     {
@@ -28,7 +28,7 @@
       "color": "#0066FF",
       "progress": 20,
       "next": "審〈買車痛點篇〉8 張樣卡 → 60 篇規格轉 spec＋批次出圖；完成帳號設定（顯示名稱、Bio、頭貼、專業帳號、2FA）＋裝 OpenCLI 擴充；60 篇排程依開跑日重排",
-      "lastUpdated": 1793386793508
+      "lastUpdated": 1793462015897
     },
     {
       "id": "ig-travel",
@@ -38,7 +38,7 @@
       "color": "#2aa198",
       "progress": 40,
       "next": "完成五步設定＋刪重複帳號＋裝 OpenCLI 擴充；設定完成後隔天起每天一篇，9 天補完九宮格",
-      "lastUpdated": 1793386793508
+      "lastUpdated": 1793462015897
     },
     {
       "id": "yt-kids",
@@ -48,7 +48,7 @@
       "color": "#b06bd6",
       "progress": 45,
       "next": "母稿複審定稿→TTS 首批 7 集→A 版第 1 集；同步補頻道門面與上架素材",
-      "lastUpdated": 1793386793508
+      "lastUpdated": 1793462015897
     },
     {
       "id": "jiuqu",
@@ -57,7 +57,7 @@
       "stage": "MVP",
       "color": "#C96442",
       "progress": 60,
-      "lastUpdated": 1793386793508,
+      "lastUpdated": 1793462015897,
       "next": "選定主機平台＋網域即可部署上線（部署後跑 preflight＋smoke）；可選配 LLM／Places 金鑰提升解析；LINE 登入待填 Channel Secret"
     },
     {
@@ -68,7 +68,7 @@
       "color": "#6f8f78",
       "progress": 30,
       "next": "確認 wenshin／yt-kids 的 cloud-kit 是否已匯入（是則移出 INBOX／歸檔 02_KNOWLEDGE）；停滯專案標「無變更」或降週更；同步 guru 的最近更新日期",
-      "lastUpdated": 1793386793508
+      "lastUpdated": 1793462015897
     }
   ],
   "ideas": [
@@ -99,7 +99,7 @@
       "due": "2026-10-20",
       "priority": "高",
       "done": true,
-      "completedAt": 1793386793509
+      "completedAt": 1793462015898
     },
     {
       "id": "task-2",
@@ -148,7 +148,7 @@
       "due": "2026-10-18",
       "priority": "高",
       "done": true,
-      "completedAt": 1793386793509
+      "completedAt": 1793462015898
     },
     {
       "id": "task-a2",
@@ -157,7 +157,7 @@
       "due": "2026-10-18",
       "priority": "高",
       "done": true,
-      "completedAt": 1793386793509
+      "completedAt": 1793462015898
     },
     {
       "id": "task-a3",
@@ -166,7 +166,7 @@
       "due": "2026-10-19",
       "priority": "中",
       "done": true,
-      "completedAt": 1793386793509
+      "completedAt": 1793462015899
     },
     {
       "id": "task-20260911-大盤儀表板/大盤籌碼",
@@ -175,9 +175,9 @@
       "due": "",
       "priority": "中",
       "done": true,
-      "createdAt": 1793386793509,
-      "updatedAt": 1793386793509,
-      "completedAt": 1793386793509
+      "createdAt": 1793462015899,
+      "updatedAt": 1793462015899,
+      "completedAt": 1793462015899
     },
     {
       "id": "task-20260912-研判邏輯修正：PA六",
@@ -186,9 +186,9 @@
       "due": "",
       "priority": "高",
       "done": true,
-      "createdAt": 1793386793509,
-      "updatedAt": 1793386793509,
-      "completedAt": 1793386793509
+      "createdAt": 1793462015899,
+      "updatedAt": 1793462015899,
+      "completedAt": 1793462015899
     },
     {
       "id": "task-20260912-大盤籌碼本週改用自己",
@@ -197,9 +197,9 @@
       "due": "",
       "priority": "中",
       "done": true,
-      "createdAt": 1793386793509,
-      "updatedAt": 1793386793509,
-      "completedAt": 1793386793509
+      "createdAt": 1793462015899,
+      "updatedAt": 1793462015899,
+      "completedAt": 1793462015899
     },
     {
       "id": "task-backtest",
@@ -208,8 +208,8 @@
       "due": "",
       "priority": "medium",
       "done": false,
-      "createdAt": 1793386793509,
-      "updatedAt": 1793386793509
+      "createdAt": 1793462015899,
+      "updatedAt": 1793462015899
     },
     {
       "id": "task-realtime",
@@ -218,8 +218,8 @@
       "due": "",
       "priority": "medium",
       "done": false,
-      "createdAt": 1793386793509,
-      "updatedAt": 1793386793509
+      "createdAt": 1793462015899,
+      "updatedAt": 1793462015899
     },
     {
       "id": "task-igcar-1",
@@ -228,8 +228,8 @@
       "due": "",
       "priority": "高",
       "done": false,
-      "createdAt": 1793386793509,
-      "updatedAt": 1793386793509
+      "createdAt": 1793462015899,
+      "updatedAt": 1793462015899
     },
     {
       "id": "task-igcar-2",
@@ -238,8 +238,8 @@
       "due": "",
       "priority": "高",
       "done": false,
-      "createdAt": 1793386793509,
-      "updatedAt": 1793386793509
+      "createdAt": 1793462015899,
+      "updatedAt": 1793462015899
     },
     {
       "id": "task-igcar-3",
@@ -248,8 +248,8 @@
       "due": "",
       "priority": "高",
       "done": false,
-      "createdAt": 1793386793509,
-      "updatedAt": 1793386793509
+      "createdAt": 1793462015899,
+      "updatedAt": 1793462015899
     },
     {
       "id": "task-igcar-4",
@@ -258,8 +258,8 @@
       "due": "",
       "priority": "中",
       "done": false,
-      "createdAt": 1793386793509,
-      "updatedAt": 1793386793509
+      "createdAt": 1793462015899,
+      "updatedAt": 1793462015899
     },
     {
       "id": "task-igtravel-1",
@@ -268,8 +268,8 @@
       "due": "",
       "priority": "高",
       "done": false,
-      "createdAt": 1793386793509,
-      "updatedAt": 1793386793509
+      "createdAt": 1793462015899,
+      "updatedAt": 1793462015899
     },
     {
       "id": "task-igtravel-2",
@@ -278,8 +278,8 @@
       "due": "",
       "priority": "中",
       "done": false,
-      "createdAt": 1793386793509,
-      "updatedAt": 1793386793509
+      "createdAt": 1793462015899,
+      "updatedAt": 1793462015899
     },
     {
       "id": "task-igtravel-3",
@@ -288,8 +288,8 @@
       "due": "",
       "priority": "高",
       "done": false,
-      "createdAt": 1793386793509,
-      "updatedAt": 1793386793509
+      "createdAt": 1793462015899,
+      "updatedAt": 1793462015899
     },
     {
       "id": "task-igtravel-4",
@@ -298,8 +298,8 @@
       "due": "",
       "priority": "中",
       "done": false,
-      "createdAt": 1793386793509,
-      "updatedAt": 1793386793509
+      "createdAt": 1793462015899,
+      "updatedAt": 1793462015899
     },
     {
       "id": "task-ytkids-1",
@@ -308,8 +308,8 @@
       "due": "2026-10-09",
       "priority": "高",
       "done": false,
-      "createdAt": 1793386793509,
-      "updatedAt": 1793386793509
+      "createdAt": 1793462015899,
+      "updatedAt": 1793462015899
     },
     {
       "id": "task-ytkids-2",
@@ -318,8 +318,8 @@
       "due": "",
       "priority": "中",
       "done": false,
-      "createdAt": 1793386793509,
-      "updatedAt": 1793386793509
+      "createdAt": 1793462015899,
+      "updatedAt": 1793462015899
     },
     {
       "id": "task-ytkids-3",
@@ -328,8 +328,8 @@
       "due": "",
       "priority": "高",
       "done": false,
-      "createdAt": 1793386793509,
-      "updatedAt": 1793386793509
+      "createdAt": 1793462015899,
+      "updatedAt": 1793462015899
     },
     {
       "id": "task-ytkids-4",
@@ -338,9 +338,9 @@
       "due": "2026-09-30",
       "priority": "中",
       "done": true,
-      "createdAt": 1793386793509,
-      "updatedAt": 1793386793509,
-      "completedAt": 1793386793509
+      "createdAt": 1793462015899,
+      "updatedAt": 1793462015899,
+      "completedAt": 1793462015899
     },
     {
       "id": "task-jiuqu-1",
@@ -349,8 +349,8 @@
       "due": "",
       "priority": "高",
       "done": false,
-      "createdAt": 1793386793509,
-      "updatedAt": 1793386793509
+      "createdAt": 1793462015899,
+      "updatedAt": 1793462015899
     },
     {
       "id": "task-jiuqu-2",
@@ -359,8 +359,8 @@
       "due": "",
       "priority": "中",
       "done": false,
-      "createdAt": 1793386793509,
-      "updatedAt": 1793386793509
+      "createdAt": 1793462015899,
+      "updatedAt": 1793462015899
     },
     {
       "id": "task-ytkids-5",
@@ -369,8 +369,8 @@
       "due": "2026-10-09",
       "priority": "高",
       "done": false,
-      "createdAt": 1793386793509,
-      "updatedAt": 1793386793509
+      "createdAt": 1793462015899,
+      "updatedAt": 1793462015899
     },
     {
       "id": "task-ytkids-6",
@@ -379,8 +379,8 @@
       "due": "2026-10-10",
       "priority": "高",
       "done": false,
-      "createdAt": 1793386793509,
-      "updatedAt": 1793386793509
+      "createdAt": 1793462015899,
+      "updatedAt": 1793462015899
     },
     {
       "id": "task-ytkids-7",
@@ -389,9 +389,9 @@
       "due": "2026-10-01",
       "priority": "高",
       "done": true,
-      "createdAt": 1793386793509,
-      "updatedAt": 1793386793509,
-      "completedAt": 1793386793509
+      "createdAt": 1793462015899,
+      "updatedAt": 1793462015899,
+      "completedAt": 1793462015899
     },
     {
       "id": "task-ytkids-8",
@@ -400,8 +400,8 @@
       "due": "2026-10-12",
       "priority": "高",
       "done": false,
-      "createdAt": 1793386793509,
-      "updatedAt": 1793386793509
+      "createdAt": 1793462015899,
+      "updatedAt": 1793462015899
     },
     {
       "id": "task-ytkids-9",
@@ -410,8 +410,8 @@
       "due": "2026-10-12",
       "priority": "中",
       "done": false,
-      "createdAt": 1793386793509,
-      "updatedAt": 1793386793509
+      "createdAt": 1793462015899,
+      "updatedAt": 1793462015899
     },
     {
       "id": "task-ytkids-10",
@@ -420,8 +420,8 @@
       "due": "2026-10-14",
       "priority": "高",
       "done": false,
-      "createdAt": 1793386793509,
-      "updatedAt": 1793386793509
+      "createdAt": 1793462015899,
+      "updatedAt": 1793462015899
     },
     {
       "id": "task-ytkids-11",
@@ -430,8 +430,8 @@
       "due": "2026-10-15",
       "priority": "高",
       "done": false,
-      "createdAt": 1793386793509,
-      "updatedAt": 1793386793509
+      "createdAt": 1793462015899,
+      "updatedAt": 1793462015899
     },
     {
       "id": "task-ytkids-12",
@@ -440,8 +440,8 @@
       "due": "2026-10-20",
       "priority": "中",
       "done": false,
-      "createdAt": 1793386793509,
-      "updatedAt": 1793386793509
+      "createdAt": 1793462015899,
+      "updatedAt": 1793462015899
     }
   ],
   "notes": [
@@ -454,7 +454,7 @@
         "概念"
       ],
       "projectId": "guru",
-      "createdAt": 1793300393509
+      "createdAt": 1793375615899
     },
     {
       "id": "note-2",
@@ -465,7 +465,7 @@
         "決策"
       ],
       "projectId": "guru",
-      "createdAt": 1793127593509
+      "createdAt": 1793202815899
     },
     {
       "id": "note-3",
@@ -476,7 +476,7 @@
         "音樂"
       ],
       "projectId": "",
-      "createdAt": 1792781993509
+      "createdAt": 1792857215899
     },
     {
       "id": "note-a1",
@@ -487,7 +487,7 @@
         "架構"
       ],
       "projectId": "guru",
-      "createdAt": 1793386793509
+      "createdAt": 1793462015899
     },
     {
       "id": "note-20260912-股流更新：研判邏",
@@ -498,7 +498,7 @@
         "更新"
       ],
       "projectId": "guru",
-      "createdAt": 1793386793509
+      "createdAt": 1793462015899
     },
     {
       "id": "note-20260912-股流更新：大盤籌",
@@ -509,7 +509,7 @@
         "儀表板"
       ],
       "projectId": "guru",
-      "createdAt": 1793386793509
+      "createdAt": 1793462015899
     },
     {
       "id": "note-igcar-1",
@@ -521,7 +521,7 @@
         "品牌"
       ],
       "projectId": "ig-car",
-      "createdAt": 1793386793509
+      "createdAt": 1793462015899
     },
     {
       "id": "note-igtravel-1",
@@ -533,7 +533,7 @@
         "品牌"
       ],
       "projectId": "ig-travel",
-      "createdAt": 1793386793509
+      "createdAt": 1793462015899
     },
     {
       "id": "note-ytkids-1",
@@ -545,7 +545,7 @@
         "動畫"
       ],
       "projectId": "yt-kids",
-      "createdAt": 1793386793509
+      "createdAt": 1793462015899
     },
     {
       "id": "note-polaris-track-1",
@@ -556,7 +556,7 @@
         "決策"
       ],
       "projectId": "",
-      "createdAt": 1793386793509
+      "createdAt": 1793462015899
     },
     {
       "id": "note-polaris-track-2",
@@ -567,7 +567,7 @@
         "決策"
       ],
       "projectId": "",
-      "createdAt": 1793386793509
+      "createdAt": 1793462015899
     },
     {
       "id": "note-ytkids-107",
@@ -580,7 +580,7 @@
         "神仙童萌會"
       ],
       "projectId": "yt-kids",
-      "createdAt": 1793386793509
+      "createdAt": 1793462015899
     },
     {
       "id": "note-ytkids-1016",
@@ -593,7 +593,7 @@
         "神仙童萌會"
       ],
       "projectId": "yt-kids",
-      "createdAt": 1793386793509
+      "createdAt": 1793462015899
     }
   ],
   "timelineEvents": [
@@ -604,7 +604,7 @@
       "type": "note",
       "projectId": "yt-kids",
       "color": "#b06bd6",
-      "createdAt": 1793386793510
+      "createdAt": 1793462015899
     },
     {
       "id": "ev-ytkids-1",
@@ -613,7 +613,7 @@
       "type": "milestone",
       "projectId": "yt-kids",
       "color": "#b06bd6",
-      "createdAt": 1793386793510
+      "createdAt": 1793462015899
     },
     {
       "id": "ev-20260911",
@@ -622,7 +622,7 @@
       "type": "milestone",
       "projectId": "guru",
       "color": "#e76f51",
-      "createdAt": 1793386793510
+      "createdAt": 1793462015899
     },
     {
       "id": "ev-ytkids-1016",
@@ -631,7 +631,7 @@
       "type": "note",
       "projectId": "yt-kids",
       "color": "#b06bd6",
-      "createdAt": 1793386793510
+      "createdAt": 1793462015899
     },
     {
       "id": "ev-6",
@@ -688,7 +688,7 @@
       "type": "milestone",
       "projectId": "ig-car",
       "color": "#0066FF",
-      "createdAt": 1793386793510
+      "createdAt": 1793462015899
     },
     {
       "id": "ev-igtravel-1",
@@ -697,7 +697,7 @@
       "type": "milestone",
       "projectId": "ig-travel",
       "color": "#2aa198",
-      "createdAt": 1793386793510
+      "createdAt": 1793462015899
     },
     {
       "id": "ev-1",
@@ -763,7 +763,7 @@
       "projectId": "yt-kids"
     }
   ],
-  "exportedAt": "2026-10-30T18:59:53.510Z",
+  "exportedAt": "2026-10-31T15:53:35.899Z",
   "schema": "polaris-dashboard-state/v1",
   "note": "由 scripts/export-state.js 從 src/main.jsx seed 匯出；給 AI / ZCode 讀取的儀表板內容快照。"
 }

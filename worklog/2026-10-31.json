@@ -62,7 +62,8 @@
       "stage": "營運",
       "progress": 30,
       "description": "AI 工作區（AIOS）營運層：每日 09:00 自動清收巡檢、跨專案 INDEX 與停滯偵測已常態運作；目前兩個 cloud-kit zip 逾期 18 天未匯入，多數專案 >14 天未動。",
-      "next": "確認 wenshin／yt-kids 的 cloud-kit 是否已匯入（是則移出 INBOX／歸檔 02_KNOWLEDGE）；停滯專案標「無變更」或降週更；同步 guru 的最近更新日期"
+      "next": "確認 wenshin／yt-kids 的 cloud-kit 是否已匯入（是則移出 INBOX／歸檔 02_KNOWLEDGE）；停滯專案標「無變更」或降週更；同步 guru 的最近更新日期",
+      "color": "#6f8f78"
     }
   ]
 }
