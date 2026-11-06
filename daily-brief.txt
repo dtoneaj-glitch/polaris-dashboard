@@ -1,9 +1,8 @@
-# 北極星 daily-brief 2026-10-31 23:50（AI 自動產生；欄位留空＝沿用現值）
-# 今日掃描：guru 近 3 日無新 commit；IG運營／兒童YT頻道今日 0 異動；北極星收件匣僅 10/29 AIOS 巡檢（今晨已納入）；OpenClaw 工具設定凌晨異動屬環境設定、非專案產出。今日各專案無新進度，維持原值。
-guru: 72% |  | 
-jiuqu: 60% |  | 
-ig-car: 20% |  | 
-ig-travel: 40% |  | 
-yt-kids: 45% |  | 
-poker: 18% |  | 
-ai-workspace: 30% |  | 
+guru: 72
+poker: 18
+ig-car: 20
+ig-travel: 52 | 旅遊選品師 IG（@travel.curator_chris；kelisi.travel 重複帳號待刪）。三版常態內容系統成形（11-07）：月初大展／周五本周末／下周一跨縣市，全台 20 縣市實抓 WeKenGo 檢驗稿完成（月初 8 檔國際展、周五 20 縣市各 1 檔、周一 7 條跨縣市）；BearCarousel 已匯出 3 組共 21 張輪播，第 01 篇暖調繪本 8 頁也完成。帳號五步設定仍未做，本週不發布。 | 完成帳號五步設定＋刪 kelisi.travel＋裝 OpenCLI；設定好先發周五篇（11/7–8），再排周一跨縣市與 12 月月初大展
+yt-kids: 49 | 兒童神話動畫《神仙童萌會》（4–12 歲、去宗教化；S1 三萌神）。S1 母稿 20 集與序章在檔；11-03 完成 TTS 五方選型（台腔優先 voai／waigo，最省 fish 但陸腔，ElevenLabs 僅多語用），序章 7 段測試文稿已備，音檔仍 0（voai／waigo／aivoice 需登入才能生成）。 | 選定 TTS 平台（voai 或 waigo，或給 API key）→ 生成序章段 1 五方並聽定案 → 首批 7 集量產；母稿複審與頻道門面並行
+jiuqu: 60
+ai-workspace: 32 | AI 工作區（AIOS）營運層：11-04 巡檢仍列 cloud-kit ×2 逾期 24 天、9 個專案停滯；北極星收集器 11-07 恢復產出，但 jiuqu git 仍指舊 mapsync-mvp 路徑、IG 三份檔誤報缺失（實際在子目錄）。 | 修 collect.js：jiuqu 改指 D:\ZCODE\咻揪趣、IG 檔改抓子目錄；決定 cloud-kit zip 歸檔 02_KNOWLEDGE；停滯專案標暫停或降週更
+peilian: 50 | 陪練運動課表 PWA（React 19＋Vite＋Dexie，離線優先、無後端）：主流程已完成並過 typecheck／build／8 項 Playwright。11-06 新增 B2B 教案庫 v0.1：皮拉提斯／機械健身／HIIT 三域各 10 張、共 30 張動作卡樣卡＋驗收指南與總覽頁；插圖先留位，等口令驗收過再走 resvg。 | 找 3 位現職教練各抽 5 張照卡唸口令（平均至少 1.5 且無 0 分）；過關才產三格插圖與批量匯出 | name=陪練運動課表 | stage=MVP
